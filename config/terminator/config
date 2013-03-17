@@ -1,0 +1,28 @@
+[global_config]
+  geometry_hinting = False
+  handle_size = 0
+  focus = mouse
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#000000:#f2777a:#99cc99:#f99157:#5780a9:#cc99cc:#82cbcb:#515151:#666666:#ff3334:#9ec400:#ffcc66:#6699cc:#b777e0:#54ced6:#393939"
+    copy_on_selection = True
+    background_darkness = 0.06
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#aeafad"
+    foreground_color = "#cccccc"
+    icon_bell = False
+    show_titlebar = False
+    font = Dina 14
+    background_color = "#2d2d2d"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

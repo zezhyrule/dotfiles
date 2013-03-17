@@ -1,0 +1,8 @@
+{
+  "ui" : {
+    "global" : {
+      "ui-type" : "side-doish",
+      "show-indicator" : false
+    }
+  }
+}

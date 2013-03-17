@@ -1,0 +1,61 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+[ -n "$TMUX" ] && export TERM=xterm-256color
+
+# allows saving with ctrl-s in vim
+vim()
+{
+    local STTYOPTS="$(stty --save)"
+    stty stop '' -ixoff
+    command vim "$@"
+    stty "$STTYOPTS"
+}
+
+# colored man pages!
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;35m") \
+			man "$@"
+}
+
+# PS1='\u \w > '
+PS1='\[\e[m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[35m\]> \[\e[0m\]'
+
+shopt -s autocd # cd to a dir just by typing its name
+PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD' # ls after cding
+
+alias ..='cd ..'
+alias vim="stty stop '' -ixoff ; vim"
+alias svim='sudo vim'
+alias vimrc='$EDITOR $HOME/.vimrc'
+alias wifi='sudo wifi-menu'
+alias ls='ls --color=auto'
+alias ll="ls -lh"
+alias la="ls -a"
+# alias pacman='pacman-color'
+alias pacs='sudo pacman -S'
+alias pacf='pacman -Ss'
+alias pacup='sudo pacman -Syu'
+alias pacr='sudo pacman -Rns'
+alias pak='sudo packer -S'
+alias pakup='sudo packer -Syu'
+alias pakf='packer -Ss'
+alias awrc='$EDITOR $HOME/.config/awesome/rc.lua'
+alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
+alias tmux='tmux -2uv'
+alias reboot="sudo shutdown -r now"
+alias poweroff="sudo poweroff"
+alias halt="sudo shutdown -h now"
+
+
+export EDITOR=vim

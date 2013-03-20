@@ -3484,7 +3484,8 @@
             "ssl.google-analytics.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 10
+                  "5": 10,
+                  "6": 0
                },
                "supports_spdy": true
             },

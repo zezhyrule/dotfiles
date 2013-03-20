@@ -90,7 +90,7 @@
    "bVzOnu6xyelN8iVLDSbFjyZVgXrXDyLSokjnq2hdUFs=": {
       "created": 1362584411.184988,
       "dynamic_spki_hashes_expiry": 0.0,
-      "expiry": 1366390390.138566,
+      "expiry": 1366392673.059985,
       "include_subdomains": false,
       "mode": "force-https",
       "static_spki_hashes": [  ]

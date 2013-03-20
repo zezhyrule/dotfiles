@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "Konto"
+   },
+   "apply": {
+      "message": "Zastosuj"
+   },
+   "audio_default_filename": {
+      "message": "Plik audio bez nazwy"
+   },
+   "auth_url_failure": {
+      "message": "U\u017Cytkownik nie ma autoryzacji na dost\u0119p do adresu $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "Anuluj"
+   },
+   "cannot_capture_chrome": {
+      "message": "Nie mo\u017Cna przechwyci\u0107 stron Chrome."
+   },
+   "chrome_extension_name": {
+      "message": "Zapisz na Dysku Google"
+   },
+   "close": {
+      "message": "Zamknij"
+   },
+   "convert_to_google_format": {
+      "message": "Konwersja do formatu Google"
+   },
+   "debug": {
+      "message": "Debugowanie"
+   },
+   "default_filename": {
+      "message": "Bez tytu\u0142u"
+   },
+   "docs_api_failure": {
+      "message": "Nie mo\u017Cna uzyska\u0107 dost\u0119pu do interfejsu API Dokument\u00F3w: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "Pobieranie zosta\u0142o anulowane."
+   },
+   "download_failure": {
+      "message": "B\u0142\u0105d pobierania: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "B\u0142\u0105d pobierania: nie odebrano danych."
+   },
+   "download_failure_too_big_mb": {
+      "message": "B\u0142\u0105d pobierania: plik \u017Ar\u00F3d\u0142owy jest za du\u017Cy ($1 MB).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "Pobieram plik $1...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "Pobieram..."
+   },
+   "empty_page_capture": {
+      "message": "Nie uda\u0142o si\u0119 przechwyci\u0107 zawarto\u015Bci strony jako pliku MHTML."
+   },
+   "enable_file_url": {
+      "message": "Musisz zezwoli\u0107 na URL-e do plik\u00F3w, w\u0142\u0105czaj\u0105c w tym celu opcj\u0119 \u201EZezwalaj na URL-e do plik\u00F3w\u201D na stronie Ustawienia rozszerze\u0144."
+   },
+   "ext_description": {
+      "message": "Zapisz tre\u015Bci internetowe w us\u0142udze Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "Nie uda\u0142o si\u0119 przechwyci\u0107 zawarto\u015Bci strony jako MHTML: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "Wy\u015Blij opini\u0119 (tylko wewn\u0119trznie)"
+   },
+   "file_bug_internal": {
+      "message": "Zg\u0142o\u015B b\u0142\u0105d (tylko wewn\u0119trznie)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E $3 \u003C/a\u003E zosta\u0142 zapisany w \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003E Google Drive \u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "Plik $1 zosta\u0142 przeniesiony do kosza. Przejd\u017A do: \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "Pomoc"
+   },
+   "html_default_filename": {
+      "message": "Plik HTML bez nazwy"
+   },
+   "image_capture_failed": {
+      "message": "Przechwytywanie obrazu nie powiod\u0142o si\u0119."
+   },
+   "image_capture_failed_reason": {
+      "message": "Przechwytywanie obrazu nie powiod\u0142o si\u0119 ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "Obraz bez tytu\u0142u"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Strona bez tytu\u0142u.mht"
+   },
+   "misc": {
+      "message": "Inne"
+   },
+   "oauth_title": {
+      "message": "Przekierowywanie do Google w celu zalogowania si\u0119"
+   },
+   "options_header_text": {
+      "message": "Opcje rozszerze\u0144 Zapisz na Dysku Google"
+   },
+   "options_title": {
+      "message": "Opcje Zapisz na Dysku Google"
+   },
+   "page_size_not_supported": {
+      "message": "Rozmiar strony nie jest obs\u0142ugiwany: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "Plik PDF bez nazwy"
+   },
+   "percent": {
+      "message": "$1% gotowe",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "Prywatno\u015B\u0107"
+   },
+   "redirecting": {
+      "message": "Trwa przekierowywanie..."
+   },
+   "rename": {
+      "message": "Zmie\u0144 nazw\u0119"
+   },
+   "rename_prompt": {
+      "message": "Zmie\u0144 nazw\u0119:"
+   },
+   "save_as_html": {
+      "message": "\u0179r\u00F3d\u0142o HTML (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "Dokument Google"
+   },
+   "save_as_image_entire": {
+      "message": "Obraz ca\u0142ej strony (.png)"
+   },
+   "save_as_image_visible": {
+      "message": "Obraz widocznej strony (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "Archiwum internetowe (.mht)"
+   },
+   "save_audio": {
+      "message": "Zapisz plik audio w: Google Drive"
+   },
+   "save_image": {
+      "message": "Zapisz obraz w: Google Drive"
+   },
+   "save_link": {
+      "message": "Zapisz link w: Google Drive"
+   },
+   "save_page_as": {
+      "message": "Zapisz stron\u0119 jako:"
+   },
+   "save_to_google_drive_action": {
+      "message": "Zapisz w Google Drive"
+   },
+   "save_video": {
+      "message": "Zapisz plik wideo w: Google Drive"
+   },
+   "saving": {
+      "message": "Zapisywanie pliku $1 w: Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "Prze\u015Blij opini\u0119"
+   },
+   "sign_out": {
+      "message": "Wyloguj si\u0119"
+   },
+   "start_download_exception": {
+      "message": "Niepowodzenie podczas rozpoczynania pobierania: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "Tekst bez tytu\u0142u"
+   },
+   "trash": {
+      "message": "Kosz"
+   },
+   "unspecified_error": {
+      "message": "Nieokre\u015Blony b\u0142\u0105d"
+   },
+   "upload_canceled": {
+      "message": "Przys\u0142anie anulowane"
+   },
+   "upload_failure": {
+      "message": "B\u0142\u0105d przesy\u0142ania: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "Przesy\u0142anie $1 do Google Drive",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003EOtw\u00F3rz link\u003C/a\u003E i zapisz stron\u0119 za pomoc\u0105 przycisku Zapisz w Google Drive po prawej stronie paska adresu.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "To jest link do strony internetowej"
+   },
+   "user_info_failure": {
+      "message": "Nie uda\u0142o si\u0119 uzyska\u0107 dost\u0119pu do informacji o u\u017Cytkowniku."
+   },
+   "video_default_filename": {
+      "message": "Plik wideo bez nazwy"
+   },
+   "xml_default_filename": {
+      "message": "Plik XML bez nazwy"
+   }
+}

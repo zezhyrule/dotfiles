@@ -1,0 +1,18 @@
+{
+   "api_console_project_id": "419782477519",
+   "app": {
+      "launch": {
+         "web_url": "http://pixlr.com/editor/"
+      },
+      "urls": [ "http://pixlr.com/editor/" ]
+   },
+   "container": "GOOGLE_DRIVE",
+   "description": "Full featured in browser photo editor!",
+   "icons": {
+      "128": "editor_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqH44mQ/nGJ8+1J7HHLj0xdlGOtzLifd7Z0vFHZUPLK/k51PEQyOpHKz6hewhU5qz4l/TfzwiOROwRPBYftfecN380eKxjAbktSHrheN1/bzuMOsKf9Ni5SNpxe5zMYcIfHVq0OmhRn+l/mkB6QdMETwHzmdr40cbs5AqpYxbVRwIDAQAB",
+   "name": "Pixlr Editor",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}

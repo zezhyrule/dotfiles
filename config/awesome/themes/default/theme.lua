@@ -7,10 +7,10 @@ local home = os.getenv("HOME")
 
 theme.font          = "dina 8"
 
-theme.bg_normal     = "#282828"
-theme.bg_focus      = "#282828"
+theme.bg_normal     = "#1f1f1f"
+theme.bg_focus      = "#1f1f1f"
 theme.bg_urgent     = "#f2777a"
-theme.bg_minimize   = "#282828"
+theme.bg_minimize   = "#1f1f1f"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#cccccc"
@@ -22,10 +22,10 @@ theme.bg_em         = "#282828"
 theme.fg_em         = "#cccccc"
 
 
-theme.border_width  = 0
-theme.border_normal = "#1d1d1d"
-theme.border_focus  = "#1d1d1d"
-theme.border_marked = "#91231c"
+theme.border_width  = 1
+theme.border_normal = "#2f2f2f"
+theme.border_focus  = "#2f2f2f"
+theme.border_marked = "#1f1f1f"
 
 -- There are other variable sets
 -- overriding the default one when

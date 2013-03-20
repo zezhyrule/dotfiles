@@ -1,0 +1,10 @@
+/* Charles Davis */
+/* 2013-03-16 */
+/* prints a string, "To be, or not to be?" */
+
+#include <stdio.h> // Includes the header file in which the function printf is defined
+int main (int argc, char *argv[]) {
+	printf("To be, or not to be?\n");
+	return 0;
+
+}

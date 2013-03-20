@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Online-diagrammit"
+   },
+   "appLongDesc": {
+      "message": "draw.io-sovellus on Google Driven (TM) kanssa toimiva ilmainen diagrammi-sovellus, joka antaa sinun piirt\u00E4\u00E4:\n\n- Vuokaaviot\n- UML-kaaviot\n- ERD-kaaviot\n- Verkkokaaviot\n- Liiketoimintamallit\n- Organisaatiokaaviot\n- Elektroniset piirit\n- Rautalankamallintaminen ja simulaatiot \n\nOminaisuudet:\n- Alkuper\u00E4inen HTML 5 toimeksiantaja, t\u00E4ydellisell\u00E4 IE 6-8 tuella. \n- Laaja, sis\u00E4\u00E4nrakennettu kaaviokirjasto\n- Edistyksellinen ved\u00E4 ja pudota k\u00E4ytt\u00F6liittym\u00E4\n- Kuvahaku ja lis\u00E4toimintoja\n- Tallenna muotoihin: PNG/JPG/XML/SVG/PDF\n- Tukee kosketuslaitetta\n- T\u00E4ydellinen l\u00E4hdekoodi paikasta github - https://github.com/jgraph/draw.io \n- Interaktiivinen yhteisty\u00F6\n- Upotetut diagrammit blogeihin tai wikeihin"
+   },
+   "appName": {
+      "message": "draw.io (Diagramly)"
+   }
+}

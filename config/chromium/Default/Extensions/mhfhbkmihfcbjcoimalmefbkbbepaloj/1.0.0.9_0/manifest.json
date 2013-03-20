@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://play.spotify.com/?utm_source=google&utm_medium=bd_consumer&utm_campaign=acquisition_chromewebstore_gb&utm_content=gb500008"
+      },
+      "urls": [ "https://play.spotify.com/?utm_source=google&utm_medium=bd_consumer&utm_campaign=acquisition_chromewebstore_gb&utm_content=gb500008" ]
+   },
+   "description": "Spotify is a digital music service that gives you access to millions of songs.",
+   "icons": {
+      "128": "appmator128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOhlRWWmLnNtX3X/R1chP8XNYCKK2gVkT5jRCw62xRi3SMUlxaaBHVlmNHj+N8IUSTPgnAAsrWgditpCa9ynaFm/aqOH+bLNBCb6xFMEj7nOsn+d/ctEorP6cygQB50lGwrxQXwxB5UMfdLU2ovpqhi12vhHcxQQ4NhhKrI+AZowIDAQAB",
+   "manifest_version": 2,
+   "name": "Music for every moment - Spotify",
+   "offline_enabled": false,
+   "permissions": [  ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.0.9"
+}

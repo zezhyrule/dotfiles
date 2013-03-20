@@ -1,0 +1,438 @@
+body {
+  font-size: 81.25%;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #03B;
+}
+
+input, textarea, select {
+  border-color:#CCCCCC #DDDDDD #DDDDDD;
+  border-style:solid;
+  border-width:1px;
+  padding:3px 0 3px 3px;
+}
+
+textarea {
+  resize: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#gc-flash-audio {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+}
+
+#gc-popup-c {
+  width: 300px;
+  padding: 6px 8px;
+}
+
+#gc-client {
+  width: 300px;
+  padding: 6px 8px;
+}
+
+.gc-client-desc {
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #222;
+}
+
+.gc-client-link {
+  font-weight: bold;
+}
+
+body.gc-popout #gc-popup-c {
+  width: auto;
+}
+
+#gc-number {
+  font-weight: bold;
+  color: #999999;
+  font-size: 11px;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+.gc-popup-close {
+  background-image: url(images/bubble-close.png);
+  background-color: white;
+  background-position: top right;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.gc-tabs {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+a.gc-tab-sel {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.gc-footer-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#gc-goto-inbox {
+  font-weight: bold;
+}
+
+.gc-status {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  color: #fff;
+  background-color: #4c74c3;
+  -webkit-border-radius: 4px 4px;
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.gc-quickcall-phone {
+  margin: 0 0 0 0;
+}
+
+.gc-quickcall-msg,
+.gc-quickcall-err {
+  margin: 0px 3px 0px 5px;
+  padding: 4px 6px 4px;
+  min-width: 90px;
+  vertical-align: middle;
+}
+
+.gc-quickcall-msg {
+  background-color: #eff3f8;
+}
+
+.gc-quickcall-err {
+  background-color: #f8c3c3;
+  color: #8c0a0a;
+}
+
+.gc-quickcall-contents {
+
+}
+
+.gc-quickcall-contents input.gc-quickcall-ac,
+.gc-quicksms input.gc-quickcall-ac {
+  width: 164px;
+}
+
+.gc-quickcall-contents .goog-flat-menu-button-input input,
+.gc-quickcall-contents .goog-flat-menu-button-caption {
+  width: 140px;
+}
+
+.gc-quickcall-h {
+  font-weight: bold;
+  margin: 6px 0 2px 1px;
+}
+
+.gc-quikcall-sub {
+  color: #848484;
+  font-size: 90%;
+  margin: 2px 0 0 2px;
+}
+
+.gc-quicksms textarea {
+  width: 220px;
+  height: 40px;
+}
+
+.gc-quicksms-ctrl {
+  margin-top: 8px;
+}
+
+.gc-quicksms-title {
+  font-weight: bold;
+}
+
+input.gc-quicksms-number {
+  width: 200px;
+}
+
+.gc-quicksms-msg {
+  margin: 2px 3px 2px 5px;
+  padding: 4px 6px;
+  background-color: #eff3f8;
+  width: 110px;
+  vertical-align: middle;
+}
+
+.gc-quicksms-err {
+  background-color: #f8c3c3;
+  color: #8c0a0a;
+}
+
+.gc-sms-counter {
+  color: #507dcc;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+/* Inbox Styles */
+
+.gc-inbox {
+  margin: 6px 0 0 0;
+  overflow-y: auto;
+  max-height: 510px;
+}
+
+.gc-loading,
+.gc-loading-2,
+.gc-no-items {
+  padding: 51px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  color: #bababa;
+  white-space: nowrap;
+}
+
+.gc-no-items {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gc-loading-2 {
+  background: url(bubble-19.png) no-repeat 6px 6px;
+  padding: 4px 8px 4px 32px;
+  font-size: 18px;
+}
+
+.gc-message-read,
+.gc-message-unread {
+  padding: 4px 0 0 0;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  vertical-align: top;
+  -webkit-border-radius: 4px 4px;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  position: relative;
+}
+
+.gc-message-read {
+
+}
+
+.gc-message-unread {
+  /*border-left: 3px solid #99BB00;*/
+}
+
+.gc-message-top {
+  padding: 0 5px 0 10px;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.gc-message-status {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: 100%;
+  width: 4px;
+  -webkit-border-radius: 2px 2px;
+  background-color: #99BB00;
+}
+
+.gc-message-read .gc-message-status {
+  background-color: #fff;
+}
+
+.gc-message-actions {
+  -webkit-border-radius: 0 0 4px 4px;
+  background-color: #f7f7f7;
+  padding: 3px 5px 3px 10px;
+}
+
+.gc-message-h {
+  font-weight: bold;
+  border: 1px solid orange;
+  display: block;
+}
+
+.gc-message-info {
+  float: left;
+  margin-left: 5px;
+}
+
+.gc-message-sub {
+  color: #666;
+}
+
+.gc-message-title {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.gc-message-text {
+  padding: 0;
+}
+
+div.gc-message-portrait {
+  position: relative;
+  width: 32px;
+  height: 37px;
+  float: left;
+}
+
+div.gc-message-portrait div {
+  position: absolute;
+  bottom: 1px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+}
+
+a.gc-message-action {
+  margin-right: 8px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.gc-message-icon-2 {  /* Voicemail */
+  background: url(images/vicons.png) no-repeat 0 0;
+}
+
+.gc-message-icon-10, .gc-message-icon-11 {  /* SMS */
+  background: url(images/vicons.png) no-repeat 0 -90px;
+}
+
+.gc-message-icon-0 {  /* Missed */
+  background: url(images/vicons.png) no-repeat 0 -177px;
+}
+
+.gc-message-icon-1 {  /* Received */
+  background: url(images/vicons.png) no-repeat 0 -271px;
+}
+
+.gc-message-icon-7,
+.gc-message-icon-8,
+.gc-message-icon-12 {  /* Placed */
+  background: url(images/vicons.png) no-repeat 0px -255px;
+}
+
+.gc-message-icon-4 {  /* Recorded */
+  background: url(images/vicons.png) no-repeat 0px -30px;
+}
+
+.gc-message-play {
+  background-repeat: no-repeat;
+  background-image: url(images/playbutton.png);
+  background-position: top left;
+  padding: 0 0 0 20px;
+  height: 20px;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0 3px -2px;
+}
+
+.gc-message-play div {
+  background-repeat: no-repeat;
+  background-image: url(images/playbutton.png);
+  background-position: top right;
+  padding: 3px 6px 4px 0;
+  margin-right: -7px;
+  display: inline-block;
+}
+
+.gc-message-sms-row {
+  line-height: 1.3em;
+  padding: 0;
+}
+
+.gc-message-sms-from,
+.gc-message-sms-text {
+  color: #000;
+  font-size: 11px;
+}
+
+.gc-message-sms-from {
+  font-weight: bold;
+  font-size: 85%;
+}
+
+.gc-message-sms-more {
+  text-decoration: underline;
+  color: #03b;
+  padding: 3px 0;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+/* GOOG Styles */
+
+.goog-inline-block {
+  position: relative;
+  display: inline-block;
+}
+
+.goog-button-base {
+  font-size:1em;
+}
+
+.goog-button-base-pos {
+  height: inherit;
+}
+
+.goog-flat-menu-button-dropdown {
+  background: url(toolbar_icons.gif) no-repeat -176px;
+}
+
+/* Toggle button checked state */
+
+.goog-button-base-checked .goog-button-base-outer-box,
+.goog-button-base-checked .goog-button-base-inner-box {
+  background-color: #777;
+  border-color: #888;
+}
+.goog-button-base-checked .goog-button-base-top-shadow {
+  border-bottom-color: #888;
+  background-color: #999;
+}
+.goog-button-base-checked .goog-button-base-content {
+  color: #eee;
+}
+.goog-button-base-checked .goog-menu-button-dropdown {
+  border-top-color: #fff;
+}
+
+/* Overrides */
+
+div.goog-button-base-hover .goog-button-base-content,
+div.goog-button-base-focused .goog-button-base-content {
+  cursor: pointer;
+}

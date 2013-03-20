@@ -1,0 +1,156 @@
+<!-- It's not needed yet it was an experiement for playing with a new bookmarklet -->
+
+<html>
+<head>
+	<title>Test</title>
+	<style type="text/css">
+	body {
+		margin: 0;
+		font-size:16px;
+		color: #000000;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+	#sliderWrap {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#slider {
+		position: absolute;
+		background-color: #e7e7e7;
+		width: 100%;
+		height: 140px;
+		margin-top: -140px;
+	}
+
+	#slider img {
+		border: 0;
+	}
+
+	#sliderContent {
+		margin: 50px 0px 0px 0px;
+		position: absolute;
+		text-align:center;
+		color:#333333;
+		font-weight:bold;
+		padding: 10px;
+		width: 100%;
+	}
+
+	#header {
+		margin: 0 auto;
+		width: 600px;
+		background-color: #F0F0F0;
+		height: 200px;
+		padding: 10px;
+	}
+
+	#openCloseWrap {
+		position:absolute;
+		margin: 143px 0 0 120px;
+		font-size:12px;
+		font-weight:bold;
+	}
+
+	#openCloseIdentifier {
+		display:none;
+	}
+</style>
+<script type="text/javascript">
+	var init = function() {
+		var slideDown = function() {
+			var slider = document.getElementById("slider");
+			setTimeout(function() {
+				if (parseInt(slider.style.marginTop) == -140) {
+					port.postMessage({action: "hideIframe"});
+					return;
+				};
+				slider.style.marginTop = (parseInt(slider.style.marginTop) - 10) + "px";
+				slideDown();
+			}, 20);
+		}
+
+		var slideUp = function() {
+			//$("#slider").animate({marginTop: "0px"}, 500 );
+			var slider = document.getElementById("slider");
+			setTimeout(function() {
+				if (parseInt(slider.style.marginTop) == 0) {
+					return;
+				};
+				slider.style.marginTop = (parseInt(slider.style.marginTop) + 10) + "px";
+				slideUp();
+			}, 20);
+		}
+		
+
+		var toggleNotification = function(title, url) {
+			//if ($("#openCloseIdentifier").is(":hidden")) {
+			var openCloseIdentifier = document.getElementById("openCloseIdentifier");
+			var slider = document.getElementById("slider");
+			if (!slider.style.marginTop) {slider.style.marginTop = "-140px"}; 
+			if (parseInt(slider.style.marginTop) == -140) {
+				slideUp();
+				openCloseIdentifier.style.display = 'block';
+				//$("#openCloseIdentifier").show();
+			} else {
+				slideDown();
+				openCloseIdentifier.style.display = 'none';
+				//$("#openCloseIdentifier").hide();
+			}
+		}
+		/*$(".topMenuAction").on("click", function(e) {
+			toggleNotification();
+			return false;
+		});*/
+
+		/*$("#close-button-link").on("click", function(event) {
+			//toggleNotification();
+			parent.closeIFrame();
+			return false;	
+		});*/
+
+		document.getElementById("close-button-link").onclick = function() {
+			//window.parent.closeIFrame();
+			//port.postMessage({action: "hideIframe"});
+			slideDown();
+			return false;	
+		};
+
+		setTimeout(slideDown, 4000);
+
+		toggleNotification();
+
+	}
+
+	var port = chrome.extension.connect({name: "bookmarklet"});
+	port.onMessage.addListener(function(msg) {
+		if (msg.action == "added") {
+			// Change to added to queue
+		};
+	});
+
+	chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+		if (request.action == "startAddURL") {
+			alert("Start add url");
+		} else if (request.action == "urlAddedSuccessfully") {
+			alert("urlAddedSuccessfully");
+		};	
+  	});
+
+	window.onload = init;
+</script>
+</head>
+<body>
+	<div id="sliderWrap">
+		<div id="openCloseIdentifier"></div>
+		<div id="slider">
+			<div id="sliderContent">
+				<img src="../img/ril-logo.png">
+				<a id="close-button-link" href="#"><img src="../img/close-button.png"></a>
+				<a target="_blank" href="http://getpocket.com/a/queue/">show queue</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

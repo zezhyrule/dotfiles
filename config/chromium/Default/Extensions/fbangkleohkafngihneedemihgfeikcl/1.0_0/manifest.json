@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.pandora.com/"
+      },
+      "urls": [ "http://www.pandora.com/" ]
+   },
+   "description": "Pandora is a free personalized radio service. Enter a song, artist or genre and we'll create a personalized station you\u2019ll love.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIqn+luobo1XYZsRrQGORwSWI7gVCt/i5SURxqPnDPB7KQnhm1MeBCyWbwDPM/OjOV3QLkd2nhfk6RUBE6DCntqEqhi+q17KgOzAL7ZNFwpvGIsuJMJpX/S1EHbdywZ/t/TDaYKfYXnmfpqml3y3HsDy7Ymxaxr53XJh3bkBN7dQIDAQAB",
+   "name": "Pandora",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

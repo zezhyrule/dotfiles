@@ -1,0 +1,6 @@
+<ToolboxConfiguration>
+  <LoadedDefaultProviders>
+    <Provider>MonoDevelop.AspNet.AspNetToolboxProvider</Provider>
+    <Provider>MonoDevelop.GtkCore.GuiBuilder.ToolboxProvider</Provider>
+  </LoadedDefaultProviders>
+</ToolboxConfiguration>

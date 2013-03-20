@@ -79,7 +79,7 @@ end
 -- Define a tag table which hold all screen tags.
 tags = {
   names  = { "1:term", "2:code", "3:web", "4:media", "5:else" },
-  layout = { layouts[6], layouts[2], layouts[4], layouts[7], layouts[1],
+  layout = { layouts[2], layouts[2], layouts[4], layouts[7], layouts[1],
              layouts[7], layouts[2], layouts[1]
 }}
 for s = 1, screen.count() do
@@ -98,10 +98,11 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    {"luakit", "luakit"},
+                                    {"chromium", "chromium"},
 				    {"geany", "geany"},
 				    {"gimp", "gimp"},
 				    {"vim", editor_cmd},
+				    {"steam", "steam"},
 				    {"logout", "logout"},
                                     { "open terminal", terminal }
                                   }
@@ -416,8 +417,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { instance = "gimp" },
       properties = { tag = tags[1][4] } },
-    -- Set luakit to always map on tags number 3 of screen 1.
-    { rule = { class = "luakit" },
+    -- Set Chromium to always map on tags number 2 of screen 1.
+    { rule = { class = "Chromium" },
       properties = { tag = tags[1][3] } },
     -- Set Geeqie to the currently focused tag, as floating
     { rule = { instance = "geeqie" },
@@ -427,7 +428,7 @@ awful.rules.rules = {
     { rule = { class = "Steam" },
       properties = { tag = tags[1][4] } },
     { rule = { class = "Audacity" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][4] } },
     { rule = { class = "synapse" },
       properties = { border = 0 } },
 }
@@ -507,8 +508,8 @@ end
 do
   local cmds = 
   { 
-    -- run_once("xcompmgr"),
-    -- run_once("capsmod4"),
+    run_once("xcompmgr"),
+    run_once("capsmod4"),
     -- run_once("conky"),
   }
 
@@ -517,3 +518,14 @@ do
   end
 end
 
+function start_daemon(dae)
+	daeCheck = os.execute("ps -eF | grep -v grep | grep -w " .. dae)
+	if (daeCheck ~= 0) then
+		os.execute(dae .. " &")
+	end
+end
+
+procs = {"gnome-settings-daemon", "nm-applet"}
+for k = 1, #procs do
+	start_daemon(procs[k])
+end

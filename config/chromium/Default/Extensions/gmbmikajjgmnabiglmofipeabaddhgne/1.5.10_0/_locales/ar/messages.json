@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "\u0627\u0644\u062D\u0633\u0627\u0628"
+   },
+   "apply": {
+      "message": "\u062A\u0637\u0628\u064A\u0642"
+   },
+   "audio_default_filename": {
+      "message": "\u0645\u0644\u0641 \u0635\u0648\u062A\u064A \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "auth_url_failure": {
+      "message": "\u0644\u064A\u0633 \u0645\u0635\u0631\u062D\u064B\u0627 \u0644\u0644\u0645\u0633\u062A\u062E\u062F\u0645 \u0628\u0627\u0644\u062F\u062E\u0648\u0644 \u0625\u0644\u0649 $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "\u0625\u0644\u063A\u0627\u0621"
+   },
+   "cannot_capture_chrome": {
+      "message": "\u064A\u062A\u0639\u0630\u0631 \u0627\u0644\u062A\u0642\u0627\u0637 \u0635\u0641\u062D\u0627\u062A Chrome."
+   },
+   "chrome_extension_name": {
+      "message": "\u062D\u0641\u0638 \u0625\u0644\u0649 Google Drive"
+   },
+   "close": {
+      "message": "\u0625\u063A\u0644\u0627\u0642"
+   },
+   "convert_to_google_format": {
+      "message": "\u062A\u062D\u0648\u064A\u0644 \u0625\u0644\u0649 \u062A\u0646\u0633\u064A\u0642 Google"
+   },
+   "debug": {
+      "message": "\u062A\u0635\u062D\u064A\u062D \u0627\u0644\u0623\u062E\u0637\u0627\u0621"
+   },
+   "default_filename": {
+      "message": "\u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "docs_api_failure": {
+      "message": "\u0623\u062E\u0641\u0642\u062A \u0639\u0645\u0644\u064A\u0629 \u0627\u0644\u062F\u062E\u0648\u0644 \u0625\u0644\u0649 \u0648\u0627\u062C\u0647\u0629 \u0628\u0631\u0645\u062C\u0629 \u062A\u0637\u0628\u064A\u0642\u0627\u062A \u0645\u062D\u0631\u0651\u0631 \u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "\u062A\u0645 \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u0646\u0632\u064A\u0644."
+   },
+   "download_failure": {
+      "message": "\u0623\u062E\u0641\u0642 \u0627\u0644\u062A\u0646\u0632\u064A\u0644: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "\u0625\u062E\u0641\u0627\u0642 \u0627\u0644\u062A\u0646\u0632\u064A\u0644: \u0644\u0645 \u064A\u062A\u0645 \u0627\u0633\u062A\u0644\u0627\u0645 \u0623\u064A\u0629 \u0628\u064A\u0627\u0646\u0627\u062A."
+   },
+   "download_failure_too_big_mb": {
+      "message": "\u0623\u062E\u0641\u0642 \u0627\u0644\u062A\u0646\u0632\u064A\u0644: \u062D\u062C\u0645 \u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u0645\u0635\u062F\u0631 \u0643\u0628\u064A\u0631 \u062C\u062F\u064B\u0627 ($1 \u0645\u064A\u063A\u0627\u0628\u0627\u064A\u062A).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "\u062C\u0627\u0631\u064D \u062A\u0646\u0632\u064A\u0644 $1 ...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "\u062C\u0627\u0631\u064D \u0627\u0644\u062A\u0646\u0632\u064A\u0644..."
+   },
+   "empty_page_capture": {
+      "message": "\u062A\u0639\u0630\u0631 \u0627\u0644\u062A\u0642\u0627\u0637 \u0645\u062D\u062A\u0648\u064A\u0627\u062A \u0627\u0644\u0635\u0641\u062D\u0629 \u0628\u062A\u0646\u0633\u064A\u0642 MHTML."
+   },
+   "enable_file_url": {
+      "message": "\u064A\u062C\u0628 \u062A\u0645\u0643\u064A\u0646 \u0639\u0646\u0627\u0648\u064A\u0646 URL \u0644\u0644\u0645\u0644\u0641 \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0627\u0644\u062E\u064A\u0627\u0631 \"\u0627\u0644\u0633\u0645\u0627\u062D \u0628\u0627\u0644\u062F\u062E\u0648\u0644 \u0625\u0644\u0649 \u0639\u0646\u0627\u0648\u064A\u0646 URL \u0644\u0644\u0645\u0644\u0641\u0627\u062A\" \u0641\u064A \u0635\u0641\u062D\u0629 \u0625\u0639\u062F\u0627\u062F\u0627\u062A \u0627\u0644\u0625\u0636\u0627\u0641\u0629."
+   },
+   "ext_description": {
+      "message": "\u062D\u0641\u0638 \u0645\u062D\u062A\u0648\u0649 \u0627\u0644\u0648\u064A\u0628 \u0641\u064A Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "\u062A\u0639\u0630\u0631 \u0627\u0644\u062A\u0642\u0627\u0637 \u0645\u062D\u062A\u0648\u064A\u0627\u062A \u0627\u0644\u0635\u0641\u062D\u0629 \u0628\u062A\u0646\u0633\u064A\u0642 MHTML: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "\u0625\u0631\u0633\u0627\u0644 \u062A\u0639\u0644\u064A\u0642\u0627\u062A (\u062F\u0627\u062E\u0644\u064A\u064B\u0627 \u0641\u0642\u0637)"
+   },
+   "file_bug_internal": {
+      "message": "\u0625\u0631\u0633\u0627\u0644 \u062E\u0637\u0623 (\u062F\u0627\u062E\u0644\u064A\u064B\u0627 \u0641\u0642\u0637)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E \u062A\u0645 \u062D\u0641\u0638\u0647 \u0625\u0644\u0649 \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "\u062A\u0645 \u0646\u0642\u0644 $1 \u0625\u0644\u0649 \u0627\u0644\u0645\u0647\u0645\u0644\u0627\u062A. \u0627\u0646\u062A\u0642\u0644 \u0625\u0644\u0649 \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "\u0645\u0633\u0627\u0639\u062F\u0629"
+   },
+   "html_default_filename": {
+      "message": "HTML \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "image_capture_failed": {
+      "message": "\u0623\u062E\u0641\u0642 \u0627\u0644\u062A\u0642\u0627\u0637 \u0627\u0644\u0635\u0648\u0631\u0629."
+   },
+   "image_capture_failed_reason": {
+      "message": "\u0623\u062E\u0641\u0642 \u0627\u0644\u062A\u0642\u0627\u0637 \u0627\u0644\u0635\u0648\u0631\u0629 ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "\u0635\u0648\u0631\u0629 \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Untitled Page Capture.mht"
+   },
+   "misc": {
+      "message": "\u0645\u064A\u0632\u0627\u062A \u0645\u062A\u0646\u0648\u0639\u0629"
+   },
+   "oauth_title": {
+      "message": "\u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u062A\u0648\u062C\u064A\u0647 \u0625\u0644\u0649 Google \u0644\u0644\u062F\u062E\u0648\u0644"
+   },
+   "options_header_text": {
+      "message": "\u062E\u064A\u0627\u0631\u0627\u062A \u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u062D\u0641\u0638 \u0625\u0644\u0649 Google Drive"
+   },
+   "options_title": {
+      "message": "\u062E\u064A\u0627\u0631\u0627\u062A \u062D\u0641\u0638 \u0625\u0644\u0649 Google Drive"
+   },
+   "page_size_not_supported": {
+      "message": "\u062D\u062C\u0645 \u0627\u0644\u0635\u0641\u062D\u0629 \u063A\u064A\u0631 \u0645\u062A\u0648\u0627\u0641\u0642: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "PDF \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "percent": {
+      "message": "\u062A\u0645 $1%",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "\u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629"
+   },
+   "redirecting": {
+      "message": "\u062C\u0627\u0631\u064D \u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u062A\u0648\u062C\u064A\u0647..."
+   },
+   "rename": {
+      "message": "\u0625\u0639\u0627\u062F\u0629 \u062A\u0633\u0645\u064A\u0629"
+   },
+   "rename_prompt": {
+      "message": "\u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u062A\u0633\u0645\u064A\u0629:"
+   },
+   "save_as_html": {
+      "message": "\u0645\u0635\u062F\u0631 HTML\u200F (\u200E.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "\u0645\u0633\u062A\u0646\u062F Google"
+   },
+   "save_as_image_entire": {
+      "message": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0635\u0641\u062D\u0629 \u0628\u0627\u0644\u0643\u0627\u0645\u0644 (png.)"
+   },
+   "save_as_image_visible": {
+      "message": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0635\u0641\u062D\u0629 \u0627\u0644\u0645\u0631\u0626\u064A\u0629 (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "\u0623\u0631\u0634\u064A\u0641 \u0627\u0644\u0648\u064A\u0628 (\u200E.mht)"
+   },
+   "save_audio": {
+      "message": "\u062D\u0641\u0638 \u0627\u0644\u0635\u0648\u062A \u0625\u0644\u0649 Google Drive"
+   },
+   "save_image": {
+      "message": "\u062D\u0641\u0638 \u0627\u0644\u0635\u0648\u0631\u0629 \u0625\u0644\u0649 Google Drive"
+   },
+   "save_link": {
+      "message": "\u062D\u0641\u0638 \u0627\u0644\u0631\u0627\u0628\u0637 \u0625\u0644\u0649 Google Drive"
+   },
+   "save_page_as": {
+      "message": "\u062D\u0641\u0638 \u0627\u0644\u0635\u0641\u062D\u0629 \u0628\u062A\u0646\u0633\u064A\u0642:"
+   },
+   "save_to_google_drive_action": {
+      "message": "\u062D\u0641\u0638 \u0625\u0644\u0649 Google Drive"
+   },
+   "save_video": {
+      "message": "\u062D\u0641\u0638 \u0627\u0644\u0641\u064A\u062F\u064A\u0648 \u0625\u0644\u0649 Google Drive"
+   },
+   "saving": {
+      "message": "\u062C\u0627\u0631\u064D \u062D\u0641\u0638 $1 \u0625\u0644\u0649 Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "\u0625\u0631\u0633\u0627\u0644 \u062A\u0639\u0644\u064A\u0642\u0627\u062A"
+   },
+   "sign_out": {
+      "message": "\u0627\u0644\u062E\u0631\u0648\u062C"
+   },
+   "start_download_exception": {
+      "message": "\u0623\u062E\u0641\u0642 \u0628\u062F\u0621 \u0627\u0644\u062A\u0646\u0632\u064A\u0644: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "\u0646\u0635 \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "trash": {
+      "message": "\u0627\u0644\u0645\u0647\u0645\u0644\u0627\u062A"
+   },
+   "unspecified_error": {
+      "message": "\u062E\u0637\u0623 \u063A\u064A\u0631 \u0645\u062D\u062F\u062F"
+   },
+   "upload_canceled": {
+      "message": "\u062A\u0645 \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u0645\u064A\u0644"
+   },
+   "upload_failure": {
+      "message": "\u0623\u062E\u0641\u0642 \u0627\u0644\u062A\u062D\u0645\u064A\u0644: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "\u062C\u0627\u0631\u064D \u062A\u062D\u0645\u064A\u0644 $1 \u0625\u0644\u0649 Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003E\u0627\u0641\u062A\u062D \u0627\u0644\u0631\u0627\u0628\u0637\u003C/a\u003E\u060C \u0648\u0627\u062D\u0641\u0638 \u0627\u0644\u0635\u0641\u062D\u0629 \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0632\u0631 \u062D\u0641\u0638 \u0625\u0644\u0649 Google Drive \u064A\u0633\u0627\u0631 \u0634\u0631\u064A\u0637 \u0627\u0644\u0639\u0646\u0627\u0648\u064A\u0646.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "\u0647\u0630\u0627 \u0631\u0627\u0628\u0637 \u0625\u0644\u0649 \u0635\u0641\u062D\u0629 \u0648\u064A\u0628"
+   },
+   "user_info_failure": {
+      "message": "\u0623\u062E\u0641\u0642\u062A \u0639\u0645\u0644\u064A\u0629 \u0627\u0644\u062F\u062E\u0648\u0644 \u0625\u0644\u0649 \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0645\u0633\u062A\u062E\u062F\u0645."
+   },
+   "video_default_filename": {
+      "message": "\u0641\u064A\u062F\u064A\u0648 \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   },
+   "xml_default_filename": {
+      "message": "XML \u0628\u062F\u0648\u0646 \u0639\u0646\u0648\u0627\u0646"
+   }
+}

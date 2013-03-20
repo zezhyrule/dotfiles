@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=xkbmap script
+Exec=capsmod4
+Icon=system-run
+X-GNOME-Autostart-enabled=true

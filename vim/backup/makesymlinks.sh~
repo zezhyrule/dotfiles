@@ -13,14 +13,14 @@ files="bashrc vimrc vim config"
 ######
 
 # create dotfiles_old in homedir
-echo "Creating $olddir for backup of dotfiles in ~"
+echo -n "Creating $olddir for backup of dotfiles in ~"
 mkdir -p $olddir
-echo "...done"
+echo "done"
 
 # change to dotfiles directory
-echo "cding to $dir"
+echo -n "cding to $dir"
 cd $dir
-echo "...done"
+echo "done"
 
 # move any existing dotfiles in ~ to olddir, then create symlinks
 for file in $files; do

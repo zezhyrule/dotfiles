@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "App description.",
+      "message": "A bookmark app for GitHub."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "GitHub"
+   }
+}

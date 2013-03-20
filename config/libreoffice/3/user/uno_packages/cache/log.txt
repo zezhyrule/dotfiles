@@ -1,0 +1,6 @@
+###### Progress log entry 2013-03-08 12:19:12 ######
+Reinstalling all deployed packages...
+###### Progress log entry 2013-03-08 12:19:16 ######
+###### Progress log entry 2013-03-08 19:58:10 ######
+###### Progress log entry 2013-03-08 19:58:51 ######
+###### Progress log entry 2013-03-09 00:41:40 ######

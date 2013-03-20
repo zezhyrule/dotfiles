@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "\u05D7\u05E9\u05D1\u05D5\u05DF"
+   },
+   "apply": {
+      "message": "\u05D4\u05D7\u05DC"
+   },
+   "audio_default_filename": {
+      "message": "\u05E7\u05D5\u05D1\u05E5 \u05D0\u05D5\u05D3\u05D9\u05D5 \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "auth_url_failure": {
+      "message": "\u05D4\u05DE\u05E9\u05EA\u05DE\u05E9 \u05D0\u05D9\u05E0\u05D5 \u05E8\u05D0\u05E9\u05D9 \u05DC\u05D2\u05E9\u05EA \u05DC-$1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "\u05D1\u05D9\u05D8\u05D5\u05DC"
+   },
+   "cannot_capture_chrome": {
+      "message": "\u05DC\u05D0 \u05E0\u05D9\u05EA\u05DF \u05DC\u05E6\u05DC\u05DD \u05D3\u05E4\u05D9 Chrome."
+   },
+   "chrome_extension_name": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05D1-Google Drive"
+   },
+   "close": {
+      "message": "\u05E1\u05D2\u05D5\u05E8"
+   },
+   "convert_to_google_format": {
+      "message": "\u05D4\u05DE\u05E8 \u05DC\u05E4\u05D5\u05E8\u05DE\u05D8 \u05E9\u05DC Google"
+   },
+   "debug": {
+      "message": "\u05E0\u05D9\u05E7\u05D5\u05D9 \u05D1\u05D0\u05D2\u05D9\u05DD"
+   },
+   "default_filename": {
+      "message": "\u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "docs_api_failure": {
+      "message": "\u05DB\u05E9\u05DC \u05D1\u05D2\u05D9\u05E9\u05D4 \u05DC\u05DE\u05DE\u05E9\u05E7 API \u05E9\u05DC Google Docs: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "\u05D4\u05D4\u05D5\u05E8\u05D3\u05D4 \u05D1\u05D5\u05D8\u05DC\u05D4."
+   },
+   "download_failure": {
+      "message": "\u05DB\u05E9\u05DC \u05D1\u05D4\u05D5\u05E8\u05D3\u05D4: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "\u05DB\u05E9\u05DC \u05D1\u05D4\u05D5\u05E8\u05D3\u05D4: \u05DC\u05D0 \u05D4\u05EA\u05E7\u05D1\u05DC\u05D5 \u05E0\u05EA\u05D5\u05E0\u05D9\u05DD."
+   },
+   "download_failure_too_big_mb": {
+      "message": "\u05DB\u05D9\u05E9\u05DC\u05D5\u05DF \u05D1\u05D4\u05D5\u05E8\u05D3\u05D4: \u05D4\u05DE\u05E7\u05D5\u05E8 \u05D2\u05D3\u05D5\u05DC \u05DE\u05D3\u05D9 ($1 MB).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "\u05DE\u05D5\u05E8\u05D9\u05D3 \u05D0\u05EA $1...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "\u05DE\u05D5\u05E8\u05D9\u05D3..."
+   },
+   "empty_page_capture": {
+      "message": "\u05DC\u05D0 \u05E0\u05D9\u05EA\u05DF \u05DC\u05E6\u05DC\u05DD \u05D0\u05EA \u05EA\u05D5\u05DB\u05DF \u05D4\u05D3\u05E3 \u05DB-MHTML."
+   },
+   "enable_file_url": {
+      "message": "\u05DB\u05EA\u05D5\u05D1\u05D5\u05EA \u05D0\u05EA\u05E8\u05D9\u05DD \u05E9\u05DC \u05E7\u05D1\u05E6\u05D9\u05DD \u05D7\u05D9\u05D9\u05D1\u05D5\u05EA \u05DC\u05D4\u05D9\u05D5\u05EA \u05DE\u05D5\u05E4\u05E2\u05DC\u05D5\u05EA \u05E2\u05DD \u05D4\u05D0\u05E4\u05E9\u05E8\u05D5\u05EA \"\u05D4\u05E8\u05E9\u05D4 \u05D2\u05D9\u05E9\u05D4 \u05DC\u05DB\u05EA\u05D5\u05D1\u05D5\u05EA \u05D0\u05EA\u05E8\u05D9\u05DD \u05E9\u05DC \u05E7\u05D1\u05E6\u05D9\u05DD\", \u05D1\u05D3\u05E3 \u05D4\u05D4\u05D2\u05D3\u05E8\u05D5\u05EA \u05E9\u05DC \u05EA\u05D5\u05E1\u05E4\u05D9\u05DD."
+   },
+   "ext_description": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05EA\u05D5\u05DB\u05DF \u05D0\u05D9\u05E0\u05D8\u05E8\u05E0\u05D8 \u05D1-Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "\u05DC\u05D0 \u05E0\u05D9\u05EA\u05DF \u05D4\u05D9\u05D4 \u05DC\u05E6\u05DC\u05DD \u05D0\u05EA \u05D4\u05EA\u05D5\u05DB\u05DF \u05E9\u05DC \u05D4\u05D3\u05E3 \u05DB-MHTML: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "\u05E9\u05DC\u05D7 \u05DE\u05E9\u05D5\u05D1 (\u05D4\u05E4\u05E0\u05D9\u05DE\u05D9 \u05D1\u05DC\u05D1\u05D3)"
+   },
+   "file_bug_internal": {
+      "message": "\u05D3\u05D5\u05D5\u05D7 \u05E2\u05DC \u05D1\u05D0\u05D2 (\u05E4\u05E0\u05D9\u05DE\u05D9 \u05D1\u05DC\u05D1\u05D3)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E \u05E0\u05E9\u05DE\u05E8 \u05D1-\u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "$1 \u05D4\u05D5\u05E2\u05D1\u05E8 \u05DC\u05D0\u05E9\u05E4\u05D4. \u05E2\u05D1\u05D5\u05E8 \u05D0\u05DC \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "\u05E2\u05D6\u05E8\u05D4"
+   },
+   "html_default_filename": {
+      "message": "HTML \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "image_capture_failed": {
+      "message": "\u05E6\u05D9\u05DC\u05D5\u05DD \u05D4\u05EA\u05DE\u05D5\u05E0\u05D4 \u05E0\u05DB\u05E9\u05DC."
+   },
+   "image_capture_failed_reason": {
+      "message": "\u05E6\u05D9\u05DC\u05D5\u05DD \u05D4\u05EA\u05DE\u05D5\u05E0\u05D4 \u05E0\u05DB\u05E9\u05DC $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "\u05D3\u05E3 \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA Capture.mht"
+   },
+   "misc": {
+      "message": "\u05E9\u05D5\u05E0\u05D5\u05EA"
+   },
+   "oauth_title": {
+      "message": "\u05DE\u05E4\u05E0\u05D4 \u05DE\u05D7\u05D3\u05E9 \u05D0\u05DC Google \u05DB\u05D3\u05D9 \u05DC\u05D4\u05EA\u05D7\u05D1\u05E8"
+   },
+   "options_header_text": {
+      "message": "\u05D0\u05D5\u05E4\u05E6\u05D9\u05D5\u05EA \u05DC\u05EA\u05D5\u05E1\u05E4\u05D9\u05DD \u05E2\u05D1\u05D5\u05E8 \u05E9\u05DE\u05D5\u05E8 \u05D1-Google Drive"
+   },
+   "options_title": {
+      "message": "\u05D0\u05E4\u05E9\u05E8\u05D5\u05D9\u05D5\u05EA \u05E9\u05DE\u05D5\u05E8 \u05D1-Google Drive"
+   },
+   "page_size_not_supported": {
+      "message": "\u05D2\u05D5\u05D3\u05DC \u05D4\u05D3\u05E3 \u05D0\u05D9\u05E0\u05D5 \u05E0\u05EA\u05DE\u05DA: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "PDF \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "percent": {
+      "message": "$1% \u05D1\u05D5\u05E6\u05E2",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "\u05E4\u05E8\u05D8\u05D9\u05D5\u05EA"
+   },
+   "redirecting": {
+      "message": "\u05DE\u05E4\u05E0\u05D4 \u05DE\u05D7\u05D3\u05E9..."
+   },
+   "rename": {
+      "message": "\u05E9\u05E0\u05D4 \u05E9\u05DD"
+   },
+   "rename_prompt": {
+      "message": "\u05E9\u05E0\u05D4 \u05E9\u05DD:"
+   },
+   "save_as_html": {
+      "message": "\u05DE\u05E7\u05D5\u05E8 HTML (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "\u05DE\u05E1\u05DE\u05DA Google"
+   },
+   "save_as_image_entire": {
+      "message": "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05E9\u05DC \u05DB\u05DC \u05D4\u05D3\u05E3 (png.)"
+   },
+   "save_as_image_visible": {
+      "message": "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05E9\u05DC \u05D4\u05D3\u05E3 \u05D4\u05DE\u05D5\u05E6\u05D2 (png.)"
+   },
+   "save_as_mhtml": {
+      "message": "\u05D0\u05E8\u05DB\u05D9\u05D5\u05DF \u05D0\u05D9\u05E0\u05D8\u05E8\u05E0\u05D8 (.mht)"
+   },
+   "save_audio": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05DE\u05D5\u05E1\u05D9\u05E7\u05D4 \u05DC-Google Drive"
+   },
+   "save_image": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05DC\u05EA\u05DE\u05D5\u05E0\u05D4 \u05DC-Google Drive"
+   },
+   "save_link": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05E7\u05D9\u05E9\u05D5\u05E8 \u05DC-Google Drive"
+   },
+   "save_page_as": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05D3\u05E3 \u05DB:"
+   },
+   "save_to_google_drive_action": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05D1-Google Drive"
+   },
+   "save_video": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05D5\u05D9\u05D3\u05D0\u05D5 \u05DC-Google Drive"
+   },
+   "saving": {
+      "message": "\u05E9\u05D5\u05DE\u05E8 \u05D0\u05EA $1 \u05DC-Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "\u05E9\u05DC\u05D7 \u05DE\u05E9\u05D5\u05D1"
+   },
+   "sign_out": {
+      "message": "\u05D9\u05E6\u05D9\u05D0\u05D4"
+   },
+   "start_download_exception": {
+      "message": "\u05DB\u05E9\u05DC \u05D1\u05D4\u05EA\u05D7\u05DC\u05EA \u05D4\u05D4\u05D5\u05E8\u05D3\u05D4: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "\u05D8\u05E7\u05E1\u05D8 \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "trash": {
+      "message": "\u05E4\u05D7 \u05D0\u05E9\u05E4\u05D4"
+   },
+   "unspecified_error": {
+      "message": "\u05E9\u05D2\u05D9\u05D0\u05D4 \u05DC\u05DC\u05D0 \u05E6\u05D9\u05D5\u05DF \u05E1\u05D5\u05D2"
+   },
+   "upload_canceled": {
+      "message": "\u05D4\u05D4\u05E2\u05DC\u05D0\u05D4 \u05D1\u05D5\u05D8\u05DC\u05D4"
+   },
+   "upload_failure": {
+      "message": "\u05D4\u05D4\u05E2\u05DC\u05D0\u05D4 \u05E0\u05DB\u05E9\u05DC\u05D4: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "\u05DE\u05E2\u05DC\u05D4 \u05D0\u05EA $1 \u05D0\u05DC Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003E\u05E4\u05EA\u05D7 \u05D0\u05EA \u05D4\u05E7\u05D9\u05E9\u05D5\u05E8\u003C/a\u003E, \u05D5\u05E9\u05DE\u05D5\u05E8 \u05D0\u05EA \u05D4\u05D3\u05E3 \u05D1\u05D0\u05DE\u05E6\u05E2\u05D5\u05EA \u05D4\u05DC\u05D7\u05E6\u05DF \u05E9\u05DE\u05D5\u05E8 \u05D1-Google Drive \u05E9\u05DE\u05E9\u05DE\u05D0\u05DC \u05DC\u05E9\u05D5\u05E8\u05EA \u05D4\u05DB\u05EA\u05D5\u05D1\u05EA.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "\u05D6\u05D4\u05D5 \u05E7\u05D9\u05E9\u05D5\u05E8 \u05DC\u05D3\u05E3 \u05D0\u05D9\u05E0\u05D8\u05E8\u05E0\u05D8"
+   },
+   "user_info_failure": {
+      "message": "\u05DB\u05E9\u05DC \u05D1\u05D2\u05D9\u05E9\u05D4 \u05DC\u05E4\u05E8\u05D8\u05D9 \u05D4\u05DE\u05E9\u05EA\u05DE\u05E9."
+   },
+   "video_default_filename": {
+      "message": "\u05D5\u05D9\u05D3\u05D0\u05D5 \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   },
+   "xml_default_filename": {
+      "message": "XML \u05DC\u05DC\u05D0 \u05DB\u05D5\u05EA\u05E8\u05EA"
+   }
+}

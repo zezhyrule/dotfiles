@@ -1,0 +1,30 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/icon--19.png",
+      "default_title": "__MSG_chrome_browser_action__"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls\u003E" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_meta_extension_description__",
+   "icons": {
+      "128": "img/icon--128.png",
+      "16": "img/icon--16.png",
+      "48": "img/icon--48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCt8MT50xj+Tim31h2VGADl6CXWpKn9K1H5IQOmUyrREYC0rOoP/vD3AQ4PC8jTuUOZNAZ06vKYFTYH7YCUrk8QldzzTTUkuxf3uv34Ogd39x6BQxomHlbZYb+yxU5daZY3FgZ4MZBjWUadi1Xb7mDO6sEfLpaFKwdWQqfKalACVQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "name": "__MSG_meta_extension_name__",
+   "options_page": "options/options.html",
+   "permissions": [ "unlimitedStorage", "management", "contextMenus", "cookies", "tabs", "notifications", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "8.3358.555.444",
+   "web_accessible_resources": [ "js/target.js", "js/bulk.js", "js/__bookmarklet_to_inject.js", "js/__bookmarklet_to_inject__andClipOnLaunch.js", "js/__bookmarklet_to_inject__andHighlightOnLaunch.js", "js/__bookmarklet_to_inject__andSpeakOnLaunch.js", "libs/jQuery.js", "libs/audio.js", "css/bulk.css", "css/base--blueprint.css", "css/base--theme-1.css", "css/base--theme-2.css", "css/base--theme-3.css", "css/defined--theme-1.css", "css/defined--theme-2.css", "css/defined--theme-3.css", "img/bookmarklet--shadows.png", "img/bookmarklet--shadows@2x.png", "img/curtain--close.png", "img/curtain--close@2x.png", "img/curtain--logo.png", "img/curtain--logo@2x.png", "img/curtain--shading.png", "img/curtain--shading@2x.png", "img/dialog--clip-info.png", "img/dialog--clip-info@2x.png", "img/dialog--dynamic.png", "img/dialog--dynamic@2x.png", "img/dialog--first-show--icons.png", "img/dialog--first-show--icons@2x.png", "img/dialog--frame.png", "img/dialog--frame@2x.png", "img/dialog--login--arrow.png", "img/dialog--login--arrow@2x.png", "img/dialog--login.png", "img/dialog--login@2x.png", "img/dialog--login-reset.png", "img/dialog--login-reset@2x.png", "img/dialog--notification--icons--failed.png", "img/dialog--notification--icons--failed@2x.png", "img/dialog--notification.png", "img/dialog--notification@2x.png", "img/dialog--settings--font-size-sprite.png", "img/dialog--settings--font-size-sprite@2x.png", "img/dialog--settings--themes-sprite.png", "img/dialog--settings--themes-sprite@2x.png", "img/dialog--settings.png", "img/dialog--settings@2x.png", "img/favicon.ico", "img/favicon@2x.ico", "img/highlight--cursor-dark.png", "img/highlight--cursor.png", "img/highlight--delete-sprite.png", "img/highlight--delete-sprite@2x.png", "img/highlight--img--blue.png", "img/highlight--img--blue@2x.png", "img/highlight--img--yellow.png", "img/highlight--img--yellow@2x.png", "img/icon--128.png", "img/icon--128@2x.png", "img/icon--16.png", "img/icon--16@2x.png", "img/icon--19.png", "img/icon--19@2x.png", "img/icon--48.png", "img/icon--48@2x.png", "img/icon--64.png", "img/icon--64@2x.png", "img/loading--background.png", "img/loading--background@2x.png", "img/loading--big.gif", "img/loading--big@2x.gif", "img/loading--small.gif", "img/loading--small@2x.gif", "img/logo-and-name.png", "img/logo-and-name@2x.png", "img/options--tabs-sprite.png", "img/options--tabs-sprite@2x.png", "img/overlay--close-dark-sprite.png", "img/overlay--close-dark-sprite@2x.png", "img/overlay--close-sprite.png", "img/overlay--close-sprite@2x.png", "img/player-graphics.gif", "img/sidebar--clipping.gif", "img/sidebar--clipping@2x.gif", "img/sidebar--sprite.png", "img/sidebar--sprite@2x.png", "img/sidebar-speak--sprite--model.png", "img/sidebar-speak--sprite--model@2x.png", "img/sidebar-speak--sprite.png", "img/sidebar-speak--sprite@2x.png", "options/bulk__forSpeechDemo.js" ]
+}

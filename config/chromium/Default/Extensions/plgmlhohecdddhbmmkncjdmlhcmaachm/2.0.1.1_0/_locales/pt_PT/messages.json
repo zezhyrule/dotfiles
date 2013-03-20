@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Diagramas Online"
+   },
+   "appLongDesc": {
+      "message": "draw.io \u00E9 uma aplica\u00E7\u00E3o de diagrama\u00E7\u00E3o totalmente gratuita do Google Drive (TM) que lhe permite desenhar:\n\n- Diagramas de Fluxo\n- UML\n- ERD\n- Diagramas de redes\n- Modelos de Processos de Neg\u00F3cios\n- Organogramas\n- Circuitos Electr\u00F3nicos\n- Wireframes e prot\u00F3tipos\n\nCaracter\u00EDsticas:\n- Cliente nativo HTML 5 com suporte total IE 6-8.\n- Grande biblioteca de stencils embutida\n- Interface arrastar e soltar intuitiva\n- Pesquisa de imagem e funcionalidade adicionar\n- Exportar para PNG/JPG/XML/SVG/PDF\n- Suporte a dispositivos de toque\n- C\u00F3digo fonte completo em github - https://github.com/jgraph/draw.io.\n- Colabora\u00E7\u00E3o em tempo real.\n- Incorporar diagramas em blogs ou wikis"
+   },
+   "appName": {
+      "message": "draw.io (Diagramly)"
+   }
+}

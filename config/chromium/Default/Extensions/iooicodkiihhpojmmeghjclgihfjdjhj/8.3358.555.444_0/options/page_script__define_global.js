@@ -1,0 +1,1 @@
+var $options = {}, __readable_by_evernote = {};

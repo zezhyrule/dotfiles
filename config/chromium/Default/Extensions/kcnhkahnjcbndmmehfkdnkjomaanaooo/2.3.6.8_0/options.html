@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>Google Voice Extension - Options</title>
+<style>
+body {
+  font-family:helvetica, arial, sans-serif;
+  font-size:80%;
+  margin:10px;
+}
+
+#header {
+  padding-bottom:1.5em;
+  padding-top:1.5em;
+}
+
+#header h1 {
+  font-size: 156%;
+  display:inline;
+  padding-bottom:43px;
+  padding-left:75px;
+  padding-top:40px;
+  background:url(voice-128.png) no-repeat;
+  background-size:67px;
+  background-position:1px 18px;
+}
+
+#footer {
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+.gc-settings-content {
+  margin: 6px 6px 0 6px;
+  padding: 10px 10px 10px 10px;
+  color: #333;
+  border: 1px solid #dedede;
+  -webkit-border-radius: 5px 5px;
+}
+
+.gc-settings-table {
+  width: 100%;
+  font-size: 1em;
+}
+
+.gc-settings-table .left,
+.gc-settings-table .right {
+  vertical-align: top;
+  border-bottom: 0 dotted #aaa;
+}
+
+.gc-settings-table th {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+  padding: 12px 24px 12px 12px;
+}
+
+.gc-settings-table td {
+  width: 99%;
+  white-space: nowrap;
+  padding: 12px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="header"><h1>Google Voice Extension Options</h1></div>
+
+<form name="gvoice">
+<div class="gc-settings-content">
+  <table class="gc-settings-table" id="gc-settings-voicemail-content">
+    <tr>
+      <th class="left">Default Behavior</th>
+      <td class="right">
+        <input type="radio" id="default" name="gcdefault" value="2"/>
+        <label for="default">Go to Inbox tab when new message(s) exist</label><br/>
+        <input type="radio" id="lastviewed" name="gcdefault" value="1"/>
+        <label for="lastviewed">Go to last viewed tab</label><br/>
+        <input type="radio" id="call" name="gcdefault" value="call"/>
+        <label for="call">Go to Call tab</label><br/>
+        <input type="radio" id="sms" name="gcdefault" value="sms"/>
+        <label for="sms">Go to SMS tab</label><br/>
+        <input type="radio" id="inbox" name="gcdefault" value="inbox"/>
+        <label for="inbox">Go to Inbox tab</label><br/>
+        <input type="radio" id="off" name="gcdefault" value="0"/>
+        <label for="off">Never show popup (Go straight to website)</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">Clickable Numbers</th>
+      <td class="right">
+        <input id="gc-links" type="checkbox" value="1"/>
+        <label for="gc-links">Turn phone numbers on websites into click to call links.</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">Selectable Numbers</th>
+      <td class="right">
+        <input id="gc-select" type="checkbox" value="1"/>
+        <label for="gc-select">Selecting numbers triggers the click to call popup.</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">New Message Sound</th>
+      <td class="right">
+        <input id="gc-alert" type="checkbox" value="1"/>
+        <label for="gc-alert">Play bell sound when a new message comes in.</label>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">Clear Extension Data</th>
+      <td class="right">
+        <button onclick="clearData()">Clear data</button>
+        <span style="color: #444; font-size: 11px;">Try this if the extension isn't updating data correctly.</span>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">Account Selection *</th>
+      <td class="right">
+        <select id="gc-account">
+          <option value="0">Primary account</option>
+          <option value="1">Account #2</option>
+          <option value="2">Account #3</option>
+        </select>
+        <div style="font-size: 11px; color: #444; margin: 3px 0 0 3px;">
+        * Used only if you use multiple sign-in. <a target="_blank" href="http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=181599">Learn more</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</form>
+
+<div id="footer">
+  <button id="save-button" style="font-weight:bold" onclick="save()"
+    >Save</button>
+  <span id="status" style="margin-left: 10px; color: #0e5ecf; font-weight:bold;"></span>
+</div>
+
+<script>
+var defaultRadio;
+var links;
+var selectable;
+var alertSound;
+var account;
+var saveButton;
+
+init();
+
+function init() {
+  defaultRadio = document.gvoice.gcdefault;
+  links = document.getElementById('gc-links');
+  links.checked = localStorage['linksOff'] ? false : true;
+
+  selectable = document.getElementById('gc-select');
+  selectable.checked = localStorage['selectOff'] ? false : true;
+
+  alertSound = document.getElementById('gc-alert');
+  alertSound.checked = localStorage['alertOff'] ? false : true;
+
+  saveButton = document.getElementById("save-button");
+
+  var defaultValue = localStorage['default'] || '2';
+
+  for(var i = 0; i < defaultRadio.length; i++) {
+    defaultRadio[i].checked = false;
+    if(defaultRadio[i].value == defaultValue) {
+      defaultRadio[i].checked = true;
+    }
+  }
+
+  account = document.getElementById('gc-account');
+  account.value = localStorage['account'] || '0';
+}
+
+function save() {
+  // If account changed then reset all the data.
+  if (localStorage['account'] && localStorage['account'] != account.value) {
+    localStorage.clear();
+  }
+
+  var defaultBvr = '1';
+  for(var i = 0; i < defaultRadio.length; i++) {
+    if(defaultRadio[i].checked) {
+      defaultBvr = defaultRadio[i].value;
+    }
+  }
+
+  localStorage['default'] = defaultBvr;
+  localStorage['linksOff'] = links.checked ? '' : '1';
+  localStorage['selectOff'] = selectable.checked ? '' : '1';
+  localStorage['alertOff'] = alertSound.checked ? '' : '1';
+  localStorage['account'] = account.value || '0';
+
+  var status = document.getElementById("status");
+  status.innerHTML = "Options Saved.";
+  setTimeout(function() {
+    status.innerHTML = "";
+  }, 4000);
+}
+
+function clearData() {
+  if (confirm('Clear data in extension? (includes extension settings)')) {
+    localStorage.clear();
+    alert('Extension data cleared. Click the extension icon to sync again.');
+  }
+}
+
+</script>
+</body>
+</html>

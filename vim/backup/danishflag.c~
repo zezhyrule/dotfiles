@@ -1,0 +1,18 @@
+/* Charles Davis */
+/* 2013-03-16 */
+/* prints a string of characters resembling the danish flag */
+
+#include <stdio.h>
+
+int main (int argc, char *argv[]) {
+
+	printf("#####  ############\n");
+	printf("#####  ############\n");
+	printf("#####  ############\n");
+	printf("\n");
+	printf("#####  ############\n");
+	printf("#####  ############\n");
+	printf("#####  ############\n");
+
+	return 0;
+}

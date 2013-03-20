@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "Conta"
+   },
+   "apply": {
+      "message": "Aplicar"
+   },
+   "audio_default_filename": {
+      "message": "\u00C1udio sem t\u00EDtulo"
+   },
+   "auth_url_failure": {
+      "message": "O usu\u00E1rio n\u00E3o est\u00E1 autorizado a acessar $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "Cancelar"
+   },
+   "cannot_capture_chrome": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel capturar p\u00E1ginas do Google Chrome."
+   },
+   "chrome_extension_name": {
+      "message": "Salvar no Google Drive"
+   },
+   "close": {
+      "message": "Fechar"
+   },
+   "convert_to_google_format": {
+      "message": "Converter para o formato do Google"
+   },
+   "debug": {
+      "message": "Depurar"
+   },
+   "default_filename": {
+      "message": "Sem t\u00EDtulo"
+   },
+   "docs_api_failure": {
+      "message": "Ocorreu um erro ao acessar a API do Google Docs: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "Download cancelado."
+   },
+   "download_failure": {
+      "message": "O download falhou: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "O download falhou: nenhum dado foi recebido"
+   },
+   "download_failure_too_big_mb": {
+      "message": "Falha no download: fonte muito grande ($1 MB).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "Fazendo download de $1...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "Fazendo download de..."
+   },
+   "empty_page_capture": {
+      "message": "N\u00E3o foi poss\u00EDvel capturar o conte\u00FAdo da p\u00E1gina como MHTML."
+   },
+   "enable_file_url": {
+      "message": "Os URLs de arquivos devem estar ativados por meio da op\u00E7\u00E3o \"Permitir acesso aos URLs do arquivo \" na p\u00E1gina de configura\u00E7\u00E3o das extens\u00F5es."
+   },
+   "ext_description": {
+      "message": "Salvar conte\u00FAdo da web em Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "N\u00E3o foi poss\u00EDvel capturar o conte\u00FAdo da p\u00E1gina como MHTML: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "Enviar feedback (somente para uso interno)"
+   },
+   "file_bug_internal": {
+      "message": "Registrar um bug (somente para uso interno)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E foi salvo no \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "$1 foi movido para a lixeira. Acesse o \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "Ajuda"
+   },
+   "html_default_filename": {
+      "message": "HTML sem t\u00EDtulo"
+   },
+   "image_capture_failed": {
+      "message": "Falha ao capturar a imagem."
+   },
+   "image_capture_failed_reason": {
+      "message": "Falha ao capturar imagem ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "Imagem sem t\u00EDtulo"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Untitled Page Capture.mht"
+   },
+   "misc": {
+      "message": "Diversos"
+   },
+   "oauth_title": {
+      "message": "Redirecionando para o Google para fazer login"
+   },
+   "options_header_text": {
+      "message": "Op\u00E7\u00F5es da extens\u00E3o Salvar no Google Drive"
+   },
+   "options_title": {
+      "message": "Op\u00E7\u00F5es de Salvar no Google Drive"
+   },
+   "page_size_not_supported": {
+      "message": "Tamanho de p\u00E1gina incompat\u00EDvel: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "PDF sem t\u00EDtulo"
+   },
+   "percent": {
+      "message": "$1% conclu\u00EDdos",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "Privacidade"
+   },
+   "redirecting": {
+      "message": "Redirecionando..."
+   },
+   "rename": {
+      "message": "Renomear"
+   },
+   "rename_prompt": {
+      "message": "Renomear:"
+   },
+   "save_as_html": {
+      "message": "C\u00F3digo-fonte HTML (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "Documento do Google"
+   },
+   "save_as_image_entire": {
+      "message": "Imagem da p\u00E1gina inteira (.png)"
+   },
+   "save_as_image_visible": {
+      "message": "Imagem da p\u00E1gina vis\u00EDvel (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "Arquivo da web (.mht)"
+   },
+   "save_audio": {
+      "message": "Salvar \u00E1udio no Google Drive"
+   },
+   "save_image": {
+      "message": "Salvar imagem no Google Drive"
+   },
+   "save_link": {
+      "message": "Salvar link no Google Drive"
+   },
+   "save_page_as": {
+      "message": "Salvar p\u00E1gina como:"
+   },
+   "save_to_google_drive_action": {
+      "message": "Salvar no Google Drive"
+   },
+   "save_video": {
+      "message": "Salvar v\u00EDdeo no Google Drive"
+   },
+   "saving": {
+      "message": "Salvando $1 no Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "Enviar coment\u00E1rios"
+   },
+   "sign_out": {
+      "message": "Sair"
+   },
+   "start_download_exception": {
+      "message": "N\u00E3o foi poss\u00EDvel iniciar o download: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "Texto sem t\u00EDtulo"
+   },
+   "trash": {
+      "message": "Lixeira"
+   },
+   "unspecified_error": {
+      "message": "Erro n\u00E3o especificado"
+   },
+   "upload_canceled": {
+      "message": "Upload cancelado"
+   },
+   "upload_failure": {
+      "message": "Falha no upload: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "Enviando $1 para o Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003EAbra o link\u003C/a\u003E e salve a p\u00E1gina usando o bot\u00E3o Salvar no Google Drive \u00E0 direita da barra de endere\u00E7os.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "Este \u00E9 um link para uma p\u00E1gina da Web"
+   },
+   "user_info_failure": {
+      "message": "Ocorreu um erro ao acessar as informa\u00E7\u00F5es do usu\u00E1rio."
+   },
+   "video_default_filename": {
+      "message": "V\u00EDdeo sem t\u00EDtulo"
+   },
+   "xml_default_filename": {
+      "message": "XML sem t\u00EDtulo"
+   }
+}

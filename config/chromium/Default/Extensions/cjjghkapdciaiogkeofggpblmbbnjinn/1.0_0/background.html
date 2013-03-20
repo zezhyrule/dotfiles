@@ -1,0 +1,229 @@
+<html>
+<head>
+<script>
+
+var Pixlr = {
+	tabid:0,
+	data:'',
+	canvas:'',
+	opener:'',
+	cy:0,
+	MessageHandler: function()
+	{
+		chrome.extension.onConnect.addListener(function(port)
+		{
+			var tab = port.sender.tab;
+			port.onMessage.addListener(function(obj)
+			{
+				switch(obj.msg)
+				{
+					case "grab_selected":
+						Pixlr.GrabPortion(obj.x, obj.y, obj.width, obj.height);
+						break;
+					case "edit":
+						Pixlr.PostImage("pixlr", obj.title);
+						break;
+					case "share":
+						Pixlr.PostImage("immio", obj.title);
+						break;
+					case "save":
+						Pixlr.PostImage("save", obj.title);
+						break;
+					case "scroll_init_done":
+						Pixlr.canvas = document.createElement('canvas');
+						Pixlr.canvas.width = obj.width;
+						Pixlr.canvas.height = obj.height;
+						Pixlr.cy = 0;
+					case "scroll_next_done":
+						Pixlr.CaptureToCanvas();
+						break;
+					case "scroll_finished":
+						Pixlr.CaptureToCanvasDone();
+						break;
+				}
+			});
+		});
+	},
+	Open: function(what)
+	{
+		switch(what)
+		{
+			case "editor":
+			case "express":
+				chrome.tabs.create({url: 'http://pixlr.com/'+ what +'/'});
+				break;
+			case "immio":
+				chrome.tabs.create({url: 'http://imm.io/'});
+				break;
+		}
+	},
+	GrabVisible: function()
+	{
+		chrome.tabs.getSelected(null, function(tab) {
+			Pixlr.tabid = tab.id;
+			chrome.tabs.captureVisibleTab(null, function(data) {
+				Pixlr.data = data;
+				Pixlr.SendMessage("show_selector");
+			});
+		});
+	},
+	GrabEntire: function(ref)
+	{
+		Pixlr.opener = ref;
+		chrome.tabs.getSelected(null, function(tab) {
+			Pixlr.tabid = tab.id;
+			Pixlr.SendMessage("scroll_init");
+		});
+	},
+	ShowArea: function()
+	{
+		chrome.tabs.getSelected(null, function(tab) {
+			Pixlr.tabid = tab.id;
+			Pixlr.SendMessage("show_area");
+		});
+	},
+	GrabPortion: function(x, y, width, height)
+	{
+		chrome.tabs.captureVisibleTab(null, function(data) {
+			var image = new Image();
+			image.onload = function()
+			{
+				var canvas = document.createElement('canvas');
+				canvas.width = width-22, canvas.height = height;
+				
+				var ctx = canvas.getContext("2d");
+				ctx.drawImage(image, x, y, width, height, 0, 0, width, height);
+				Pixlr.data = canvas.toDataURL("image/jpeg");
+
+				Pixlr.SendMessage("show_selector");
+			};
+			image.src = data;
+		});
+	},
+	CaptureToCanvas: function()
+	{
+		chrome.tabs.captureVisibleTab(null, function(data) {
+			var image = new Image();
+			image.onload = function()
+			{
+				var ctx = Pixlr.canvas.getContext("2d");
+				//ctx.drawImage(image, 0, Pixlr.cy);
+				
+				var height = (Pixlr.cy+image.height > Pixlr.canvas.height) ? Pixlr.canvas.height-Pixlr.cy : image.height;
+				
+				if(height > 0) {
+					ctx.drawImage(image, 0, image.height-height, image.width-22, height, 0, Pixlr.cy, Pixlr.canvas.width, height);
+				}
+				Pixlr.cy += image.height;
+				Pixlr.SendMessage("scroll_next");
+			};
+			image.src = data;
+		});
+	},
+	CaptureToCanvasDone: function()
+	{
+		Pixlr.data = Pixlr.canvas.toDataURL("image/jpeg");
+		Pixlr.SendMessage("show_selector");
+		Pixlr.opener.close();
+	},
+	SendMessage: function(message)
+	{
+		chrome.tabs.sendRequest(Pixlr.tabid, {msg: message}, function() {});
+	},
+	PostImage: function(target, title)
+	{
+		const BOUNDARY = '345823569845694578678';
+	
+		var xhr = new XMLHttpRequest(), 
+		  body = [
+			'--' + BOUNDARY,
+			'Content-disposition: form-data; name="image"', '',
+			Pixlr.data,
+			'--' + BOUNDARY + '--', ''
+		  ].join('\r\n');
+	
+		if(target == "pixlr")
+		{
+		  xhr.open("POST", "http://pixlr.com/store/", true);
+		  xhr.onreadystatechange = function(){ Pixlr.PixlrRequestState(xhr, title); };
+		}
+		else if(target == 'immio') 
+		{
+		  xhr.open('POST', 'http://imm.io/?callback=true&name='+ title, true);
+		  xhr.onreadystatechange = function(){ Pixlr.ImmIoRequestState(xhr); };
+		}
+		else
+		{
+		  xhr.open('POST', 'http://pixlr.com/store/', true);
+		  xhr.onreadystatechange = function(){ Pixlr.SaveRequestState(xhr); };
+		}
+	
+		xhr.setRequestHeader('content-type', 'multipart/form-data; boundary=' + BOUNDARY);
+		xhr.setRequestHeader('content-length', body.length);
+		xhr.send(body);
+
+	},
+	PixlrRequestState: function(req, title)
+	{
+		Pixlr.SendMessage("clean_up");
+	
+		if(req.readyState == 4) {
+			if(req.status == 200) {
+				var url = "http://pixlr.com/editor/?chro=mer&image=" +req.responseText+ "&title="+ escape(title) +"&method=post";
+				chrome.tabs.create({url: url});
+			}
+			else {
+				alert('We are sorry but we were unable to send the request\nstatus=' + req.status +" - "+ req.responseText);
+			}
+		}
+	},
+	ImmIoRequestState: function(req)
+	{
+		Pixlr.SendMessage("clean_up");
+	
+		if(req.readyState == 4) {
+			if(req.status == 200) {
+				chrome.tabs.create({url:req.responseText});
+			}
+			else {
+				alert('We are sorry but we were unable to send the request\nstatus=' + req.status);
+			}
+		}
+	},
+	SaveRequestState: function(req)
+	{
+		Pixlr.SendMessage("clean_up");
+	
+		if(req.readyState == 4) {
+			if(req.status == 200) {
+				chrome.tabs.sendRequest(Pixlr.tabid, {msg: "load_url", URL: req.responseText}, function() {});
+			}
+			else {
+				alert('We are sorry but we were unable to send the request\nstatus=' + req.status);
+			}
+		}
+	},
+	GetLocale: function()
+	{
+		switch(window.navigator.language.toLowerCase())
+		{
+			case "pt-br": return "pt-br";
+			case "zh-cn": return "zh-cn";
+			case "zh-tw": return "zh-tw";
+
+			default: return window.navigator.language.toLowerCase().substring(0,2);
+		}
+	},
+	EditClick: function(info) 
+	{
+		chrome.tabs.create({"url":"http://pixlr.com/editor/?image="+ info.srcUrl});
+	}
+};
+
+Pixlr.MessageHandler();
+
+chrome.contextMenus.create({"title":"Edit in Pixlr editor", "contexts": ["image"], "onclick": Pixlr.EditClick});
+	
+</script>
+</head>
+</html>

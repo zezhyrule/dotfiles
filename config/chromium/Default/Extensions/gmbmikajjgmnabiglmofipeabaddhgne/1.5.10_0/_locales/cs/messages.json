@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "\u00DA\u010Det"
+   },
+   "apply": {
+      "message": "Pou\u017E\u00EDt"
+   },
+   "audio_default_filename": {
+      "message": "Zvukov\u00FD soubor bez n\u00E1zvu"
+   },
+   "auth_url_failure": {
+      "message": "U\u017Eivatel nem\u00E1 opr\u00E1vn\u011Bn\u00ED pro p\u0159\u00EDstup na str\u00E1nku $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "Zru\u0161it"
+   },
+   "cannot_capture_chrome": {
+      "message": "Nelze zaznamenat str\u00E1nky ve form\u00E1tu Chrome."
+   },
+   "chrome_extension_name": {
+      "message": "Ulo\u017Eit na Disk Google"
+   },
+   "close": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "convert_to_google_format": {
+      "message": "P\u0159evod do form\u00E1tu Google"
+   },
+   "debug": {
+      "message": "Ladit"
+   },
+   "default_filename": {
+      "message": "Bez n\u00E1zvu"
+   },
+   "docs_api_failure": {
+      "message": "Chyba p\u0159i p\u0159\u00EDstupu k rozhran\u00ED API slu\u017Eby Dokumenty: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "Stahov\u00E1n\u00ED bylo zru\u0161eno."
+   },
+   "download_failure": {
+      "message": "Stahov\u00E1n\u00ED se nezda\u0159ilo: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "Sta\u017Een\u00ED se nezda\u0159ilo: Nebyla p\u0159ijata \u017E\u00E1dn\u00E1 data."
+   },
+   "download_failure_too_big_mb": {
+      "message": "Sta\u017Een\u00ED se nezda\u0159ilo: Zdrojov\u00FD soubor je p\u0159\u00EDli\u0161 velk\u00FD ($1\u00A0MB).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "Prob\u00EDh\u00E1 stahov\u00E1n\u00ED souboru $1...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "Prob\u00EDh\u00E1 stahov\u00E1n\u00ED..."
+   },
+   "empty_page_capture": {
+      "message": "Nelze zaznamenat obsah str\u00E1nky ve form\u00E1tu MHTML."
+   },
+   "enable_file_url": {
+      "message": "Adresy URL soubor\u016F mus\u00ED b\u00FDt povoleny prost\u0159ednictv\u00EDm volby Povolit p\u0159\u00EDstup k adres\u00E1m URL soubor\u016F, kter\u00E1 se nach\u00E1z\u00ED na str\u00E1nce Nastaven\u00ED roz\u0161\u00ED\u0159en\u00ED."
+   },
+   "ext_description": {
+      "message": "Ulo\u017Eit obsah webu do slu\u017Eby  Disk Google."
+   },
+   "failure_page_capture": {
+      "message": "Nelze zaznamenat obsah str\u00E1nky ve form\u00E1tu MHTML: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "Odeslat n\u00E1zor (pouze intern\u00ED)"
+   },
+   "file_bug_internal": {
+      "message": "Ozn\u00E1mit chybu (pouze intern\u00ED)"
+   },
+   "file_was_saved": {
+      "message": "Soubor \u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E byl ulo\u017Een do slu\u017Eby \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EDisk Google\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "Soubor $1 byl p\u0159esunut do ko\u0161e. P\u0159ej\u00EDt do slu\u017Eby \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EDisk Google\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Disk Google"
+   },
+   "help": {
+      "message": "N\u00E1pov\u011Bda"
+   },
+   "html_default_filename": {
+      "message": "HTML bez n\u00E1zvu"
+   },
+   "image_capture_failed": {
+      "message": "Z\u00E1znam obr\u00E1zku se nezda\u0159il"
+   },
+   "image_capture_failed_reason": {
+      "message": "Z\u00E1znam obr\u00E1zku se nezda\u0159il ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "Obr\u00E1zek bez n\u00E1zvu"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Z\u00E1znam str\u00E1nky bez n\u00E1zvu.mht"
+   },
+   "misc": {
+      "message": "R\u016Fzn\u00E9"
+   },
+   "oauth_title": {
+      "message": "P\u0159esm\u011Brov\u00E1n\u00ED na Google k p\u0159ihl\u00E1\u0161en\u00ED"
+   },
+   "options_header_text": {
+      "message": "Mo\u017Enosti roz\u0161\u00ED\u0159en\u00ED Ulo\u017Eit na Disk Google"
+   },
+   "options_title": {
+      "message": "Mo\u017Enosti pro Ulo\u017Eit na Disk Google"
+   },
+   "page_size_not_supported": {
+      "message": "Velikost str\u00E1nky nen\u00ED podporov\u00E1na: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "PDF bez n\u00E1zvu"
+   },
+   "percent": {
+      "message": "$1 % hotovo",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "Ochrana osobn\u00EDch \u00FAdaj\u016F"
+   },
+   "redirecting": {
+      "message": "P\u0159esm\u011Brov\u00E1n\u00ED..."
+   },
+   "rename": {
+      "message": "P\u0159ejmenovat"
+   },
+   "rename_prompt": {
+      "message": "P\u0159ejmenovat:"
+   },
+   "save_as_html": {
+      "message": "Zdroj HTML (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "Dokument Google"
+   },
+   "save_as_image_entire": {
+      "message": "Sn\u00EDmek cel\u00E9 str\u00E1nky (.png)"
+   },
+   "save_as_image_visible": {
+      "message": "Obr\u00E1zek viditeln\u00E9 str\u00E1nky (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "Webov\u00FD archiv (.mht)"
+   },
+   "save_audio": {
+      "message": "Ulo\u017Eit audio do slu\u017Eby Disk Google"
+   },
+   "save_image": {
+      "message": "Ulo\u017Eit obr\u00E1zek do slu\u017Eby Disk Google"
+   },
+   "save_link": {
+      "message": "Ulo\u017Eit odkaz do slu\u017Eby Disk Google"
+   },
+   "save_page_as": {
+      "message": "Ulo\u017Eit str\u00E1nku jako:"
+   },
+   "save_to_google_drive_action": {
+      "message": "Ulo\u017Eit do slu\u017Eby Disk Google"
+   },
+   "save_video": {
+      "message": "Ulo\u017Eit video do slu\u017Eby Disk Google"
+   },
+   "saving": {
+      "message": "Ukl\u00E1d\u00E1n\u00ED souboru $1 do slu\u017Eby Disk Google...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "Odeslat n\u00E1zor"
+   },
+   "sign_out": {
+      "message": "Odhl\u00E1sit se"
+   },
+   "start_download_exception": {
+      "message": "P\u0159i zah\u00E1jen\u00ED stahov\u00E1n\u00ED do\u0161lo k chyb\u011B: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "Text bez n\u00E1zvu"
+   },
+   "trash": {
+      "message": "Ko\u0161"
+   },
+   "unspecified_error": {
+      "message": "Nespecifikovan\u00E1 chyba"
+   },
+   "upload_canceled": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED zru\u0161eno"
+   },
+   "upload_failure": {
+      "message": "Chyba p\u0159i nahr\u00E1v\u00E1n\u00ED: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED souboru $1 do slu\u017Eby Disk Google...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003EOtev\u0159ete odkaz\u003C/a\u003E a ulo\u017Ete str\u00E1nku pomoc\u00ED tla\u010D\u00EDtka Ulo\u017Eit do slu\u017Eby Disk Google {1}IMAGE_TAG{/1} vpravo od adresn\u00EDho \u0159\u00E1dku.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "Toto je odkaz na webovou str\u00E1nku"
+   },
+   "user_info_failure": {
+      "message": "Chyba p\u0159i p\u0159\u00EDstupu k informac\u00EDm o u\u017Eivateli."
+   },
+   "video_default_filename": {
+      "message": "Video bez n\u00E1zvu"
+   },
+   "xml_default_filename": {
+      "message": "XML bez n\u00E1zvu"
+   }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="conf_special.js"></script>
+        <script src="config.js"></script>
+        <script src="md5.js"></script>
+        <script src="options.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="social.js"></script>
+
+        <title id="optionstitle"></title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                font-family:arial;
+                font-size:14px;
+                color:#000000;          
+            }
+            body{
+                background:url('img/options_bg.png') repeat-y 0 0;
+            }
+            /*LEFT PANEL*/
+            #left_panel{
+                position:absolute;
+                top:28px;
+                left:0px;
+                width:190px;
+            }
+            #left_h2{
+                color: #53637D;
+                font-size: 26px;
+                font-weight: normal;
+                text-align: right;
+                text-shadow: white 0 1px 2px;
+            }
+            #left_h2 img{
+                margin:0 7px -6px 0;
+            }
+            #saved_text{
+                display:none;
+                text-align: center;
+                margin-left: 40px;
+            }
+            /*MAIN*/
+            #main{
+                position:relative;
+                padding:20px 20px 20px 240px;
+                text-align:left;
+            }
+            h1{
+                font-size:16px;
+            }
+            
+            hr{
+                display:block;
+                height:0;
+                margin:15px 0;
+                border:none;
+                border-bottom:solid 1px #eeeeee;
+            }
+            #close{
+                padding:3px 15px;
+                cursor:pointer;
+            }
+            input[type="button"]{
+
+                padding:3px 15px;
+                cursor:pointer;
+            }
+            ul li
+            {
+                list-style-type: none;
+                margin-bottom: 1em;
+            }
+            #blockedlist input[type="button"]
+            {
+                background-repeat: no-repeat;
+
+                float:left;
+            }
+            #blockedlist img{
+
+                margin-right: 5px;
+                margin-left: 15px;
+            }
+            #blockedlist li{
+                cursor:pointer;
+            }
+            #blockedlist{
+                padding:10px;                
+                width: 40%;
+                height: auto;
+            }
+            h2 {
+                margin-bottom: 1em;
+            }
+            #block_page{
+                margin-bottom: 1em;
+            }
+            td { 
+                vertical-align: top; 
+            }
+            #close{
+                display:none;
+            }
+            .warning_label{
+                color: red;
+                display:none
+            }
+            #password_set_label{
+                color:red;
+                display:none;
+            }
+            .options td{
+                padding-right: 90px;
+            }
+            
+            /* NEW SOCIAL*/
+            .clear{
+                display:block;
+                clear:both;
+                height:0;
+                line-height:0;
+                font-size:0;
+            }
+            
+            .social{
+                margin:15px 0 0 0;
+                padding:16px 0 0 0;
+                border-top:solid 1px #eeeeee;
+            }
+            
+            .social_top{
+              padding:0 0 5px 75px;
+            }
+            
+            .social_top ul{
+              margin:0 auto;
+              width:450px;
+            }
+            
+            .social_top ul li{
+              list-style-type: none;
+              float: left;
+              width:150px;
+            }
+            
+            .social_foot a{
+                display: inline-block;
+                width:36px;
+                height:36px;
+                margin:0 0 -13px 0px;
+            }
+            
+            .social_foot a.twitter{
+                background: url('img/foot_ico_twitter.png') no-repeat 0 0;
+            }
+            
+            .social_foot a.fb{
+                background: url('img/foot_ico_fb.png') no-repeat 0 0;
+            }
+            
+            .social_foot a.email{
+                background: url('img/foot_ico_email.png') no-repeat 0 0;
+            }
+            
+            .social_foot a.gplus{
+                background: url('img/foot_ico_gplus.png') no-repeat 0 0;
+            }
+            
+            .social_foot a:hover{
+                background-position:0 -36px !important;
+            }
+            
+            .social_foot{
+               text-align: center;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div id="main">
+            <img id="logo" src="../img/options_logo.png" alt="Wips.com" /><br />
+            <span id="version_number"></span>
+            <h1 id="h1"></h1>
+
+            <div id="left_panel">
+                <h2 id="left_h2" >
+                    <img src="../img/icon40.png" alt="wips" /> <span id="optionstitle"></span>
+                </h2>
+                <div id="saved_text"></div>
+                
+            </div>
+            <hr />
+            <div id="login">
+                <label id="login_label" for="login_password" ></label>
+                <input type="password" id="login_password" value="" />
+                <input type="button" id="login_button" value=""  />
+
+            </div>
+            <div id="auth_zone">
+                
+                <table class="options">
+                    <tr>
+                        <td><h2 id="func_title"></h2>
+                            <ul>
+                                <li><input id="enable_check" type="checkbox" name="" />
+                                    <label id="enable_label" for="auth_check" ></label></li>
+    <!--                                <li><input id="warning_check" type="checkbox" name="" />
+                                        <label id="warning_label" for="auth_check" ></label></li>-->
+                                <li><input id="blacklist_check" type="radio" value="" />
+                                    <label id="blacklist_label" for="blacklist_check"></label>
+                                    <input id="whitelist_check" type="radio" value="" />
+                                    <label id="whitelist_label" for="whitelist_check"></label></li>
+                                <li><input id="stats_check" type="checkbox" name="" />
+                                    <label id="stats_label" for="stats_check" ></label></li>
+                            </ul>
+                            <hr /></td>
+                        <td><h2 id="auth_title"></h2>
+                            <div>
+                                <ul>
+                                    <li><input id="auth_check" type="checkbox" name="" />
+                                        <label id="auth_label" for="auth_check" ></label></li>
+                                    <li>
+                                        <!--<label id="passwd_label" for="passwd_check" ></label>-->
+                                        <input type="password" id="passwd" value="" />
+                                        <input type="button" id="set_password" value=""><br>
+                                        <label id="password_set_label"></label>
+                                    </li>
+
+                                </ul>
+                            </div></td>
+                    </tr>
+                </table>
+                <div>
+                    <h2 id="list_title"></h2>
+                    http://<input type="text" id="block_page" value=""/>
+                    <input id="add_page" type="button" value="" />                
+                    <div>
+                        <label id="wrong_url" class="warning_label"></label>
+                        <label id="page_exist" class="warning_label"></label>
+                    </div>
+                    <div id="blockedlist">
+                    </div>
+                </div>
+                <input type="button" id="close_button" value=""  />
+
+            </div>
+            <div id="close">
+                
+            </div>
+            
+            <div class="social">
+              <div class="social_top">
+                <ul>
+                  <li id="share-facebook-obal"></li>
+                  <li id="share-twitter-obal"></li>
+                  <li id="share-google-obal"></li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+              <div class="social_foot">
+                <a target="_blank" href="http://www.twitter.com/wipscom" class="twitter"></a>
+                <a target="_blank" href="http://www.facebook.com/wipscom" class="fb"></a>
+                <a href="mailto:info@wips.com" class="email"></a>
+                <a target="_blank" href="https://plus.google.com/100520130082816551481/posts" class="gplus"></a>
+              </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

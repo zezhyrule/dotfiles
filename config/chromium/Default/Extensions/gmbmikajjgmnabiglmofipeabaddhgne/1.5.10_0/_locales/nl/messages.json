@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "Account"
+   },
+   "apply": {
+      "message": "Toepassen"
+   },
+   "audio_default_filename": {
+      "message": "Naamloze audio"
+   },
+   "auth_url_failure": {
+      "message": "Gebruiker is niet geautoriseerd om $1 te openen",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "Annuleren"
+   },
+   "cannot_capture_chrome": {
+      "message": "Kan Chrome-pagina's niet vastleggen."
+   },
+   "chrome_extension_name": {
+      "message": "Opslaan in Google Drive"
+   },
+   "close": {
+      "message": "Sluiten"
+   },
+   "convert_to_google_format": {
+      "message": "Converteren naar Google-indeling"
+   },
+   "debug": {
+      "message": "Foutopsporing"
+   },
+   "default_filename": {
+      "message": "Naamloos"
+   },
+   "docs_api_failure": {
+      "message": "Kan geen toegang krijgen tot API voor Google Documenten: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "Download is geannuleerd."
+   },
+   "download_failure": {
+      "message": "Downloaden is mislukt: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "Downloadfout: geen gegevens ontvangen."
+   },
+   "download_failure_too_big_mb": {
+      "message": "Downloaden mislukt: bronbestand te groot ($1 MB).",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "$1 wordt gedownload...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "Wordt gedownload..."
+   },
+   "empty_page_capture": {
+      "message": "De inhoud van de pagina kan niet als MHTML worden vastgelegd."
+   },
+   "enable_file_url": {
+      "message": "Bestand-URL's moeten zijn ingeschakeld met de optie 'Toegang tot bestand-URL's toestaan' op de instellingenpagina Extensies."
+   },
+   "ext_description": {
+      "message": "Webinhoud opslaan op Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "De inhoud van de pagina kan niet als MHTML worden vastgelegd: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "Feedback verzenden (alleen intern)"
+   },
+   "file_bug_internal": {
+      "message": "Een bug melden (alleen intern)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E is opgeslagen in \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "$1 is verplaatst naar de prullenbak. Ga naar \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "html_default_filename": {
+      "message": "Naamloze HTML"
+   },
+   "image_capture_failed": {
+      "message": "Afbeeldingen zijn niet vastgelegd."
+   },
+   "image_capture_failed_reason": {
+      "message": "Afbeelding is niet vastgelegd ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "Naamloze afbeelding"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Untitled Page Capture.mht"
+   },
+   "misc": {
+      "message": "Overige"
+   },
+   "oauth_title": {
+      "message": "U wordt omgeleid naar Google om u aan te melden"
+   },
+   "options_header_text": {
+      "message": "Opslaan in Google Drive opties voor extensies"
+   },
+   "options_title": {
+      "message": "Opslaan in Google Drive Opties"
+   },
+   "page_size_not_supported": {
+      "message": "Paginaformaat wordt niet ondersteund: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "Naamloze pdf"
+   },
+   "percent": {
+      "message": "$1% gereed",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "Privacy"
+   },
+   "redirecting": {
+      "message": "Omleiden..."
+   },
+   "rename": {
+      "message": "Naam wijzigen"
+   },
+   "rename_prompt": {
+      "message": "Naam wijzigen:"
+   },
+   "save_as_html": {
+      "message": "HTML-code (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "Google-document"
+   },
+   "save_as_image_entire": {
+      "message": "Afbeelding van hele pagina (.png)"
+   },
+   "save_as_image_visible": {
+      "message": "Afbeelding van zichtbare pagina (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "Webarchief (.mht)"
+   },
+   "save_audio": {
+      "message": "Audio opslaan in Google Drive"
+   },
+   "save_image": {
+      "message": "Afbeelding opslaan in Google Drive"
+   },
+   "save_link": {
+      "message": "Link opslaan in Google Drive"
+   },
+   "save_page_as": {
+      "message": "Pagina opslaan als:"
+   },
+   "save_to_google_drive_action": {
+      "message": "Opslaan in Google Drive"
+   },
+   "save_video": {
+      "message": "Video opslaan in Google Drive"
+   },
+   "saving": {
+      "message": "$1 opslaan in Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "Feedback verzenden"
+   },
+   "sign_out": {
+      "message": "Afmelden"
+   },
+   "start_download_exception": {
+      "message": "Download kan niet worden gestart: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "Naamloze tekst"
+   },
+   "trash": {
+      "message": "Prullenbak"
+   },
+   "unspecified_error": {
+      "message": "Niet-gespecificeerde fout"
+   },
+   "upload_canceled": {
+      "message": "Upload geannuleerd"
+   },
+   "upload_failure": {
+      "message": "Fout bij uploaden: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "$1 uploaden naar Google Drive...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003EKlik op de link\u003C/a\u003E en sla de pagina op met de knop Opslaan in Google Drive rechts van de adresbalk.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "Dit is een link naar een webpagina"
+   },
+   "user_info_failure": {
+      "message": "Kan geen toegang krijgen tot gebruikersinformatie."
+   },
+   "video_default_filename": {
+      "message": "Naamloze video"
+   },
+   "xml_default_filename": {
+      "message": "Naamloze XML"
+   }
+}

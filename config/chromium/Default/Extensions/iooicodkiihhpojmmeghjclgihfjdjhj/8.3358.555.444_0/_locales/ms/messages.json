@@ -1,0 +1,539 @@
+{
+   "chrome_browser_action": {
+      "message": "Lihat halaman dalam Clearly."
+   },
+   "chrome_context_menu": {
+      "message": "Clearly"
+   },
+   "firefox_button": {
+      "message": "Clearly"
+   },
+   "firefox_button_tooltip": {
+      "message": "Lihat muka surat ini dalam Clearly."
+   },
+   "firefox_context_menu": {
+      "message": "Clearly"
+   },
+   "firefox_menu": {
+      "message": "Clearly"
+   },
+   "inside__blank_error__body": {
+      "message": "Clearly pada masa ini dicipta untuk berfungsi pada halaman artikel. Satu halaman artikel ialah sebarang halaman yang mengandungi satu blok besar teks \u2014 seperti, contohnya, artikel akhbar atau siaran blog."
+   },
+   "inside__blank_error__heading": {
+      "message": "Petua untuk menggunakan Evernote Clearly"
+   },
+   "inside__evernote_clipping": {
+      "message": "Mengklip..."
+   },
+   "inside__evernote_clipping_failed": {
+      "message": "Pengklipan gagal."
+   },
+   "inside__evernote_login__button_cancel__label": {
+      "message": "Batal"
+   },
+   "inside__evernote_login__button_do__label": {
+      "message": "Daftar masuk"
+   },
+   "inside__evernote_login__create_account": {
+      "message": "Buat akaun"
+   },
+   "inside__evernote_login__general__error": {
+      "message": "Pengesahihan gagal."
+   },
+   "inside__evernote_login__heading": {
+      "message": "Daftar masuk ke Evernote"
+   },
+   "inside__evernote_login__password__error__format": {
+      "message": "Kata laluan mengandungi aksara yang tidak boleh digunakan."
+   },
+   "inside__evernote_login__password__error__invalid": {
+      "message": "Nama pengguna dan kata laluan tidak sepadan dengan pengguna sedia ada."
+   },
+   "inside__evernote_login__password__error__length": {
+      "message": "Kata laluan mestilah antara 6 dan 64 aksara panjangnya."
+   },
+   "inside__evernote_login__password__error__required": {
+      "message": "Kata laluan diperlukan."
+   },
+   "inside__evernote_login__password__label": {
+      "message": "Kata laluan"
+   },
+   "inside__evernote_login__rememberMe__label": {
+      "message": "Ingat saya"
+   },
+   "inside__evernote_login__spinner": {
+      "message": "Mendaftar masuk ke Evernote"
+   },
+   "inside__evernote_login__username__error__format": {
+      "message": "Nama pengguna mengandungi aksara yang tidak boleh digunakan."
+   },
+   "inside__evernote_login__username__error__invalid": {
+      "message": "Bukan pengguna aktif yang sah."
+   },
+   "inside__evernote_login__username__error__length": {
+      "message": "Nama pengguna mestilah antara 1 dan 64 aksara panjangnya."
+   },
+   "inside__evernote_login__username__error__required": {
+      "message": "Nama pengguna diperlukan."
+   },
+   "inside__evernote_login__username__label": {
+      "message": "Nama Pengguna atau Alamat E-mel Evernote"
+   },
+   "inside__features__clipping__text": {
+      "message": "Simpan bahan yang anda baca pada akaun Evernote anda dengan satu kilk. Capai klip dari sebarang peranti, bila-bila masa dalam Evernote."
+   },
+   "inside__features__clipping__title": {
+      "message": "Klipkan pada Evernote"
+   },
+   "inside__features__close2": {
+      "message": "Tutup"
+   },
+   "inside__features__eula_notice": {
+      "message": "Apabila menggunakan Clearly, bermakna anda bersetuju menerima [=eula] kami."
+   },
+   "inside__features__highlighting__text": {
+      "message": "Serlahkan teks yang anda mahu ingati & dapatkannya dengan cepat dalam akaun Evernote anda. Penyerlahan perubahan yang anda buat dalam Clearly akan dikemas kini dalam akaun Evernote anda secara automatik."
+   },
+   "inside__features__highlighting__title": {
+      "message": "Menyerlahkan"
+   },
+   "inside__features__related_notes__text": {
+      "message": "Temui semula nota anda dengan mudah dari akaun Evernote anda yang berkaitan dengan halaman yang anda sedang lihat. Nota Berkaitan dipaparkan di bahagian bawah artikel atau di sebelah kanan jika ada ruang."
+   },
+   "inside__features__related_notes__title": {
+      "message": "Nota Berkaitan"
+   },
+   "inside__features__smart_filing__text": {
+      "message": "Menguntukkan teg secara automatik ke klip Web anda dan menyimpannya pada buku nota yang sesuai, oleh itu anda tidak perlu melakukannya lagi."
+   },
+   "inside__features__smart_filing__title": {
+      "message": "Pemfailan Pintar"
+   },
+   "inside__features__speech__no_language_explanation": {
+      "message": "Evernote Clearly tidak boleh menentukan bahasa artikel ini. Jika anda mengetahui bahasanya, pilih bahasa itu di bawah dan kami akan mainkannya."
+   },
+   "inside__features__speech__no_language_title": {
+      "message": "Bahasa tidak disokong"
+   },
+   "inside__features__speech__text": {
+      "message": "Duduk dan biarkan Clearly membacakan siaran blog, artikel dan halaman web kepada anda dengan adanya ciri Teks Ke Pertuturan baharu, yang tersedia eksklusif untuk pelanggan Evernote Premium."
+   },
+   "inside__features__speech__text__available": {
+      "message": "Teks Ke Pertuturan dalam 21 bahasa:"
+   },
+   "inside__features__speech__text__available_languages": {
+      "message": "Inggeris, Jepun, Sepanyol, Perancis, Jerman, China, Korea, Arab, Czech, Denmark, Belanda, Finland, Greek, Hungary, Itali, Norway, Poland, Portugis, Rusia, Sweden dan Turki."
+   },
+   "inside__features__speech__text__cancel": {
+      "message": "Batal"
+   },
+   "inside__features__speech__text__language": {
+      "message": "Bahasa tidak disokong"
+   },
+   "inside__features__speech__text__play": {
+      "message": "Mainkan guna bahasa ini"
+   },
+   "inside__features__speech__text__powered": {
+      "message": "Evernote Clearly dikuasai oleh [=service]."
+   },
+   "inside__features__speech__text__requires": {
+      "message": "Memerlukan [=product]."
+   },
+   "inside__features__speech__text__try": {
+      "message": "Cuba Teks Ke Pertuturan"
+   },
+   "inside__features__speech__text__upgrade": {
+      "message": "Naik Taraf ke Evernote Premium"
+   },
+   "inside__features__speech__title": {
+      "message": "Teks Ke Pertuturan"
+   },
+   "inside__features__title__all": {
+      "message": "Selamat datang ke Evernote Clearly baharu"
+   },
+   "inside__features__title__new": {
+      "message": "Anda mendapat versi baharu Evernote Clearly"
+   },
+   "inside__filing_info__default_notebook": {
+      "message": "Buku Nota lalai anda"
+   },
+   "inside__filing_info__edit": {
+      "message": "Sunting"
+   },
+   "inside__filing_info__sentence": {
+      "message": "Diklipkan ke dalam buku nota [=notebook] dan diteg dengan [=tags]."
+   },
+   "inside__filing_info__sentence_and": {
+      "message": "dan"
+   },
+   "inside__filing_info__sentence_no_tags": {
+      "message": "Diklipkan ke dalam buku nota [=notebook]."
+   },
+   "inside__filing_info__sentence_other_tags": {
+      "message": "teg lain"
+   },
+   "inside__filing_info__title_normal": {
+      "message": "Difailkan dalam:"
+   },
+   "inside__filing_info__title_smart": {
+      "message": "Difailkan Pintar dalam:"
+   },
+   "inside__filing_info__view": {
+      "message": "Lihat"
+   },
+   "inside__menu__clip_to_evernote__tooltip": {
+      "message": "Klipkan pada Evernote."
+   },
+   "inside__menu__close__tooltip": {
+      "message": "Sembunyikan tindihan."
+   },
+   "inside__menu__fitts__tooltip": {
+      "message": "Sembunyikan tindihan."
+   },
+   "inside__menu__highlight_to_evernote__tooltip": {
+      "message": "Sorotan."
+   },
+   "inside__menu__print__tooltip": {
+      "message": "Cetak."
+   },
+   "inside__menu__settings__tooltip": {
+      "message": "Papar Tema."
+   },
+   "inside__menu__speak__forward__tooltip": {
+      "message": "Ke Hadapan"
+   },
+   "inside__menu__speak__pause__tooltip": {
+      "message": "Jeda"
+   },
+   "inside__menu__speak__play__tooltip": {
+      "message": "Main"
+   },
+   "inside__menu__speak__rewind__tooltip": {
+      "message": "Ke Belakang"
+   },
+   "inside__menu__speak__tooltip": {
+      "message": "Teks Ke Pertuturan"
+   },
+   "inside__misc__page": {
+      "message": "halaman"
+   },
+   "inside__related_notes__disable_long": {
+      "message": "Adakah anda mahu melumpuhkan Nota Berkaitan?"
+   },
+   "inside__related_notes__disable_short": {
+      "message": "Lumpuhkan?"
+   },
+   "inside__related_notes__title": {
+      "message": "Nota Berkaitan"
+   },
+   "inside__rtl__ltr__label": {
+      "message": "Kiri-ke-kanan"
+   },
+   "inside__rtl__main__label": {
+      "message": "Arah teks?"
+   },
+   "inside__rtl__rtl__label": {
+      "message": "Kanan-ke-kiri"
+   },
+   "inside__settings__fontSize__large": {
+      "message": "besar"
+   },
+   "inside__settings__fontSize__medium": {
+      "message": "sederhana"
+   },
+   "inside__settings__fontSize__small": {
+      "message": "kecil"
+   },
+   "inside__settings__theme__1": {
+      "message": "Kertas Akhbar"
+   },
+   "inside__settings__theme__2": {
+      "message": "Ketara"
+   },
+   "inside__settings__theme__3": {
+      "message": "Pungguk Malam"
+   },
+   "inside__settings__theme__custom": {
+      "message": "Tersuai"
+   },
+   "meta_extension_author": {
+      "message": "Evernote Corp."
+   },
+   "meta_extension_description": {
+      "message": "Clearly membuatkan siaran blog, artikel dan laman web bersih dan mudah untuk dibaca. Simpan kesemuanya ke Evernote untuk membaca di mana-mana sahaja."
+   },
+   "meta_extension_name": {
+      "message": "Clearly"
+   },
+   "options__account__sign_out": {
+      "message": "Log masuk secara kekal sebagai [[=username]]."
+   },
+   "options__account__sign_out_link": {
+      "message": "Daftar keluar."
+   },
+   "options__account__signed_out": {
+      "message": "Anda tidak mendaftar masuk secara kekal. Klik ikon Evernote, pada bar sisi Clearly, untuk mendaftar masuk."
+   },
+   "options__base__label": {
+      "message": "Asas CSS "
+   },
+   "options__box_width__label": {
+      "message": "Lebar Baris"
+   },
+   "options__button__more_options": {
+      "message": "Lagi Pilihan"
+   },
+   "options__button__reset_custom": {
+      "message": "Tetapkan semula"
+   },
+   "options__button__save_custom": {
+      "message": "Simpan Tema"
+   },
+   "options__button__save_general": {
+      "message": "Simpan Pilihan"
+   },
+   "options__clip_notebook__business": {
+      "message": "Buku Nota Perniagaan"
+   },
+   "options__clip_notebook__no__label": {
+      "message": "Gunakan Buku Nota Lalai"
+   },
+   "options__clip_notebook__shared": {
+      "message": "Buku Nota Kongsi"
+   },
+   "options__clip_notebook__yes__label": {
+      "message": "Guna Buku Nota ini"
+   },
+   "options__clip_notebook__your": {
+      "message": "Buku Nota Anda"
+   },
+   "options__clip_tag__no__label": {
+      "message": "Jangan teg"
+   },
+   "options__clip_tag__yes__label": {
+      "message": "Teg dengan"
+   },
+   "options__color_background__label": {
+      "message": "Warna Latar Belakang"
+   },
+   "options__color_links__label": {
+      "message": "Warna Pautan"
+   },
+   "options__color_text__label": {
+      "message": "Warna Latar Depan"
+   },
+   "options__custom_css__label": {
+      "message": "CSS Tersuai"
+   },
+   "options__footnote_links__label": {
+      "message": "Pautan sebagai Nota kaki"
+   },
+   "options__keys_activation__label": {
+      "message": "Lihat halaman dalam Clearly"
+   },
+   "options__keys_clip__label": {
+      "message": "Klipkan pada Evernote"
+   },
+   "options__keys_highlight__label": {
+      "message": "Sorotan"
+   },
+   "options__keys_speech__label": {
+      "message": "Teks Ke Pertuturan"
+   },
+   "options__large_graphics__label": {
+      "message": "Grafik Besar"
+   },
+   "options__message__keys": {
+      "message": "Untuk membuat perubahan, tempatkan kursor dalam medan dan taip gabungan kekunci pada papan kekunci anda."
+   },
+   "options__message__keys_firefox": {
+      "message": "Mulakan semula penyemak imbas anda selepas selesai menyimpan."
+   },
+   "options__message__notebook": {
+      "message": "Buku nota untuk diklip padanya, apabila anda Klip ke Evernote."
+   },
+   "options__message__open_notes_in": {
+      "message": "When openinig notes from Clearly, use a specific Evernote client."
+   },
+   "options__message__related_notes": {
+      "message": "Benarkan Evernote mengambil klip daripada akaun anda yang mungkin berkaitan dengan perkara yang anda baca sekarang."
+   },
+   "options__message__saved": {
+      "message": "Tetapan akan dilaksanakan pada mana-mana tab baharu yang anda gunakan Clearly."
+   },
+   "options__message__smart_filing": {
+      "message": "Benarkan Evernote menentukan klip Buku Nota mana yang harus dimasukkan dan Teg mana yang harus diperoleh."
+   },
+   "options__message__tags": {
+      "message": "Teg yang hendak digunakan, apabila anda Klip ke Evernote."
+   },
+   "options__open_notes_in__desktop__label": {
+      "message": "Klien desktop"
+   },
+   "options__open_notes_in__web__label": {
+      "message": "Klien web"
+   },
+   "options__related_notes__disabled__label": {
+      "message": "Lumpuhkan Nota Berkaitan"
+   },
+   "options__related_notes__enabled__label": {
+      "message": "Dayakan Nota Berkaitan"
+   },
+   "options__related_notes__just_at_bottom__label": {
+      "message": "Dayakan Nota Berkaitan, bukan hanya tunjukkan di bawah"
+   },
+   "options__smart_filing__disabled__label": {
+      "message": "Lumpuhkan Pemfailan Pintar"
+   },
+   "options__smart_filing__enabled__label": {
+      "message": "Dayakan Pemfailan Pintar"
+   },
+   "options__smart_filing__just_notebooks__label": {
+      "message": "Dayakan Pemfailan Pintar, bukan hanya untuk Buku Nota"
+   },
+   "options__smart_filing__just_tags__label": {
+      "message": "Dayakan Pemfailan Pintar, bukan hanya untuk Teg"
+   },
+   "options__smart_filing_for_business__label": {
+      "message": "Benarkan Pemfailan Pintar ke dalam Buku Nota Perniagaan"
+   },
+   "options__speech_demo__label": {
+      "message": "Tunjuk Cara"
+   },
+   "options__speech_gender__label": {
+      "message": "Suara Bacaan"
+   },
+   "options__speech_speed__label": {
+      "message": "Kelajuan Bacaan"
+   },
+   "options__text_align__label": {
+      "message": "Laras Teks"
+   },
+   "options__text_font__label": {
+      "message": "Fon  Badan"
+   },
+   "options__text_font_header__label": {
+      "message": "Fon Pengepala"
+   },
+   "options__text_font_monospace__label": {
+      "message": "Fon Monospace"
+   },
+   "options__text_line_height__label": {
+      "message": "Tinggi Baris"
+   },
+   "options__text_size__label": {
+      "message": "Saiz Fon Asas"
+   },
+   "options__title__custom": {
+      "message": "Tema Tersuai"
+   },
+   "options__title__features": {
+      "message": "Ciri Clearly"
+   },
+   "options__title__general": {
+      "message": "Pilihan"
+   },
+   "options__title__page": {
+      "message": "Clearly / Pilihan"
+   },
+   "options__title__speech": {
+      "message": "Teks Ke Pertuturan"
+   },
+   "options__title__sub__account": {
+      "message": "Akaun"
+   },
+   "options__title__sub__keyboard": {
+      "message": "Pintasan papan kekunci"
+   },
+   "options__title__sub__notebook": {
+      "message": "Buku nota"
+   },
+   "options__title__sub__open_notes_in": {
+      "message": "Buka nota dalam"
+   },
+   "options__title__sub__related_notes": {
+      "message": "Nota Berkaitan"
+   },
+   "options__title__sub__smart_filing": {
+      "message": "Pemfailan Pintar"
+   },
+   "options__title__sub__tags": {
+      "message": "Teg"
+   },
+   "options__values__base__Blueprint": {
+      "message": "Cetakan Biru"
+   },
+   "options__values__base__None": {
+      "message": "Tiada"
+   },
+   "options__values__base__Theme_1": {
+      "message": "Klasik"
+   },
+   "options__values__base__Theme_2": {
+      "message": "Moden"
+   },
+   "options__values__base__Theme_3": {
+      "message": "Waktu-malam"
+   },
+   "options__values__footnote_links__Always": {
+      "message": "Sentiasa"
+   },
+   "options__values__footnote_links__Never": {
+      "message": "Jangan sekali-kali"
+   },
+   "options__values__footnote_links__On_Print": {
+      "message": "Semasa Cetak"
+   },
+   "options__values__large_graphics__Do_Nothing": {
+      "message": "Sentiasa Papar"
+   },
+   "options__values__large_graphics__Hide_Always": {
+      "message": "Sembunyikan Selalu"
+   },
+   "options__values__large_graphics__Hide_on_Print": {
+      "message": "Sembunyikan semasa Cetak"
+   },
+   "options__values__menu_placement__Bottom_Right": {
+      "message": "Bawah Kanan"
+   },
+   "options__values__menu_placement__Top_Right": {
+      "message": "Atas Kanan"
+   },
+   "options__values__speech_gender__default": {
+      "message": "Lalai"
+   },
+   "options__values__speech_gender__female": {
+      "message": "Perempuan (jika ada)"
+   },
+   "options__values__speech_gender__male": {
+      "message": "Lelaki (jika ada)"
+   },
+   "options__values__speech_speed__fast": {
+      "message": "Pantas"
+   },
+   "options__values__speech_speed__faster": {
+      "message": "Lebih Pantas"
+   },
+   "options__values__speech_speed__fastest": {
+      "message": "Paling Pantas"
+   },
+   "options__values__speech_speed__normal": {
+      "message": "Biasa"
+   },
+   "options__values__speech_speed__slow": {
+      "message": "Perlahan"
+   },
+   "options__values__speech_speed__slower": {
+      "message": "Lebih Perlahan"
+   },
+   "options__values__speech_speed__slowest": {
+      "message": "Paling Perlahan"
+   },
+   "options__values__text_align__Justified": {
+      "message": "Terlaras"
+   },
+   "options__values__text_align__Normal": {
+      "message": "Biasa"
+   }
+}

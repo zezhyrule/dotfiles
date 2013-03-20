@@ -1,0 +1,318 @@
+{
+   "account": {
+      "message": "Konto"
+   },
+   "apply": {
+      "message": "\u00DCbernehmen"
+   },
+   "audio_default_filename": {
+      "message": "Unbenannte Audiodatei"
+   },
+   "auth_url_failure": {
+      "message": "Der Nutzer ist nicht zum Zugriff auf $1 berechtigt.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "cancel": {
+      "message": "Abbrechen"
+   },
+   "cannot_capture_chrome": {
+      "message": "Chrome-Seiten k\u00F6nnen nicht erfasst werden."
+   },
+   "chrome_extension_name": {
+      "message": "In Google Drive speichern"
+   },
+   "close": {
+      "message": "Schlie\u00DFen"
+   },
+   "convert_to_google_format": {
+      "message": "Ins Google-Format konvertieren"
+   },
+   "debug": {
+      "message": "Fehlerbehebung"
+   },
+   "default_filename": {
+      "message": "Unbenannt"
+   },
+   "docs_api_failure": {
+      "message": "Fehler beim Zugriff auf Google Docs-API: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_canceled": {
+      "message": "Download abgebrochen"
+   },
+   "download_failure": {
+      "message": "Fehler beim Download: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_failure_no_data": {
+      "message": "Download-Fehler: keine Daten empfangen."
+   },
+   "download_failure_too_big_mb": {
+      "message": "Fehler beim Herunterladen: Quelle zu gro\u00DF ($1 MB)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_known_name": {
+      "message": "$1 wird heruntergeladen...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "download_unknown_name": {
+      "message": "Download..."
+   },
+   "empty_page_capture": {
+      "message": "Der Inhalt der Seite konnte nicht als MHTML-Datei gespeichert werden."
+   },
+   "enable_file_url": {
+      "message": "Datei-URLs m\u00FCssen \u00FCber die Option \"Zugriff auf Datei-URLs erlauben\" auf der Seite \"Einstellungen\" f\u00FCr Erweiterungen aktiviert werden."
+   },
+   "ext_description": {
+      "message": "Webinhalte speichern in Google Drive."
+   },
+   "failure_page_capture": {
+      "message": "Der Inhalt der Seite konnte nicht als MHTML-Datei gespeichert werden: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "feedback_internal": {
+      "message": "Feedback geben (nur intern)"
+   },
+   "file_bug_internal": {
+      "message": "Fehler melden (nur intern)"
+   },
+   "file_was_saved": {
+      "message": "\u003Ca id=\"$1\" href=\"$2\" target=\"_blank\"\u003E$3\u003C/a\u003E wurde in \u003Ca id=\"$4\" href=\"$5\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E gespeichert.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         },
+         "4": {
+            "content": "$4"
+         },
+         "5": {
+            "content": "$5"
+         }
+      }
+   },
+   "file_was_trashed": {
+      "message": "$1 wurde in den Papierkorb verschoben. Weiter zu \u003Ca id=\"$2\", href=\"$3\" target=\"_blank\" class=\"no-break\"\u003EGoogle Drive\u003C/a\u003E",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         },
+         "2": {
+            "content": "$2"
+         },
+         "3": {
+            "content": "$3"
+         }
+      }
+   },
+   "google_drive": {
+      "message": "Google Drive"
+   },
+   "help": {
+      "message": "Hilfe"
+   },
+   "html_default_filename": {
+      "message": "Unbenanntes HTML-Dokument"
+   },
+   "image_capture_failed": {
+      "message": "Beim Erfassen des Bilds ist ein Fehler aufgetreten."
+   },
+   "image_capture_failed_reason": {
+      "message": "Beim Erfassen des Bilds ist ein Fehler aufgetreten. ($1)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "image_default_filename": {
+      "message": "Unbenanntes Bild"
+   },
+   "invalid_url": {
+      "message": "Invalid URL: $1. Downloaded URLs must start with http://, https://, or file://.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "mhtml_default_filename": {
+      "message": "Unbenannte Webseite.mht"
+   },
+   "misc": {
+      "message": "Sonstiges"
+   },
+   "oauth_title": {
+      "message": "Weiterleitung zur Anmeldung bei Google"
+   },
+   "options_header_text": {
+      "message": "Erweiterungsoptionen f\u00FCr In Google Drive speichern"
+   },
+   "options_title": {
+      "message": "Optionen f\u00FCr In Google Drive speichern"
+   },
+   "page_size_not_supported": {
+      "message": "Die Seitengr\u00F6\u00DFe wird nicht unterst\u00FCtzt: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "pdf_default_filename": {
+      "message": "Unbenanntes PDF-Dokument"
+   },
+   "percent": {
+      "message": "$1 % abgeschlossen",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "privacy": {
+      "message": "Datenschutz"
+   },
+   "redirecting": {
+      "message": "Weiterleitung..."
+   },
+   "rename": {
+      "message": "Umbenennen"
+   },
+   "rename_prompt": {
+      "message": "Umbenennen:"
+   },
+   "save_as_html": {
+      "message": "HTML-Quelle (.html)"
+   },
+   "save_as_htmldoc": {
+      "message": "Google-Dokument"
+   },
+   "save_as_image_entire": {
+      "message": "Bild der gesamten Seite (.png)"
+   },
+   "save_as_image_visible": {
+      "message": "Bild der sichtbaren Seite (.png)"
+   },
+   "save_as_mhtml": {
+      "message": "Webarchiv (.mht)"
+   },
+   "save_audio": {
+      "message": "Audiodaten in Google Drive speichern"
+   },
+   "save_image": {
+      "message": "Bild in Google Drive speichern"
+   },
+   "save_link": {
+      "message": "Link in Google Drive speichern"
+   },
+   "save_page_as": {
+      "message": "Seite speichern als:"
+   },
+   "save_to_google_drive_action": {
+      "message": "In Google Drive speichern"
+   },
+   "save_video": {
+      "message": "Video in Google Drive speichern"
+   },
+   "saving": {
+      "message": "$1 wird in Google Drive gespeichert ...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "send_feedback": {
+      "message": "Feedback geben"
+   },
+   "sign_out": {
+      "message": "Abmelden"
+   },
+   "start_download_exception": {
+      "message": "Fehler beim Starten des Downloads: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "text_default_filename": {
+      "message": "Unbenanntes Textdokument"
+   },
+   "trash": {
+      "message": "In den Papierkorb"
+   },
+   "unspecified_error": {
+      "message": "Unbekannter Fehler"
+   },
+   "upload_canceled": {
+      "message": "Upload abgebrochen"
+   },
+   "upload_failure": {
+      "message": "Fehler beim Upload: $1.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "uploading": {
+      "message": "$1 wird in Google Drive hochgeladen...",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action": {
+      "message": "\u003Ca href=\"$1\" target=\"_blank\"\u003E\u00D6ffnen Sie den Link\u003C/a\u003E und speichern Sie die Seite mit der Schaltfl\u00E4che \"In Google Drive speichern\" rechts neben der Adressleiste.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "use_browser_action_title": {
+      "message": "Dies ist ein Link zu einer Webseite"
+   },
+   "user_info_failure": {
+      "message": "Fehler beim Zugriff auf Nutzerinformationen"
+   },
+   "video_default_filename": {
+      "message": "Unbenanntes Video"
+   },
+   "xml_default_filename": {
+      "message": "Unbenanntes XML-Dokument"
+   }
+}

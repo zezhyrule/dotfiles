@@ -1,0 +1,55 @@
+/* Charles D */
+/* 2013-03-18 */
+/* takes inputted number and determines if it's a leapyear or not */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+#define START_OF_GREG_CALENDAR 1582
+
+int main (int argc, const char *argv[])
+{
+
+    int year;
+
+
+    /* printf("Please enter a year, and I will determine if it's a leap year: "); */
+    printf("please enter the year you are interested in\n");
+
+    scanf("%d", &year);
+
+    /* only accurate if year is past 1582, which was when the gregorian calendar started */
+    assert (year >= START_OF_GREG_CALENDAR);
+
+    if ((year % 4) == 0)
+    {
+	if (year % 100 == 0)
+	{
+	    if (year % 400 == 0)
+	    {
+		/* printf("Your number is a leap year! Nice choice.\n"); */
+		printf("<year> is a leap year!\n");
+	    }
+	    else
+	    {
+		/* printf ("Sorry, that year is not a leap year.\n"); */
+		printf ("<year> is not a leap year!\n");
+	    }
+	}
+	else
+	{
+	    /* printf ("That year is indeed a leap year.\n"); */
+	    printf("<year> is a leap year!\n");
+	}
+    }
+    else
+    {
+	/* printf("The number you have entered is not a leap year.\n"); */
+	printf ("<year> is not a leap year!\n");
+    }
+
+
+
+    return EXIT_SUCCESS;
+}

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Pocket Chrome Extension Options</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/options.css">
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/safari-content.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shared.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/options-page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="header">
+				<img width="283" height="52" src="../img/Pocket-Chrome-OptionsLogo@2x.png">
+			</div>
+			<div id="content-inner-container">
+				<h2>OPTIONS</h2>
+				<div class="section-wrapper">
+					<h3>Logged in as: </h3>
+					<ul class="section-item-list">
+						<li><span id="username-field"></span> <span id="logout-link-wrapper">(<a id="logout-link" href='#'>logout</a>)</span><span id="login-link-wrapper"><a id="login-link" href="#">Click here to log in</a></span></li>
+					</ul>
+				</div>
+				<div class="section-wrapper" id="ril-keyboard-shortcut">
+					<h3>Keyboard Shortcut:</h3>
+					<ul class="section-item-list">
+						<li><input id="keyboard-shortcut-checkbox" type="checkbox" class="checkbox" /><label for="keyboard-shortcut-checkbox">Enabled</label></li>
+						<li><input id="keyboard-shortcut-text" type="text" class="text" placeholder="alt+b"/></li>
+						<li class="shortcut-info"></li>
+					</ul>
+				</div>
+				<div class="section-wrapper" id="ril-integrations">
+					<h3>Quick save services:</h3>
+					<ul class="section-item-list">
+						<li><input id="twitter-checkbox" type="checkbox" class="checkbox" /><label for="twitter-checkbox">Twitter</label></li>
+						<li><input id="yahoo-checkbox" type="checkbox" class="checkbox" /><label for="yahoo-checkbox">Yahoo!</label></li>
+						<li><input id="greader-checkbox" type="checkbox" class="checkbox" /><label for="greader-checkbox">Google Reader</label></li>
+						<li><input id="hackernews-checkbox" type="checkbox" class="checkbox" /><label for="hackernews-checkbox">Hacker News</label></li>
+						<li><input id="reddit-checkbox" type="checkbox" class="checkbox" /><label for="reddit-checkbox">Reddit</label></li>
+						<!--<li><input id="linkedin-checkbox" type="checkbox" class="checkbox" /><label for="linkedin-checkbox">Linkedin</label></li>-->
+						<li class="services-info">When enabled, you can add directly to Pocket any items from these services <a href="http://help.getpocket.com/customer/portal/articles/485889">(learn more)</a>.</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+
+		    	<div id="ril-topics-links-mac" class="ril-topic-footer block">
+    				<h3>More ways to use Pocket:</h3>
+					<ul id="ril-topics">
+					    <li class="ril-web"><a target="_blank" href="http://getpocket.com/a/">Web App</a></li>
+						<li class="ril-iphone-ipad"><a target="_blank" href="http://getpocket.com/ios/">iPhone / iPad</a></li>
+					    <li class="ril-mac"><a target="_blank" href="http://getpocket.com/mac/">Mac</a></li>
+					    <li class="ril-android"><a target="_blank" href="http://getpocket.com/android/">Android</a></li>
+					</ul>
+				</div>
+
+				<div id="ril-topics-links-win" class="ril-topic-footer block">
+    				<h3>More ways to use Pocket:</h3>
+					<ul id="ril-topics">
+					    <li class="ril-web"><a target="_blank" href="http://getpocket.com/a/">Web App</a></li>
+						<li class="ril-iphone"><a target="_blank" href="http://getpocket.com/iphone/">iPhone</a></li>
+					    <li class="ril-ipad"><a target="_blank" href="http://getpocket.com/iphone/">iPad</a></li>
+					    <li class="ril-android"><a target="_blank" href="http://getpocket.com/android/">Android</a></li>
+					</ul>
+				</div>
+
+				<div class="section-wrapper" id="ril-support">
+					<h3>Questions about Pocket?</h3>
+					<ul class="section-item-list ril-support-text">
+						<li><a href="#" id="search-support-link">Search support</a>, <a href="#" id="send-us-an-email-link">send us an email</a> or </br><a href="#" id="get-in-touch-on-twitter-link">get in touch on Twitter</a>.</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">&copy; Copyright 2013 Read It Later Inc.</div>
+	</body>
+</html>

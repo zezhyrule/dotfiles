@@ -15,7 +15,7 @@ vim()
     stty "$STTYOPTS"
 }
 
-# colored man pages!
+# colored  man pages!
 man() {
 	env \
 		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
@@ -28,6 +28,10 @@ man() {
 			man "$@"
 }
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 # PS1='\u \w > '
 PS1='\[\e[m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[35m\]> \[\e[0m\]'
 
@@ -38,15 +42,16 @@ alias ..='cd ..'
 alias vim="stty stop '' -ixoff ; vim"
 alias svim='sudo vim'
 alias vimrc='$EDITOR $HOME/.vimrc'
+alias bashrc='$EDITOR $HOME/.bashrc'
 alias wifi='sudo wifi-menu'
 alias ls='ls --color=auto'
 alias ll="ls -lh"
 alias la="ls -a"
-# alias pacman='pacman-color'
-alias pacs='sudo pacman -S'
-alias pacf='pacman -Ss'
-alias pacup='sudo pacman -Syu'
-alias pacr='sudo pacman -Rns'
+alias pacman='pacman-color'
+alias pacs='sudo pacman-color -S'
+alias pacf='pacman-color -Ss'
+alias pacup='sudo pacman-color -Syu'
+alias pacr='sudo pacman-color -Rns'
 alias pak='sudo packer -S'
 alias pakup='sudo packer -Syu'
 alias pakf='packer -Ss'

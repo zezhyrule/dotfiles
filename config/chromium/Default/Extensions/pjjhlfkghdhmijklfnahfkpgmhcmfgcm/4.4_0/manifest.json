@@ -1,0 +1,32 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.google.com/reader/"
+      },
+      "urls": [ "http://www.google.com/reader" ]
+   },
+   "description": "Google Reader: keeping up with your favorite websites is as easy as checking your email.",
+   "icons": {
+      "128": "128.png",
+      "24": "24.png",
+      "48": "48.png"
+   },
+   "intents": {
+      "http://webintents.org/subscribe": [ {
+         "href": "http://www.google.com/reader/view/",
+         "title": "Google Reader",
+         "type": [ "application/atom+xml", "application/rss+xml", "text/uri-list" ]
+      } ],
+      "http://webintents.org/view": [ {
+         "href": "http://www.google.com/reader/view/",
+         "title": "Google Reader",
+         "type": [ "application/atom+xml", "application/rss+xml" ]
+      } ]
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOlJkq9z6mQlIVY1cDDBHjlc12Z2dsLMTm05zpAYp01X2Db44ErRpJkItIMbxgPBiRQTUWcc+NYfkE/mVlV9DG7pw8yTSWAsNwTz3KapOPwvmkKlZ3UtKdK5NvrK+10QMDJYYG+FaVThNSvUas3fhpKEqSEflsfFEXcoXjgI23EwIDAQAB",
+   "manifest_version": 2,
+   "name": "Google Reader",
+   "options_page": "http://www.google.com/reader/settings",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "4.4"
+}

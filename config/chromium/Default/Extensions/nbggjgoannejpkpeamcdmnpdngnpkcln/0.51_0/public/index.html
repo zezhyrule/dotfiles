@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pomodoro Daisuki</title>
+
+    <link rel="shortcut icon" href="images/tomato_16.png" type="image/png"/>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <script src="javascripts/vendor.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/initialize.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <img class="brand-image" src="images/tomato_32.png" alt="tomato">
+            <a class="brand" href="#">Pomodoro Daisuki</a>
+
+            <div class="action-container">
+                <span id="actions">
+                    <a href="#working">
+                        <button id="start-pomodoro" class="btn btn-primary">Start Pomodoro</button>
+                    </a>
+                    <a href="#resting/short">
+                        <button id="take-a-short-break" class="btn btn-success">Take a short break</button>
+                    </a>
+                    <a href="#resting/long">
+                        <button id="take-a-long-break" class="btn btn-success">Take a long break</button>
+                    </a>
+                </span>
+                <span style="margin-left: 5px">
+                    <a href="#stats">
+                        <button class="btn">Show stats</button>
+                    </a>
+                </span>
+                <span id="small-timer-container" style="margin-left: 5px">
+                    <a href="#small-timer">
+                        <button id="small-timer" class="btn btn-success">Timer</button>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /navbar -->
+
+<!-- main -->
+<div id ="main"></div>
+<!-- /main -->
+
+<!-- modal -->
+<div id="timer-modal" class="modal hide fade"></div>
+<div id="stats-modal" class="modal hide fade"></div>
+<!-- modal -->
+
+
+</body>
+</html>

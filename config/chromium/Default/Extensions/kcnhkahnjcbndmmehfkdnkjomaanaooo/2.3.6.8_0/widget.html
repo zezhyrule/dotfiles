@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<style>
+body {
+  background: transparent !important;
+}
+</style>
+<script src="voice.js" type="text/javascript"></script>
+<link href="css-deps.css" media="screen" rel="Stylesheet" type="text/css"/>
+<link href="widget.css" media="screen" rel="Stylesheet" type="text/css"/>
+<script>
+var callWidget;
+function showWidget() {
+  if (callWidget) {
+    callWidget.reloadWidget();
+  } else {
+    callWidget = new CallWidget('widget');
+  }
+}
+</script>
+</head>
+<body onload="showWidget()" onhashchange="showWidget()">
+<div id="widget" style="height: 1px; width: 1px"></div>
+</body>
+</html>

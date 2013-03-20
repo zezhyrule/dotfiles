@@ -1,0 +1,75 @@
+# Conky, a system monitor, based on torsmo
+#
+# Any original torsmo code is licensed under the BSD license
+#
+# All code written since the fork of torsmo is licensed under the GPL
+#
+# Please see COPYING for details
+#
+# Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+# Copyright (c) 2005-2010 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+# All rights reserved.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+background yes
+cpu_avg_samples 5
+net_avg_samples 5
+out_to_console no
+own_window_transparent yes
+own_window_argb_visual true
+own_window_argb_value 0
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+use_xft yes
+xftfont Dina:size=8
+xftalpha 0.8
+update_interval 2
+own_window yes
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+stippled_borders no
+border_width 1
+default_color white
+default_shade_color black
+default_outline_color white
+alignment top_middle
+gap_x 0
+gap_y 250
+maximum_width 500
+use_spacer yes
+no_buffers yes
+uppercase no
+# stuff after 'TEXT' will be formatted on screen
+TEXT
+${color 1e90ff}               +                ${color 1e90ff}OS: ${color lightgrey}Arch Linux ${exec uname -m}
+${color 1e90ff}               \#                ${color 1e90ff}Hostname: ${color lightgrey}$nodename
+${color 1e90ff}              \#\#\#               ${color 1e90ff}Uptime: ${color lightgrey}$uptime
+${color 1e90ff}             \#\#\#\#\#              ${color 1e90ff}Kernel: ${color lightgrey}$kernel
+${color 1e90ff}             \#\#\#\#\#\#             ${color 1e90ff}Shell: ${color lightgrey}${exec echo $SHELL}
+${color 1e90ff}            ; \#\#\#\#\#;            ${color 1e90ff}Packages: ${color lightgrey}${exec ls /var/lib/pacman/local/ | wc -l }
+${color 1e90ff}           +\#\#.\#\#\#\#\#            ${color 1e90ff}${exec ~/.conky/wmorde.sh xxx}: ${color lightgrey}${exec ~/.conky/wmorde.sh}
+${color 1e90ff}          +\#\#\#\#\#\#\#\#\#\#           ${color 1e90ff}CPU: ${color lightgrey}${exec cat /proc/cpuinfo | grep "model name" | head -n 1 | sed 's/^.*: //g' | sed 's/  //g' | sed 's/\@.*$//g'}
+${color 1e90ff}         \#\#\#\#\#\#${color 4682b4}\#\#\#\#\#${color 1e90ff}\#\#;         ${color 1e90ff}CPU Usage: ${color lightgrey}${cpu}%
+${color 1e90ff}        \#\#\#${color 4682b4}\#\#\#\#\#\#\#\#\#\#\#\#${color 1e90ff}+        ${color 1e90ff}RAM: ${color lightgrey}$mem / $memmax $membar
+${color 1e90ff}       \#${color 4682b4}\#\#\#\#\#\#   \#\#\#\#\#\#\#        ${color 1e90ff}Home: ${color lightgrey}${fs_used /home} / ${fs_size /home} ${fs_bar 6 /home}
+${color 4682b4}     .\#\#\#\#\#\#;     ;\#\#\#;`".      ${color 1e90ff}Root: ${color lightgrey}${fs_used /} / ${fs_size /} ${fs_bar 6 /}
+${color 4682b4}    .\#\#\#\#\#\#\#;     ;\#\#\#\#\#.       
+${color 4682b4}    \#\#\#\#\#\#\#\#\#.   .\#\#\#\#\#\#\#\#`     
+${color 4682b4}   \#\#\#\#\#\#'           '\#\#\#\#\#\#    
+${color 4682b4}  ;\#\#\#\#                 \#\#\#\#;   
+${color 4682b4}  \#\#'                     '\#\#   
+${color 4682b4} \#'                         `\#  

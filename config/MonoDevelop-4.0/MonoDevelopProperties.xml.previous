@@ -1,0 +1,53 @@
+﻿<MonoDevelopProperties version="2.0">
+  <Property key="MonoDevelop.Core.FirstRun" value="False" />
+  <Property key="MonoDevelop.EnableInstrumentation" value="False" />
+  <Property key="FontProperties" />
+  <Property key="MonoDevelop.Ide.UserInterfaceTheme" value="" />
+  <Property key="MonoDevelop.Ide.UserInterfaceLanguage" value="" />
+  <Property key="MonoDevelop.TextEditor.Document.Document.DefaultDocumentAggregatorProperties" />
+  <Property key="MonoDevelop.Ide.DefaultTargetRuntime" value="__current" />
+  <Property key="MonoDevelop.EnableAutomatedTesting" value="False" />
+  <Property key="MonoDevelop.Ide.WorkbenchCompactness" value="Normal" />
+  <Property key="FavoriteRecentFiles">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </Property>
+  <Property key="WelcomePage.UpdateFromInternet" value="True" />
+  <Property key="SharpDevelop.Workbench.WorkbenchMemento">
+    <Property key="bounds" value="50, 50, 1266, 618" />
+    <Property key="windowState" value="Maximized" />
+    <Property key="fullscreen" value="False" />
+    <Property key="toolbarStatus">
+      <DockToolbarFrameStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <version>2</version>
+        <layout id="" />
+        <layout id="Solution" />
+      </DockToolbarFrameStatus>
+    </Property>
+  </Property>
+  <Property key="ToolboxIsInCompactMode" value="False" />
+  <Property key="SharpDevelop.TaskList.ShowErrors" value="True" />
+  <Property key="SharpDevelop.TaskList.ShowWarnings" value="True" />
+  <Property key="SharpDevelop.TaskList.ShowMessages" value="True" />
+  <Property key="Monodevelop.ErrorListColumns" value="TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE" />
+  <Property key="SharpDevelop.TaskList.OutputViewVisible" value="False" />
+  <Property key="Monodevelop.UserTasksHighPrioColor" value="" />
+  <Property key="Monodevelop.UserTasksNormalPrioColor" value="" />
+  <Property key="Monodevelop.UserTasksLowPrioColor" value="" />
+  <Property key="Monodevelop.TaskList.ActiveView" value="MonoDevelop.Ide.Tasks.CommentTasksView" />
+  <Property key="Monodevelop.TaskListTokens" value="FIXME:2;TODO:1;HACK:1;UNDONE:0" />
+  <Property key="Monodevelop.CommentTasksColumns" value="TRUE;TRUE;TRUE;TRUE" />
+  <Property key="MonoDevelop.Ide.ExtensibleTreeView.Zoom.ProjectPad" value="1" />
+  <Property key="MonoDevelop.Ide.ExtensibleTreeView.Zoom.MonoDevelop.NUnit.TestPad" value="1" />
+  <Property key="MonoDevelop.Core.Gui.CurrentWorkbenchLayout" value="Solution" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.CheckForUpdates" value="True" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.LastCheck" value="03/11/2013 13:12:37" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.UpdateSpanUnit" value="Day" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.UpdateSpanValue" value="1" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.UpdateLevel" value="Stable" />
+  <Property key="MonoDevelop.Core.Gui.Dialog.TipOfTheDayView.ShowTipsAtStartup" value="False" />
+  <Property key="MonoDevelop.Core.LastRunVersion" value="5" />
+  <Property key="MonoDevelop.Core.LastRunRevision" value="0" />
+  <Property key="SharpDevelop.LoadPrevProjectOnStartup" value="False" />
+  <Property key="MonoDevelop.GtkCore.ShowNonContainerWarning" value="True" />
+  <Property key="MonoDevelop.Debugger.DebuggingService.EnginePriority" value="Mono.Debugger.Soft,Mono.Debugger.Soft.Custom,Mono.Debugger.Soft.AspNet" />
+</MonoDevelopProperties>

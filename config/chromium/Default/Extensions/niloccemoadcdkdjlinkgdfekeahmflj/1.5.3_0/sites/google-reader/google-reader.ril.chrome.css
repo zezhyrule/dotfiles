@@ -1,0 +1,7 @@
+.ril-icon  {  
+  background-image: url(chrome-extension://__MSG_@@extension_id__/sites/google-reader/greader_sprite.png) !important;
+}
+
+.ril-icon.updating { 
+  background-image: url(chrome-extension://__MSG_@@extension_id__/sites/google-reader/markempty16-loading.gif) !important;
+}  

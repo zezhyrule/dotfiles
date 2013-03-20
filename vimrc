@@ -36,10 +36,13 @@ inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap " ""<Esc>i
-inoremap < <><Esc>i
+" inoremap < <><Esc>i
 
 " toggle nerdtree with ctrl + n
-map <C-n> :NERDTreeToggle<CR> 
+map <F7> :NERDTreeToggle<CR> 
+
+" toggle tagbar with f8
+nmap <F8> :TagbarToggle<CR>
 
 set t_Co=256
 set bg=dark
@@ -92,10 +95,10 @@ cmap <S-Insert> 	<C-R>+
 inoremap <C-U> <C-G>u<C-U>
 
 " disable arrow keys in normal mode
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 
 " press space to center screen on cursor
 nmap <space> zz
@@ -105,6 +108,9 @@ nmap N Nzz
 
 " maps jj to escape key in insert mode
 imap jk <Esc>
+
+" hide search hl with ctrl + ,
+map <C-n> :nohl<CR>
 
 " toggle rnu with ctrl + h
 function! NumberToggle()
@@ -174,3 +180,8 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" lilypond compatibility
+filetype off
+set runtimepath+=/usr/local/share/lilypond/current/vim/
+filetype on

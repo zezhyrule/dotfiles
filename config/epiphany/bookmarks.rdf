@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ephy="http://gnome.org/ns/epiphany#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <channel rdf:about="file:///home/zezhyrule/.config/epiphany/bookmarks.rdf">
+    <title>Epiphany bookmarks</title>
+    <link>http://www.gnome.org/projects/epiphany/</link>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://www.google.com"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://www.google.com">
+    <title>Search the web</title>
+    <link>http://www.google.com</link>
+    <ephy:smartlink>http://www.google.com/search?q=%s&amp;ie=UTF-8&amp;oe=UTF-8</ephy:smartlink>
+  </item>
+</rdf:RDF>

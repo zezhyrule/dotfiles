@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://codenvy.com/"
+      },
+      "urls": [ "http://codenvy.com/" ]
+   },
+   "description": "Code better in the cloud",
+   "icons": {
+      "128": "icon128.png",
+      "32": "icon32.png",
+      "64": "icon64.png",
+      "96": "icon96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoTXA44SEIFWnukr9mdOZZNd43nrPY3QQjpP+k3mjqu39oUK9+nvhbk2f3S9OU6QocP89NoUkU6xKyKLY+trnQX6cHVTUPmfEppSIPK/czx6QPZ+d45UYC5N6qfoOGe26oAn8vq4FrfKcOHOarEJicCBU8CHtSVGVtSUb4gHP8pQIDAQAB",
+   "manifest_version": 2,
+   "name": "Codenvy IDE",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.4.0"
+}

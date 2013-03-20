@@ -1,0 +1,24 @@
+/* Charles Davis */
+/* 2013-03-16 */
+/* this is a test program to demo writing C */
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main (int argc, char* argv[]) {
+
+	int x;
+
+	x = 9001;
+
+	printf("Hello Julian wherever you are...\n");
+
+	printf("my fave number is %d \n", x);
+
+	if (x > 9000) {
+		print ("I like cheese\n");
+
+	}
+
+	return EXIT_SUCCESS;
+}

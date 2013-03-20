@@ -1,0 +1,24 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://github.com"
+      },
+      "web_content": {
+         "enabled": true,
+         "origin": "https://github.com"
+      }
+   },
+   "default_locale": "en",
+   "description": "A bookmark app for GitHub.",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmyHR0Mod7BNA1VNI8MCssij2mwFS8jWYfTbA5kGiCDmooZIjPs9j/j4Zpoz73HB023xT1M9hkNnVndZdg9cFVdqOxRXLPwhPbodMn73Zf2Ebrtu8CB2r1mAauhDm8rJhRbwyc+xcrF0y8t5lZ5m0CMrVBDXHpQmkGHqxJe2uPLQIDAQAB",
+   "manifest_version": 2,
+   "name": "GitHub",
+   "options_page": "https://github.com/settings/profile",
+   "permissions": [  ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1.7"
+}

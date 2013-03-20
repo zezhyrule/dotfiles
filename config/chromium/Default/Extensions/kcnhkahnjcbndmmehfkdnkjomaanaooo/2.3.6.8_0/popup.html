@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script src="gc_so.js" type="text/javascript"></script>
+<script src="voice.js" type="text/javascript"></script>
+<link href="css-deps.css" media="screen" rel="Stylesheet" type="text/css"/>
+<link href="voice.css" media="screen" rel="Stylesheet" type="text/css"/>
+<style>
+</style>
+</head>
+<body>
+<div id="gc-loading-site" class="gc-loading-2" style="display: none;">Loading...</div>
+<div id="gc-client" style="display: none;">
+  <div class="gc-client-desc">The Chrome extension only works with Google Voice accounts that use a Google Voice number or use voicemail.</div>
+  <div class="gc-client-link"><a id="gc-client-link" href="javascript://">Get a Google Voice Number &raquo;</a></div>
+</div>
+<div id="gc-popup-c" style="height: 170px;">
+
+<div>
+  <div style="float: left; width: 120px;">
+    <div><img title="Go to Google Voice" style="cursor: pointer; height: 28px;" id="gc-logo" src="voice_logo_sm.gif"/></div>
+  </div>
+  <div style="float: right;">
+    <div class="gc-tabs">
+      <div id="gc-tab-call" tabindex="10" class="goog-inline-block goog-button-base-collapse-right">Call</div><div id="gc-tab-sms" tabindex="11" id="Show unread messages" class="goog-inline-block goog-button goog-button-base goog-button-base-collapse-left goog-button-base-collapse-right">Text</div><div id="gc-tab-inbox" tabindex="12" id="Show unread messages" class="goog-inline-block goog-button goog-button-base goog-button-base-collapse-left">Inbox</div>
+    </div>
+    <div id="gc-number" title="Your Google Voice number"></div>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div id="gc-quickcall" class="gc-quickcall-contents" style="display: none;">
+  <form action="" name="quickcall" onsubmit="return false;">
+  <div class="gc-quickcall-outgoing">
+    <div class="gc-quickcall-h">Number to call</div>
+    <div>
+      <input tabindex="1" id="gc-quickcall-ac" value="" name="gc-quickcall-number" class="gc-text gc-quickcall-ac" autocomplete="off" type="text"/>
+    </div>
+  </div>
+  <div class="gc-quickcall-h" style="margin-top: 8px;">Phone to call with</div>
+  <div>
+    <div id="gc-quickcall-phone" class="goog-flat-menu-button gc-quickcall-phone" tabindex="2">
+      <div class="goog-menu gc-simple-menu gc-phone-menu" style="z-index: 10001;">
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 8px;">
+    <input type="submit" class="gc-quickcall-submit" style="display: none;"/>
+    <div tabindex="4" id="gc-quickcall-connect" class="goog-inline-block gc-quickcall-connect">Connect</div>
+    <div style="display: none;" id="gc-quickcall-cancel" class="goog-inline-block gc-quickcall-cancel">Hang up</div>
+    <div style="display: none;" id="gc-quickcall-msg" class="goog-inline-block gc-quickcall-msg"></div>
+  </div>
+  </form>
+</div>
+
+<div id="gc-quicksms" class="gc-quicksms" style="display: none;">
+  <div class="gc-quickcall-outgoing">
+    <div class="gc-quickcall-h">Number to text</div>
+    <div><input tabindex="5" value="" id="gc-quicksms-number" name="gc-quicksms-number" class="gc-text gc-quickcall-ac" type="text"/></div>
+  </div>
+  <div class="gc-quickcall-h" style="position: relative; width: 220px;">
+    Message
+    <div id="gc-quicksms-cnt" class="gc-sms-counter">160</div>
+  </div>
+  <div>
+    <textarea tabindex="6" id="gc-quicksms-text" class="gc-text gc-quicksms-text"></textarea>
+  </div>
+  <div class="gc-quicksms-ctrl">
+    <div id="gc-quicksms-send" tabindex="7" class="goog-inline-block gc-quicksms-send">Send</div>
+    <div style="display: none;" id="gc-quicksms-msg" class="goog-inline-block gc-quickcall-msg"></div>
+  </div>
+</div>
+
+<div id="gc-inbox" class="gc-inbox" style="display: none;">
+<div><div class="gc-loading">Loading...</div></div>
+</div>
+
+<div style="position: relative; padding: 2px 4px 6px 0;">
+  <div id="gc-status" class="gc-status" style="display: none;">Loading...</div>
+  <div class="gc-footer-r">
+    <a href="javascript:window.close()">Close</a> |
+    <a href="javascript:chrome.tabs.create({url:chrome.extension.getURL('/options.html')})">Options</a> |
+    <a id="gc-popout" href="javascript://"><img title="Popout extension" style="margin-bottom: -3px;" src="images/popout.png"/></a> |
+    <a id="gc-goto-inbox" href="javascript://">Go to inbox &raquo;</a>
+  </div>
+</div>
+
+</div>
+<script>
+var voicePopup = new VoicePopup();
+</script>
+</body>
+</html>

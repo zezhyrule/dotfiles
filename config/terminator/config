@@ -1,5 +1,6 @@
 [global_config]
   geometry_hinting = False
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   handle_size = 0
   focus = mouse
 [keybindings]

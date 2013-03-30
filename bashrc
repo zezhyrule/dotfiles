@@ -15,6 +15,10 @@ vim()
     stty "$STTYOPTS"
 }
 
+# use vi-style keybindings in shell
+# starts in insert mode, esc to leave
+set -o vi
+
 # colored  man pages!
 man() {
 	env \

@@ -3127,7 +3127,7 @@
             "clients4.google.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 32,
+                  "5": 20,
                   "6": 0
                },
                "supports_spdy": true
@@ -3204,7 +3204,9 @@
             },
             "id.google.com:443": {
                "settings": {
-                  "4": 100
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
                },
                "supports_spdy": true
             },
@@ -3499,7 +3501,9 @@
             },
             "p5-g4juwz5zzaaho-e3bggwcu64jk3h3z-100964-i1-v6exp3-ds.metric.gstatic.com:443": {
                "settings": {
-                  "4": 100
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
                },
                "supports_spdy": true
             },
@@ -3862,7 +3866,9 @@
             },
             "themes.googleusercontent.com:443": {
                "settings": {
-                  "4": 100
+                  "4": 100,
+                  "5": 15,
+                  "6": 2
                },
                "supports_spdy": true
             },
@@ -4067,7 +4073,7 @@
       "has_setup_completed": true,
       "keep_everything_synced": true,
       "keystore_encryption_bootstrap_token": "djEwg4fhE/+gsiPyM8WYlLhNG567c4P/JJrzATESlLj771w57KgkWBvGchOxjIzmM2Kj7u+tKi1mvS/XxJqW3COc6A1qMouQMiEzpwDVVFUSL9E=",
-      "last_synced_time": "13009151992482054",
+      "last_synced_time": "13009160408094615",
       "passwords": true,
       "preferences": true,
       "search_engines": true,

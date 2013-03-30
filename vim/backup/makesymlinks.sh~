@@ -8,7 +8,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc vimrc vim config"
+files="bashrc vimrc vim config minecraft scripts conkyrc"
 
 ######
 

@@ -71,8 +71,7 @@ inoremap <c-s> <c-o>:Update<CR>
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
-" :q and :Q will always quit all
-map :q :qa
+" accidentally entering capital q won't hurt anyone
 map :Q :q
 
 " CTRL-X and SHIFT-Del are Cut
@@ -109,8 +108,11 @@ nmap N Nzz
 " maps jj to escape key in insert mode
 imap jk <Esc>
 
+" esc won't move cursor left
+inoremap <Esc> <Esc>`^
+
 " hide search hl with ctrl + ,
-map <C-,> :nohl<CR>
+inoremap <C-n> :nohl<CR>
 
 " toggle rnu with ctrl + h
 function! NumberToggle()

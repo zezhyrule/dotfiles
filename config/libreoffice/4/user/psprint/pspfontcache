@@ -1,5 +1,5 @@
 LibreOffice PspFontCacheFile format 5
-FontCacheDirectory:1362860505:/usr/lib/libreoffice/share/fonts/truetype
+FontCacheDirectory:1364146129:/usr/lib/libreoffice/share/fonts/truetype
 File:opens___.ttf
 2;1
 OpenSymbol
@@ -203,30 +203,30 @@ File:verdanai.ttf
 Verdana
 0;Verdana-Italic;2;5;5;2;65535;1005;209;214;0;1591;1214;1591;1214;0;0;0;0;Italic
 
-File:PTS76F.ttf
-2;1
-PT Sans
-0;PTSans-BoldItalic;2;8;5;2;65535;1018;276;294;0;1468;1294;1468;1294;0;0;0;0;Bold Italic
-
 File:Monaco_Linux.ttf
 2;1
 Monaco_Linux
 0;Monaco;0;5;5;1;65535;1000;250;83;0;890;1250;890;1250;0;0;0;0;Regular
+
+File:PTS76F.ttf
+2;1
+PT Sans
+0;PTSans-BoldItalic;2;8;5;2;65535;1018;276;294;0;1468;1294;1468;1294;0;0;0;0;Bold Italic
 
 File:DroidSerif-Regular.ttf
 2;1
 Droid Serif
 0;DroidSerif;0;5;5;2;65535;928;235;163;0;1804;1163;1804;1163;0;0;0;8;Regular
 
-File:trebuc.ttf
-2;1
-Trebuchet MS
-0;TrebuchetMS;0;5;5;2;65535;938;222;160;0;1167;1160;1167;1160;0;0;0;8;Regular
-
 File:DroidNaskh-Regular.ttf
 2;1
 Droid Arabic Naskh
 0;DroidArabicNaskh;0;5;5;2;65535;1208;701;909;0;2205;1909;2205;1909;0;0;0;8;Regular
+
+File:trebuc.ttf
+2;1
+Trebuchet MS
+0;TrebuchetMS;0;5;5;2;65535;938;222;160;0;1167;1160;1167;1160;0;0;0;8;Regular
 
 File:courbi.ttf
 2;1
@@ -248,15 +248,15 @@ File:DroidSansArmenian.ttf
 Droid Sans Armenian
 0;DroidSansArmenian;0;5;5;2;65535;770;240;10;0;1406;1010;1406;1010;0;0;0;8;Regular
 
-File:LiberationSans-BoldItalic.ttf
-2;1
-Liberation Sans
-0;LiberationSans-BoldItalic;2;8;5;2;65535;905;211;116;0;1834;1116;1834;1116;0;0;0;0;Bold Italic
-
 File:LiberationSans-Regular.ttf
 2;1
 Liberation Sans
 0;LiberationSans;0;5;5;2;65535;905;211;116;0;1844;1116;1844;1116;0;0;0;0;Regular
+
+File:LiberationSans-BoldItalic.ttf
+2;1
+Liberation Sans
+0;LiberationSans-BoldItalic;2;8;5;2;65535;905;211;116;0;1834;1116;1834;1116;0;0;0;0;Bold Italic
 
 File:georgiab.ttf
 2;1
@@ -303,15 +303,15 @@ File:courbd.ttf
 Courier New
 0;CourierNewPS-BoldMT;0;8;5;1;65535;832;300;132;0;747;1132;747;1132;0;0;0;0;Bold
 
-File:LiberationSerif-Bold.ttf
-2;1
-Liberation Serif
-0;LiberationSerif-Bold;0;8;5;2;65535;891;216;107;0;1887;1107;1887;1107;0;0;0;0;Bold
-
 File:VeraMoIt.ttf
 2;1
 Bitstream Vera Sans Mono
 0;BitstreamVeraSansMono-Oblique;1;5;5;1;65535;928;235;163;0;760;1163;760;1163;0;0;0;4;Oblique
+
+File:LiberationSerif-Bold.ttf
+2;1
+Liberation Serif
+0;LiberationSerif-Bold;0;8;5;2;65535;891;216;107;0;1887;1107;1887;1107;0;0;0;0;Bold
 
 File:trebucit.ttf
 2;1
@@ -338,11 +338,6 @@ File:DejaVuSansMono-BoldOblique.ttf
 DejaVu Sans Mono
 0;DejaVuSansMono-BoldOblique;1;8;5;1;65535;928;235;163;0;1232;1163;1232;1163;0;0;0;0;Bold Oblique
 
-File:LiberationSerif-BoldItalic.ttf
-2;1
-Liberation Serif
-0;LiberationSerif-BoldItalic;2;8;5;2;65535;891;216;107;0;1850;1107;1850;1107;0;0;0;0;Bold Italic
-
 File:DejaVuSansCondensed-Bold.ttf
 2;1
 DejaVu Sans Condensed
@@ -357,6 +352,11 @@ File:DejaVuSans-Bold.ttf
 2;1
 DejaVu Sans
 0;DejaVuSans-Bold;0;8;5;2;65535;928;235;163;0;3044;1163;3044;1163;0;0;0;0;Bold
+
+File:LiberationSerif-BoldItalic.ttf
+2;1
+Liberation Serif
+0;LiberationSerif-BoldItalic;2;8;5;2;65535;891;216;107;0;1850;1107;1850;1107;0;0;0;0;Bold Italic
 
 File:VeraSeBd.ttf
 2;1

@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Diagrammen online"
+   },
+   "appLongDesc": {
+      "message": "draw.io is een volledig gratis Google Drive(TM) enabled diagrammen applicatie waarmee u het volgende kunt tekenen:\n\n- Stroomschema's\n- UML\n- ERD\n- Netwerk diagrammen\n- Bedrijfsproces modellen\n- Organogrammen\n- Elektronische circuits\n- Wireframing en testmodellen\n\nKenmerken:\n- Systeemeigen HTML 5 client met volledige IE 6-8 support.\n- Grote ingebouwde stencil bibliotheek\n- Intu\u00EFtieve drag and drop interface\n- Afbeeldingen zoeken en functionaliteiten toevoegen\n- Exporteren naar PNG/JPG/XML/SVG/PDF\n- Ondersteuning van Touch-apparatuur\n- Volledige broncode bij github - https://github.com/jgraph/draw.io.\n- Realtime samenwerking\n- Embed diagrammen in blogs of wiki's"
+   },
+   "appName": {
+      "message": "draw.io (Diagramly)"
+   }
+}

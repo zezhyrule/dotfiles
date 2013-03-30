@@ -17,4 +17,5 @@
   <property name="misc-single-click-timeout" type="uint" value="529"/>
   <property name="misc-middle-click-in-tab" type="bool" value="true"/>
   <property name="last-menubar-visible" type="bool" value="true"/>
+  <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
 </channel>

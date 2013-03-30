@@ -40,7 +40,7 @@ p16
 I1
 asS'filename'
 p18
-S'archlinux-hf-2013-02-11.zip.torrent'
+S'openSUSE-12.3-DVD-x86_64.iso.torrent'
 p19
 sS'max_upload_speed'
 p20
@@ -51,13 +51,13 @@ S'/home/zezhyrule/Downloads'
 p22
 sS'time_added'
 p23
-F1362863137.181143
+F1363804975.668062
 sS'total_uploaded'
 p24
-L37983L
+L81913340L
 sS'torrent_id'
 p25
-S'b3c8c1501f78d28522a0945536d1639db9e30574'
+S'979f5dd2a08a3d5a15e5e76cac43b27936fc365d'
 p26
 sS'auto_managed'
 p27
@@ -83,7 +83,7 @@ p35
 I00
 sS'url'
 p36
-S'http://downloads.raspberrypi.org:6969/announce'
+S'http://tracker.opensuse.org:6969/announce'
 p37
 sS'fail_limit'
 p38

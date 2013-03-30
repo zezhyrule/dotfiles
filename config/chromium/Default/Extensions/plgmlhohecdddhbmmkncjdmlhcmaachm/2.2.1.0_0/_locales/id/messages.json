@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Diagram Online"
+   },
+   "appLongDesc": {
+      "message": "draw.io adalah aplikasi diagram aktif Google Drive (TM) gratis yang memungkinkan anda untuk menggambar.\n\n- Diagram Alir\n- UML\n- ERD\n- Diagram Jaringan\n- Model Proses Bisnis\n- Bagan Organisasi\n- Sirkuit Elektronik\n- Wireframe dan mockup\n\nFitur-fitur:\n- HTML 5 native dengan dukungan penuh untuk IE 6-8\n- Kaya pustaka stensil bawaan\n- Antarmuka seret dan lepas yang intuitif\n- Fungsi tambah dan cari gambar\n- Ekspor ke PNG/JPG/XML/SVG\n- Dukungan perangkat sentuh\n- Source code penuh di github - https://github.com/jgraph/draw.io.\n- Kolaborasi real-time\n- Pelekatan diagram di blog atau wiki"
+   },
+   "appName": {
+      "message": "draw.io (Diagramly)"
+   }
+}

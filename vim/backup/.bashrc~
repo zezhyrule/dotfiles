@@ -28,6 +28,10 @@ man() {
 			man "$@"
 }
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 # PS1='\u \w > '
 PS1='\[\e[m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[35m\]> \[\e[0m\]'
 
@@ -38,6 +42,7 @@ alias ..='cd ..'
 alias vim="stty stop '' -ixoff ; vim"
 alias svim='sudo vim'
 alias vimrc='$EDITOR $HOME/.vimrc'
+alias bashrc='$EDITOR $HOME/.bashrc'
 alias wifi='sudo wifi-menu'
 alias ls='ls --color=auto'
 alias ll="ls -lh"
@@ -50,6 +55,7 @@ alias pacr='sudo pacman-color -Rns'
 alias pak='sudo packer -S'
 alias pakup='sudo packer -Syu'
 alias pakf='packer -Ss'
+alias minecraftd='sudo screen -r minecraft'
 alias awrc='$EDITOR $HOME/.config/awesome/rc.lua'
 alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
 alias tmux='tmux -2uv'

@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Diagrammes en ligne"
+   },
+   "appLongDesc": {
+      "message": "draw.io est une application cr\u00E9ation de diagrammes compatible avec Google Drive(TM) et enti\u00E8rement gratuite vous permettant de dessiner :\n\n- Des organigrammes\n- Des diagramme UML\n- Des diagramme ERD\n- Des sch\u00E9mas r\u00E9seaux\n- Business Process Models\n- Org Charts\n- Des circuits \u00E9l\u00E9ctroniques\n- Maquetage d'interface\n\nFonctionnalit\u00E9es\n- Client HTML5 natif avec support d'IE 6-8\n- Large biblioth\u00E8que d'icones\n- Interface intuitive en glisser-deposer\n- Recherche d'image et ajout dans le diagramme\n- Export en PNG/JPG/XML/SVG\n- Support des interfaces tactiles\n- Code source disponible sur github - https://github.com/jgraph/draw.io\n- Edition collaborative en temps r\u00E9el\n- Int\u00E9gration des diagrammes dans les blogs et les wikis"
+   },
+   "appName": {
+      "message": "draw.io (Diagramly)"
+   }
+}

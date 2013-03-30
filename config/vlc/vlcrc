@@ -3418,7 +3418,7 @@ qt-privacy-ask=0
 #audio=1
 
 # Default audio volume (integer)
-#volume=256
+volume=225
 
 # Audio output volume step (integer)
 #volume-step=32

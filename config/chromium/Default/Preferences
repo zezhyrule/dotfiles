@@ -27,11 +27,11 @@
       "pepper_flash_settings_enabled": false,
       "show_home_button": true,
       "window_placement": {
-         "bottom": 766,
+         "bottom": 540,
          "left": 0,
          "maximized": false,
          "right": 1364,
-         "top": 506,
+         "top": 16,
          "work_area_bottom": 768,
          "work_area_left": 0,
          "work_area_right": 1366,
@@ -62,6 +62,7 @@
       "keyword": "google.com",
       "name": "Google",
       "prepopulate_id": "1",
+      "search_terms_replacement_key": "espv",
       "search_url": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:acceptedSuggestion}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}",
       "suggest_url": "{google:baseSuggestURL}search?{google:searchFieldtrialParameter}client=chrome&q={searchTerms}&{google:cursorPosition}sugkey={google:suggestAPIKeyParameter}",
       "synced_guid": "991CCEFC-8B82-080E-618E-155A246BAE99"
@@ -76,17 +77,17 @@
    "enable_do_not_track": false,
    "extensions": {
       "autoupdate": {
-         "last_check": "13008266907992364",
-         "next_check": "13008285647812807"
+         "last_check": "13009143526478508",
+         "next_check": "13009161379914565"
       },
       "blacklistupdate": {
-         "lastpingday": "13008236405429111",
-         "version": "0.0.0.141"
+         "lastpingday": "13009100408584027",
+         "version": "0.0.0.143"
       },
       "chrome_url_overrides": {
          "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
       },
-      "last_chrome_version": "25.0.1364.172",
+      "last_chrome_version": "26.0.1410.43",
       "settings": {
          "aakhlmakppmkkmfkoibponkmmpgpmjgl": {
             "blacklist": true
@@ -98,6 +99,12 @@
             "blacklist": true
          },
          "abfclfmhaemoockhhinpplncjehfpdbd": {
+            "blacklist": true
+         },
+         "abidmaanmbfeddegmapgpjhdmgjaloen": {
+            "blacklist": true
+         },
+         "acchaoeabgiclhngknbkegekbfphgndl": {
             "blacklist": true
          },
          "acmpfcamncegnhjdeiodgilikjafcamg": {
@@ -173,6 +180,9 @@
          "ajlkjjdbgcjdiklbcomhnfghjigfccoh": {
             "blacklist": true
          },
+         "ajneiojjdhceikkgmhnjhgaacpfhldpi": {
+            "blacklist": true
+         },
          "akadaakimgegecohlifeejdnnjbnobop": {
             "blacklist": true
          },
@@ -206,6 +216,9 @@
          "aojicjocmihiopalnhjikigammkhgckb": {
             "blacklist": true
          },
+         "aokenbhllkgpooaacldiamnpmmgkjblo": {
+            "blacklist": true
+         },
          "apdebchnkegjokdjplmfmepcdgneemhe": {
             "blacklist": true
          },
@@ -221,7 +234,7 @@
                "api": [ "background", "clipboardRead", "clipboardWrite", "notifications", "unlimitedStorage" ]
             },
             "install_time": "13007057689334061",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -260,6 +273,9 @@
             "blacklist": true
          },
          "bandboadndbkchlpicmfkpoedgnocblf": {
+            "blacklist": true
+         },
+         "bccdgfmbcjkfkinkkagaflgdaoaamogo": {
             "blacklist": true
          },
          "bcddmcejgphfgofbpoocakaeapfomlek": {
@@ -318,7 +334,7 @@
             },
             "install_time": "13007057692464428",
             "last_active_pingday": "13007116797590812",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -348,6 +364,9 @@
             "state": 1,
             "was_installed_by_default": false
          },
+         "bmjhmeeepkkbmjdajachipfgihmpokpd": {
+            "blacklist": true
+         },
          "bndahdijlcnncjbpammoedeapmlobllc": {
             "blacklist": true
          },
@@ -361,6 +380,12 @@
             "blacklist": true
          },
          "bokkificjhapflinbdejegngffgkcgfe": {
+            "blacklist": true
+         },
+         "bpfadpmhabiajakhgnaipdplkcjaklnj": {
+            "blacklist": true
+         },
+         "canhmdgddepdjikkjhpmhcfdkkjdbppi": {
             "blacklist": true
          },
          "caphkimknlmnhpjoneddiaakmcaajagb": {
@@ -405,6 +430,9 @@
          "cgnkbnaiipmfbakpmhllalggoepniemh": {
             "blacklist": true
          },
+         "chhniecmnighakmlnhkifeogjddhoajn": {
+            "blacklist": true
+         },
          "cidnoinjdbalndcidafahfnoeehfblfl": {
             "blacklist": true
          },
@@ -430,7 +458,7 @@
                "scriptable_host": [ "http://*/*", "https://*/*" ]
             },
             "install_time": "13007057689996888",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background_page": "background.html",
@@ -524,7 +552,7 @@
                "scriptable_host": [ "\u003Call_urls\u003E" ]
             },
             "install_time": "13007057690386857",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background": {
@@ -568,13 +596,16 @@
          "dcfefnkefopibnlcjhjcfegckhanekld": {
             "blacklist": true
          },
+         "dcpjokbfgfnbaekphjgehhjaokkcifbj": {
+            "blacklist": true
+         },
          "deceagebecbceejblnlcjooeohmmeldh": {
             "app_launcher_ordinal": "zm",
             "creation_flags": 9,
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13008113816279900",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -611,6 +642,9 @@
          "dfafokiagoiocidlpglcanjkcdbdnioi": {
             "blacklist": true
          },
+         "dfjhgoeofgmepmcngkhnaiphbhdbonhp": {
+            "blacklist": true
+         },
          "dfoegfajplmijblljfancdapbdaopebb": {
             "blacklist": true
          },
@@ -624,6 +658,12 @@
             "blacklist": true
          },
          "dhclobcklknojliojkkclgjndemadnig": {
+            "blacklist": true
+         },
+         "dhdepfaagokllfmhfbcfmocaeigmoebo": {
+            "blacklist": true
+         },
+         "dhmghpedmigfknfpolfmkihcaeiccjgf": {
             "blacklist": true
          },
          "dibljdngacjhpccjckmlmeklpgjeinjd": {
@@ -650,6 +690,9 @@
          "dlobhinihbmedmheccecfnkcadpehmbf": {
             "blacklist": true
          },
+         "dlopielgodpjhkbapdlbbicpiefpaack": {
+            "blacklist": true
+         },
          "dmabikjmolgegjajdhmgpmgffajlmmkb": {
             "blacklist": true
          },
@@ -669,6 +712,9 @@
             "blacklist": true
          },
          "dpaphgcjeeochbiafgbochohgmpcmlbj": {
+            "blacklist": true
+         },
+         "dpfanoongnoofcdhgijjdjmbnfekdejj": {
             "blacklist": true
          },
          "dpgenihgggagjjggfocjceeobjkadcbc": {
@@ -697,7 +743,7 @@
          },
          "eemcgdkfndhakfknompkggombfjjjeno": {
             "active_permissions": {
-               "api": [ "bookmarks", "bookmarkManagerPrivate", "systemPrivate", "tabs" ],
+               "api": [ "bookmarks", "bookmarkManagerPrivate", "metricsPrivate", "systemPrivate", "tabs" ],
                "explicit_host": [ "chrome://favicon/*", "chrome://resources/*" ]
             },
             "creation_flags": 1,
@@ -724,10 +770,16 @@
          "efbeabpbbkahnnjalakldjfhljboclkf": {
             "blacklist": true
          },
+         "efcnjdcimjmggfdkahncpoikhehcfgnh": {
+            "blacklist": true
+         },
          "efhjelcghjkfigiagdfbfilndaffpmdj": {
             "blacklist": true
          },
          "efnaljpgehfilpmkhobibbjceeeondmn": {
+            "blacklist": true
+         },
+         "efonemhbokfedckpfpohpmcamfihnnlm": {
             "blacklist": true
          },
          "egljdhfnbjahogjahnigfnbpidlmdagi": {
@@ -762,7 +814,7 @@
                "explicit_host": [ "https://*/*" ]
             },
             "install_time": "13007057693681017",
-            "lastpingday": "13008236405699041",
+            "lastpingday": "13009100408763515",
             "location": 1,
             "manifest": {
                "background": {
@@ -800,6 +852,9 @@
          "eijbdinddjecmebnlienfoijpjjobkjh": {
             "blacklist": true
          },
+         "einmhcleeonenkkldjlmhhcmgolhblhh": {
+            "blacklist": true
+         },
          "ejakhnjbomgngodiidgbkapjgbdckhnh": {
             "blacklist": true
          },
@@ -817,7 +872,7 @@
             },
             "install_time": "13007057688685642",
             "last_active_pingday": "13007545200760793",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -874,7 +929,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057689394986",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -918,6 +973,9 @@
          "fhlkffpjoajppmhcakbkjndbjfljccpi": {
             "blacklist": true
          },
+         "fhpclkemjlhmbfbjakbmdjihocinkmim": {
+            "blacklist": true
+         },
          "fiapkdjniadkodmdibdnchoifkpfoiid": {
             "blacklist": true
          },
@@ -951,7 +1009,7 @@
             },
             "incognito": true,
             "install_time": "13007057689538268",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "content_scripts": [ {
@@ -1005,6 +1063,9 @@
          "foenbafkkmajnmfnlcmejonkfaipdmme": {
             "blacklist": true
          },
+         "folhciaicehdnoalhbkbgkakfcockopc": {
+            "blacklist": true
+         },
          "fomljmklmcefndkgpakgifbiiidgbjej": {
             "blacklist": true
          },
@@ -1047,6 +1108,9 @@
          "gdggdkkjecogagaffaemnbfmllcoihjp": {
             "blacklist": true
          },
+         "gdlgbpbmiiagaikjbednkikinokbkbcb": {
+            "blacklist": true
+         },
          "geggofhlfbcmanadhknllmlajiafopoh": {
             "blacklist": true
          },
@@ -1057,9 +1121,6 @@
             "blacklist": true
          },
          "gfmmoiakbmdohkgeoekiokjgljcminig": {
-            "blacklist": true
-         },
-         "gfngfjfcpjomkalffgdamglddjaoiohn": {
             "blacklist": true
          },
          "ggkpicnfnljflddbdoeeaajjgepapcbf": {
@@ -1090,7 +1151,7 @@
             },
             "incognito": true,
             "install_time": "13007057691147532",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background": {
@@ -1150,6 +1211,9 @@
          "gjmhdmobkhfhkpfmfegnkkimlamjdldi": {
             "blacklist": true
          },
+         "gkcfodgjdcijjlliehfhgohlkemcbobl": {
+            "blacklist": true
+         },
          "gkhbgnodbilglgholifcjdblbgdaieah": {
             "blacklist": true
          },
@@ -1157,6 +1221,9 @@
             "blacklist": true
          },
          "gkjmgdpdndoaiholejnmdbbpdaafahmm": {
+            "blacklist": true
+         },
+         "gklphmokmaaepjgandocpneomjlidjag": {
             "blacklist": true
          },
          "glhhlafadlhkgbklgbjnmblfhnkfknbm": {
@@ -1176,7 +1243,7 @@
                "explicit_host": [ "\u003Call_urls\u003E" ]
             },
             "install_time": "13007988944089779",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background": {
@@ -1223,6 +1290,9 @@
          "gncfgndgeoddelbfhlndhljnecoednaa": {
             "blacklist": true
          },
+         "gngfmjidncdccdlfjcjbnngeaaclfgpl": {
+            "blacklist": true
+         },
          "gngmkbiihflpghldjnbpemaicedhdddk": {
             "blacklist": true
          },
@@ -1233,6 +1303,9 @@
             "blacklist": true
          },
          "gomkbnfeifchddfokcicibjnlgbolhol": {
+            "blacklist": true
+         },
+         "gompblemgafijijmlgbaepcijfgfgljf": {
             "blacklist": true
          },
          "gpdcodmabpgmncbkhpipakhehepmpopk": {
@@ -1346,6 +1419,9 @@
          "hpcdoodjfcmpcpkeendjnjkeinimhkih": {
             "blacklist": true
          },
+         "hphibigbodkkohoglgfkddblldpfohjl": {
+            "blacklist": true
+         },
          "hpibmhghjndideebpackbdlpncgkcppp": {
             "blacklist": true
          },
@@ -1364,7 +1440,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057688772323",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "api_console_project_id": "419782477519",
@@ -1449,6 +1525,9 @@
          "imkffpjpdngdkpgadcmnlkhhmhdocijn": {
             "blacklist": true
          },
+         "inbhlfpapeikbbgpfionabkigakepbbm": {
+            "blacklist": true
+         },
          "indfhnliadamglhalanplbajgenpjdml": {
             "blacklist": true
          },
@@ -1461,7 +1540,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007595780027387",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -1503,8 +1582,8 @@
                "explicit_host": [ "http://*/*", "https://*/*" ],
                "scriptable_host": [ "\u003Call_urls\u003E" ]
             },
-            "install_time": "13007057688525274",
-            "lastpingday": "13008236405583252",
+            "install_time": "13008793026754858",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background": {
@@ -1534,10 +1613,10 @@
                "options_page": "options/options.html",
                "permissions": [ "unlimitedStorage", "management", "contextMenus", "cookies", "tabs", "notifications", "http://*/*", "https://*/*" ],
                "update_url": "http://clients2.google.com/service/update2/crx",
-               "version": "8.3358.555.444",
+               "version": "8.3358.555.445",
                "web_accessible_resources": [ "js/target.js", "js/bulk.js", "js/__bookmarklet_to_inject.js", "js/__bookmarklet_to_inject__andClipOnLaunch.js", "js/__bookmarklet_to_inject__andHighlightOnLaunch.js", "js/__bookmarklet_to_inject__andSpeakOnLaunch.js", "libs/jQuery.js", "libs/audio.js", "css/bulk.css", "css/base--blueprint.css", "css/base--theme-1.css", "css/base--theme-2.css", "css/base--theme-3.css", "css/defined--theme-1.css", "css/defined--theme-2.css", "css/defined--theme-3.css", "img/bookmarklet--shadows.png", "img/bookmarklet--shadows@2x.png", "img/curtain--close.png", "img/curtain--close@2x.png", "img/curtain--logo.png", "img/curtain--logo@2x.png", "img/curtain--shading.png", "img/curtain--shading@2x.png", "img/dialog--clip-info.png", "img/dialog--clip-info@2x.png", "img/dialog--dynamic.png", "img/dialog--dynamic@2x.png", "img/dialog--first-show--icons.png", "img/dialog--first-show--icons@2x.png", "img/dialog--frame.png", "img/dialog--frame@2x.png", "img/dialog--login--arrow.png", "img/dialog--login--arrow@2x.png", "img/dialog--login.png", "img/dialog--login@2x.png", "img/dialog--login-reset.png", "img/dialog--login-reset@2x.png", "img/dialog--notification--icons--failed.png", "img/dialog--notification--icons--failed@2x.png", "img/dialog--notification.png", "img/dialog--notification@2x.png", "img/dialog--settings--font-size-sprite.png", "img/dialog--settings--font-size-sprite@2x.png", "img/dialog--settings--themes-sprite.png", "img/dialog--settings--themes-sprite@2x.png", "img/dialog--settings.png", "img/dialog--settings@2x.png", "img/favicon.ico", "img/favicon@2x.ico", "img/highlight--cursor-dark.png", "img/highlight--cursor.png", "img/highlight--delete-sprite.png", "img/highlight--delete-sprite@2x.png", "img/highlight--img--blue.png", "img/highlight--img--blue@2x.png", "img/highlight--img--yellow.png", "img/highlight--img--yellow@2x.png", "img/icon--128.png", "img/icon--128@2x.png", "img/icon--16.png", "img/icon--16@2x.png", "img/icon--19.png", "img/icon--19@2x.png", "img/icon--48.png", "img/icon--48@2x.png", "img/icon--64.png", "img/icon--64@2x.png", "img/loading--background.png", "img/loading--background@2x.png", "img/loading--big.gif", "img/loading--big@2x.gif", "img/loading--small.gif", "img/loading--small@2x.gif", "img/logo-and-name.png", "img/logo-and-name@2x.png", "img/options--tabs-sprite.png", "img/options--tabs-sprite@2x.png", "img/overlay--close-dark-sprite.png", "img/overlay--close-dark-sprite@2x.png", "img/overlay--close-sprite.png", "img/overlay--close-sprite@2x.png", "img/player-graphics.gif", "img/sidebar--clipping.gif", "img/sidebar--clipping@2x.gif", "img/sidebar--sprite.png", "img/sidebar--sprite@2x.png", "img/sidebar-speak--sprite--model.png", "img/sidebar-speak--sprite--model@2x.png", "img/sidebar-speak--sprite.png", "img/sidebar-speak--sprite@2x.png", "options/bulk__forSpeechDemo.js" ]
             },
-            "path": "iooicodkiihhpojmmeghjclgihfjdjhj/8.3358.555.444_0",
+            "path": "iooicodkiihhpojmmeghjclgihfjdjhj/8.3358.555.445_0",
             "state": 1,
             "was_installed_by_default": false
          },
@@ -1595,6 +1674,9 @@
          "jhhabiomopkibeecgngiggmopkeofacl": {
             "blacklist": true
          },
+         "jihmekmccilkocefjpejdebpapohlhjb": {
+            "blacklist": true
+         },
          "jindbcpkhnnnjgcjgmkjedbibibiojjf": {
             "blacklist": true
          },
@@ -1622,6 +1704,9 @@
          "jmifipgdcllamghkhdplfjffkciekbgo": {
             "blacklist": true
          },
+         "jolgdmpdhloiienhblmiimamomhdphlk": {
+            "blacklist": true
+         },
          "jpehgolpfgnknboibogccapmdcadjkbd": {
             "blacklist": true
          },
@@ -1631,10 +1716,16 @@
          "jpgidahfcgiajlcbleeiaibpmmblcmnb": {
             "blacklist": true
          },
+         "jpiedgcdjigcoeagojmlokclbljokpon": {
+            "blacklist": true
+         },
          "jpkdlckejfjidmplieobnhijmoiecbhl": {
             "blacklist": true
          },
          "kbipembkfhbdmkkkfbigmohilmknjnof": {
+            "blacklist": true
+         },
+         "kbmkecfipofebpaikgifajmahdmadlnb": {
             "blacklist": true
          },
          "kcanfkmhccbaheheaackijegkclkaeic": {
@@ -1662,7 +1753,7 @@
                "scriptable_host": [ "http://*/*", "https://*/*" ]
             },
             "install_time": "13007057693830197",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background_page": "background.html",
@@ -1701,7 +1792,16 @@
          "kdfahjokahcbmecgaandpobmgiiknagf": {
             "blacklist": true
          },
+         "kdicckonacionpoompfoopggkgimjpcb": {
+            "blacklist": true
+         },
          "kdjhalklkkcmodeicjiaekcgifkcepaf": {
+            "blacklist": true
+         },
+         "kdpcgcpfnkolljkhgdbbgimplfkhakec": {
+            "blacklist": true
+         },
+         "keknhkokjnjhgpcofobpcbelddppeolp": {
             "blacklist": true
          },
          "kelcbonmemlciepjdmfcifnhloeammhj": {
@@ -1710,7 +1810,13 @@
          "kelljdoinjlkmkncffgadbebgpmlcang": {
             "blacklist": true
          },
+         "keoimpnicgbcjamfdgpcecihicnbmhej": {
+            "blacklist": true
+         },
          "kffhenjbibjnbnjhlkcdlmpeccpaohio": {
+            "blacklist": true
+         },
+         "kfodnkhdfdgeaegehjjnkjkieloddelg": {
             "blacklist": true
          },
          "kgbkdabomfdpfoibliicpmibceaoohgh": {
@@ -1723,6 +1829,9 @@
             "blacklist": true
          },
          "kgdmldjagfciieddcnlhampgkajkpanc": {
+            "blacklist": true
+         },
+         "khgjomcpjblpoaipanicbfjfgcfbpegp": {
             "blacklist": true
          },
          "kibgmcdcfmcglajcfbecilngejnfppjp": {
@@ -1740,6 +1849,9 @@
          "kkhomejdleoonmbdhcigkhkjcghngncf": {
             "blacklist": true
          },
+         "kkkeikdkpjenmoiicggnnodbkebafgpc": {
+            "blacklist": true
+         },
          "kleaapgdkahaekcocmkbgfainbhihccj": {
             "blacklist": true
          },
@@ -1753,6 +1865,12 @@
             "blacklist": true
          },
          "kolbbghckjilleabphhgeggcgpfidofi": {
+            "blacklist": true
+         },
+         "kpbfifeiomkhocgkkffocfinoedcjebg": {
+            "blacklist": true
+         },
+         "laicaenbonaajhkmfhhbpiapobdieffm": {
             "blacklist": true
          },
          "lambangeielkjcnmioccboaphdfcffib": {
@@ -1769,7 +1887,7 @@
             "from_webstore": true,
             "install_time": "13007057689164884",
             "last_active_pingday": "13007631600129471",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -1817,7 +1935,7 @@
             },
             "install_time": "13007627645027938",
             "last_active_pingday": "13008150004884993",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "api_console_project_id": "471018772965",
@@ -1864,7 +1982,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057688917197",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -1912,7 +2030,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057689232678",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -1952,6 +2070,9 @@
          "ljeihpebkahejeacdalhkhmckmggppif": {
             "blacklist": true
          },
+         "ljlppmpjdogefnanekncklkjgpnhpcpd": {
+            "blacklist": true
+         },
          "ljmjoloiepllcndinchenhomcdcgbgef": {
             "blacklist": true
          },
@@ -1967,7 +2088,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057688979524",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2121,7 +2242,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007627644962183",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2147,6 +2268,9 @@
             "state": 1,
             "was_installed_by_default": false
          },
+         "mickhiflmjglhpdpfigpkpjiipfdlphj": {
+            "blacklist": true
+         },
          "mjalegijammcloleihdmooifidcjggjp": {
             "blacklist": true
          },
@@ -2171,6 +2295,9 @@
          "mlmmbepkgelpbenpobinockmiehdahai": {
             "blacklist": true
          },
+         "mlnndjkcclbekgoebkenkdgiggaomaed": {
+            "blacklist": true
+         },
          "mlnoedbhndgbjcbeadjfnmjloejlgojk": {
             "blacklist": true
          },
@@ -2190,6 +2317,9 @@
             "blacklist": true
          },
          "mogepbcllienegdibkfpmombhefhcoic": {
+            "blacklist": true
+         },
+         "mokdlfbphidpiopnlfejpcmadcbomckn": {
             "blacklist": true
          },
          "mpgehpkneknbopplhmmkfijfiniddipf": {
@@ -2216,7 +2346,7 @@
                "api": [ "clipboardRead", "clipboardWrite" ]
             },
             "install_time": "13007057689469497",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2240,6 +2370,9 @@
             "state": 1,
             "was_installed_by_default": false
          },
+         "nbfcehkihbmpebblmfkihadebllgfmgl": {
+            "blacklist": true
+         },
          "nbggjgoannejpkpeamcdmnpdngnpkcln": {
             "active_bit": false,
             "active_permissions": {
@@ -2254,7 +2387,7 @@
             },
             "install_time": "13007057691845876",
             "last_active_pingday": "13008063604074490",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2352,7 +2485,7 @@
                "scriptable_host": [ "*://*.reddit.com/*", "*://*/*", "*://twitter.com/*", "http://*.ycombinator.com/*", "http://*.ycombinator.org/*", "http://*/reader/view/*", "https://*/reader/view/*" ]
             },
             "install_time": "13007197245551032",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "background": {
@@ -2461,6 +2594,9 @@
          "odeckaficnaplobiiaomegfbokokehhb": {
             "blacklist": true
          },
+         "odefpckfdnfkeandbeccopcpncnbkonn": {
+            "blacklist": true
+         },
          "odnamglmogfldajnhkfodmloofeokcmm": {
             "blacklist": true
          },
@@ -2477,6 +2613,9 @@
             "blacklist": true
          },
          "oilfokmpgejhjhecdjjpikloibggpenf": {
+            "blacklist": true
+         },
+         "oimplfccampifgkgndlamabnkcibkngc": {
             "blacklist": true
          },
          "ojglppmhgfohhfeinlhklglifnbfebak": {
@@ -2503,7 +2642,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13008143133217335",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2564,6 +2703,12 @@
          "pcaedgdgamlfffkfblocmakhgieggoak": {
             "blacklist": true
          },
+         "pcojpoljjgnicbhaffkiphphplijgbcc": {
+            "blacklist": true
+         },
+         "pdhjoamffhjhlkiiminjhmihalkfjaee": {
+            "blacklist": true
+         },
          "peahabnpipmmfiajjjhgfggbeigbmbgp": {
             "blacklist": true
          },
@@ -2600,6 +2745,12 @@
          "pgldfhecfiofkhnbgcncepnkjkeoahlk": {
             "blacklist": true
          },
+         "pgmfkblbflahhponhjmkcnpjinenhlnc": {
+            "blacklist": true
+         },
+         "pgmpnhbchhaningbkefchpdalnimjijd": {
+            "blacklist": true
+         },
          "phkpgooenaonkpnabopdbjjfmphclela": {
             "blacklist": true
          },
@@ -2618,7 +2769,7 @@
             "from_bookmark": false,
             "from_webstore": true,
             "install_time": "13007057688851649",
-            "lastpingday": "13008236405583252",
+            "lastpingday": "13009100408702602",
             "location": 1,
             "manifest": {
                "app": {
@@ -2692,8 +2843,8 @@
             "granted_permissions": {
                "api": [ "unlimitedStorage" ]
             },
-            "install_time": "13007057691575564",
-            "lastpingday": "13008236405699041",
+            "install_time": "13008962047232750",
+            "lastpingday": "13009100408763515",
             "location": 1,
             "manifest": {
                "api_console_project_id": "420247213240",
@@ -2711,15 +2862,19 @@
                   "128": "App_Icon_128_3.png"
                },
                "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqk5inbFC1lOCksXHDdxOyCGo+x8MkilkBw03l1ZfdEGcyprRtT+Mifrspxv9vwLBthPzITxwt0KDRjwCsG58em3vzXw0mZxSb6j6U2moUl9gzGoGI6eC2iHJIaGn2Cq73Rw1Tc/2dFrSGegX2wwlKCI0mooA9xelQVczyAvsGXwIDAQAB",
+               "manifest_version": 2,
                "name": "draw.io (Diagramly)",
                "permissions": [ "unlimitedStorage" ],
                "update_url": "http://clients2.google.com/service/update2/crx",
-               "version": "2.0.1.1"
+               "version": "2.2.1.0"
             },
             "page_ordinal": "n",
-            "path": "plgmlhohecdddhbmmkncjdmlhcmaachm/2.0.1.1_0",
+            "path": "plgmlhohecdddhbmmkncjdmlhcmaachm/2.2.1.0_0",
             "state": 1,
             "was_installed_by_default": false
+         },
+         "pnaaalnkbgjaphhmahecamecmaldknkc": {
+            "blacklist": true
          },
          "pnaiiipilbpcceggeanphcpkkihnojan": {
             "blacklist": true
@@ -2738,8 +2893,8 @@
             "granted_permissions": {
                "api": [ "clipboardRead", "clipboardWrite", "storage", "terminalPrivate", "unlimitedStorage" ]
             },
-            "install_time": "13007450953696908",
-            "lastpingday": "13008236405699041",
+            "install_time": "13008383356685969",
+            "lastpingday": "13009100408763515",
             "location": 1,
             "manifest": {
                "app": {
@@ -2761,14 +2916,14 @@
                "minimum_chrome_version": "23",
                "name": "Secure Shell",
                "offline_enabled": true,
-               "options_page": "html/hterm_preferences_editor.html",
+               "options_page": "html/nassh_preferences_editor.html",
                "permissions": [ "clipboardRead", "clipboardWrite", "unlimitedStorage", "storage", "terminalPrivate" ],
                "update_url": "http://clients2.google.com/service/update2/crx",
-               "version": "0.8.16",
+               "version": "0.8.17",
                "web_accessible_resources": [ "html/nassh_google_relay.html", "html/nassh_connect_dialog.html" ]
             },
             "page_ordinal": "t",
-            "path": "pnhechapfaindjhompbnflcldabbghjo/0.8.16_0",
+            "path": "pnhechapfaindjhompbnflcldabbghjo/0.8.17_0",
             "state": 1,
             "was_installed_by_default": false
          },
@@ -2802,6 +2957,28 @@
    "google": {
       "services": {
          "last_username": "zezhyrule33@gmail.com",
+         "signin": {
+            "LSID": "DQAAAOYAAACCp1cj3MBnCqZ3dJwzpC9IQedRWV_5VjPj0cMMxUobBiC0QuaepFSbbZdBzGt2DAulHwdaBpl7bqZhnysReT8t6bfqORRSE0m847DfC7c5R2OYp8KBACdEFaTQ1S-7amHkm10SNGE2gCo2GLC6Tlz7_8fO5HfUuz9LWThyaPMOUrLcgbR3jjIuPf6L0sz_1muoQboWl1zGtD7g2mPg8vE6Uy2tg_FtFFDdBCCnPKO_v5JCgF2TE2Eg6OHirIIE75GNTc_93EVfynZbC7QzmvLNH6zTUi5MO3YnSf6xPYzUhnt_7AIhbKiPrsjzf_f4I64",
+            "SID": "DQAAANkAAAAJV__H5UoVjuVf6Qq_ftDt0llZ2aLDhbMbDk-IIyY-yogqCFJw6NFEV9yPlZMovEZpZBEkuxFC5YqN0lbSZJvKl6-MtRD6KbAk9RFWe3Xat7BTnA1xe6fw8wHJuCBdLY5J4ZSmeT-SsjdE5LNqSnZbCaNIAng8QMNdjm8ITiRpKaAb14oQy-21tEDKTy5w22zQ3Mp6N8HrXaIZUDMWXGIGt5aBG9pINZmNOuNfDvmZBR9fMvCnocQRAo8WDeyq_BMEs3_t3jl_Nj1lCzquh-E0aaXrx6BdPvt9W6fhGeiGgA",
+            "tokens": {
+               "chromiumsync": {
+                  "status": "Successful",
+                  "value": "DQAAANwAAABa_7HsvKDknXK8ql5LL6LszIuAjQNEuiojVUxGkqYqNoisfejwByDP11Aa4BfmKL8tSOVO1ICxyFysWQxlQ5S6uTY6-UHu1z9-4W8S6KKxqbSahr5Dq5cDxpq6voQI-IhVJgGI5ZYLOnJ1v0vE8b-UD5J9ybk6WJTelocKItrZWM5X2XGt1XPuCRY4F5l2mxR9w-QHvR4Qd0v1uKRkV9Qclg25wkMhEzSoy_HB-1Om_zU1swMg100cOKMgyjKwUgRA0iUuaHxaakKhOD12VwrLi6UiV8QJGZ8z-3MTeu4Adg"
+               },
+               "lso": {
+                  "status": "Successful",
+                  "value": "DQAAANwAAABa_7HsvKDknXK8ql5LL6LsJXqhQVmA1XPpQJyk1_VK3MzuvWTN_NWqrqjftkXcyG-QMuFY5gfi7BgrIh-KqVilQMmdJk1LegjuIboh5GjDZ31OyYm4O7K-uQFQZvU5NMiplK7vi5AWoSGkOs5Fdx-sNLriuGpHFBbUCcG1jfG_k7ZmyfXB9kPwjpaOSGhkAKtbJyJMIH6mO1oYodwLrBn8R0YjEmV05jOBFasIWgLy-sLbhcaH1DJJGvEvPVUT_hYobWhSIYs9sZgb73ZHD3y8oBU66FxvyQGpmKY5TDTEDw\n"
+               },
+               "mobilesync": {
+                  "status": "Successful",
+                  "value": "DQAAANwAAABa_7HsvKDknXK8ql5LL6LsJXqhQVmA1XPpQJyk1_VK3MzuvWTN_NWqrqjftkXcyG-QMuFY5gfi7BgrIh-KqVilQMmdJk1LegjuIboh5GjDZ2E6maV9soRBQpVY4yzNGECZCAt3Tz_rXSzEz7VtxPPPZVFG4lYfuqOi0YJhRi9ZR_oXC0-2S7WurSW381mlXLBFQH2M62nKmafqj-wwwYSlRk3Mrlwp70gq3mKdWBV-K3q4iqb1XL2OMHHS4aoOqydQjavNCVfMw1XZHB1HiDP_UET5MEYkTPzIM72jY6F6Ug\n"
+               },
+               "oauth2LoginRefreshToken": {
+                  "status": "Successful",
+                  "value": "1/c0RLoW32dHRQI099nQkIwwMpeoUV8v6TgZJ2yKZfWsM"
+               }
+            }
+         },
          "username": "zezhyrule33@gmail.com"
       }
    },
@@ -2813,11 +2990,12 @@
       "enabled": false
    },
    "invalidator": {
+      "client_id": "Ng1RbY2E31Ml+6YVWbQHeQ==",
       "invalidation_state": "CicKJQoGCgQIAxABEhIJ92nNv9fCC6kRh0E7YUsiqBYaBwiDEhADGAsSFGhtclNhLvCTkyW/XY8h9GAn5j/G",
       "max_invalidation_versions": [ {
-         "max-version": "1363654454539000",
+         "max-version": "1364488442619000",
          "name": "APP",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8Qf2SgB7AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhnIV1vkbMMytbo1tmN7AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
          "max-version": "1362955178249000",
@@ -2825,14 +3003,14 @@
          "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8SvH7qx6AhCP74u7+NyK4CU=",
          "source": "1004"
       }, {
-         "max-version": "1363736322003000",
+         "max-version": "1364615959344000",
          "name": "AUTOFILL",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8bFiDQp7AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhm+0/YcKGT95lzQ6XJ7AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
-         "max-version": "1363501697206000",
+         "max-version": "1364453901987000",
          "name": "BOOKMARK",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8Zk5Fe56AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8bsvmF97AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
          "max-version": "1363549276623000",
@@ -2840,9 +3018,9 @@
          "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8RM+wfN6AhDQs8Le27iAkL4B",
          "source": "1004"
       }, {
-         "max-version": "1363499123525000",
+         "max-version": "1364319430337000",
          "name": "EXTENSION",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8XWqxu16AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8YEjkE97AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
          "max-version": "1362544282821000",
@@ -2865,19 +3043,19 @@
          "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8f2aSlp6AhDT4JafhM7rs4MB",
          "source": "1004"
       }, {
-         "max-version": "1363747503784000",
+         "max-version": "1364624397336000",
          "name": "SESSION",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8VucOwt7AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8UVS63N7AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
-         "max-version": "1362787213300000",
+         "max-version": "1363453070226000",
          "name": "THEME",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8Yfc6Jh6AhDLtcvzw86CqFU=",
+         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8REpSeh6AhDLtcvzw86CqFU=",
          "source": "1004"
       }, {
-         "max-version": "1363743937036000",
+         "max-version": "1364624386927000",
          "name": "TYPED_URL",
-         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8UPJ9Qp7AhCP74u7+NyK4CU=",
+         "payload": "W:Chdi3zco8I6fPhlmezw+XCrm8Wf26nN7AhDLtcvzw86CqFU=",
          "source": "1004"
       } ]
    },
@@ -2887,12 +3065,17 @@
          "servers": {
             "0.docs.google.com:443": {
                "settings": {
-                  "4": 100,
-                  "5": 10
+                  "4": 100
                },
                "supports_spdy": true
             },
             "0.drive.google.com:443": {
+               "supports_spdy": true
+            },
+            "1-ps.googleusercontent.com:443": {
+               "supports_spdy": true
+            },
+            "3976941.fls.doubleclick.net:443": {
                "supports_spdy": true
             },
             "accounts.google.com:443": {
@@ -2908,9 +3091,19 @@
                "supports_spdy": true
             },
             "api.facebook.com:443": {
+               "settings": {
+                  "4": 100,
+                  "7": 16384
+               },
+               "supports_spdy": true
+            },
+            "api.twitter.com:443": {
                "supports_spdy": true
             },
             "apis.google.com:443": {
+               "supports_spdy": true
+            },
+            "cbks0.google.com:443": {
                "supports_spdy": true
             },
             "chart.googleapis.com:443": {
@@ -2926,11 +3119,6 @@
                "supports_spdy": true
             },
             "clients2.google.com:443": {
-               "settings": {
-                  "4": 100,
-                  "5": 32,
-                  "6": 0
-               },
                "supports_spdy": true
             },
             "clients2.googleusercontent.com:443": {
@@ -2939,34 +3127,29 @@
             "clients4.google.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 24,
+                  "5": 32,
                   "6": 0
                },
                "supports_spdy": true
             },
             "csi.gstatic.com:443": {
-               "settings": {
-                  "4": 100,
-                  "5": 32,
-                  "6": 0
-               },
                "supports_spdy": true
             },
             "doc-0k-1g-docs.googleusercontent.com:443": {
                "supports_spdy": true
             },
             "docs.google.com:443": {
-               "settings": {
-                  "4": 100,
-                  "5": 32,
-                  "6": 0
-               },
                "supports_spdy": true
             },
             "drive.google.com:443": {
                "supports_spdy": true
             },
             "encrypted-tbn0.gstatic.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 65,
+                  "6": 6
+               },
                "supports_spdy": true
             },
             "encrypted-tbn1.gstatic.com:443": {
@@ -2975,10 +3158,18 @@
             "encrypted-tbn2.gstatic.com:443": {
                "supports_spdy": true
             },
+            "encrypted-tbn3.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "fls.doubleclick.net:443": {
                "supports_spdy": true
             },
             "fonts.googleapis.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 46,
+                  "6": 0
+               },
                "supports_spdy": true
             },
             "gg.google.com:443": {
@@ -2996,6 +3187,9 @@
             "hello.staticstuff.net:443": {
                "supports_spdy": true
             },
+            "i.ytimg.com:443": {
+               "supports_spdy": true
+            },
             "i1.ytimg.com:443": {
                "supports_spdy": true
             },
@@ -3009,6 +3203,9 @@
                "supports_spdy": true
             },
             "id.google.com:443": {
+               "settings": {
+                  "4": 100
+               },
                "supports_spdy": true
             },
             "images-lso-opensocial.googleusercontent.com:443": {
@@ -3020,16 +3217,37 @@
             "img.youtube.com:443": {
                "supports_spdy": true
             },
+            "khms0.google.com:443": {
+               "supports_spdy": true
+            },
             "lh3.ggpht.com:443": {
                "supports_spdy": true
             },
             "lh3.googleusercontent.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
                "supports_spdy": true
             },
             "lh4.ggpht.com:443": {
                "supports_spdy": true
             },
             "lh4.googleusercontent.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "lh5.ggpht.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 40,
+                  "6": 0
+               },
                "supports_spdy": true
             },
             "lh5.googleusercontent.com:443": {
@@ -3047,7 +3265,7 @@
             "mail.google.com:443": {
                "settings": {
                   "4": 10,
-                  "5": 24,
+                  "5": 35,
                   "6": 0
                },
                "supports_spdy": true
@@ -3070,6 +3288,9 @@
             "oauth.googleusercontent.com:443": {
                "supports_spdy": true
             },
+            "p2-hujb3znhmdjeg-iyqkmy4p2r5jcgpe-if-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p2-jrocaosb4azjg-w2m2ui3s7ygvnbyg-if-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3085,18 +3306,19 @@
             "p5-2mm46vb6boxse-kwlzipac6jjvlvfu-190406-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-34fysueizt2ui-7xmlhbvdpdvmtbdc-788042-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-3oavtn6ydeuhw-bc3dlh6idi55mwo6-409708-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-42jbgxunzui4q-ncyguuysuuj674te-590144-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-47zytq46kfcga-wl3o67zd2lg2pnlq-292181-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-4usa3aji2gkp2-q2ojxnj37xazspfw-322434-i1-v6exp3-ds.metric.gstatic.com:443": {
-               "settings": {
-                  "4": 100,
-                  "5": 32,
-                  "6": 0
-               },
                "supports_spdy": true
             },
             "p5-56kspp4r2dzag-f6xd5lcv45gf7u4y-776507-i2-v6exp3-ds.metric.gstatic.com:443": {
@@ -3126,6 +3348,12 @@
             "p5-6qn7g5f5h2hli-eb5qfekiwhxk36y4-149215-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-6wo3lkmtulj72-t5xejyg5nkx5myre-545517-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-7bma2lcvbt7es-uwkfyddjubljaon7-613197-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-7hiqxo6rd42rw-a7243xwlhodxzbxp-851425-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3141,19 +3369,45 @@
             "p5-avvh55ifdznpa-cezyitzaruktkgny-245649-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-b2uxzbt6hztei-gvzoin7ydrstfbne-167922-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
             "p5-ba2jdtjaqv4i6-srnqahjie45qlf5k-554233-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-baoj5eahx4bmo-vtsy3zf34b232rvg-566893-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-bbk4ytspav5ac-sqoifzuwde4e5ml3-754136-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-bbss5djok5thu-6wfr72tf4dq2uwji-846929-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-bfc66no5viuzo-znuei276e52k6kvu-717600-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-bj4s5sylftdq4-clheaz2ro2qrihsa-172747-i2-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-bld7bj2qj65ki-tlaws2qjonnccpsy-414042-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-bmqd4zdnmz2bs-6z6uxw66kb3sys7c-811622-i2-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-bmqd4zdnmz2bs-6z6uxw66kb3sys7c-967986-i2-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-boxerobl6qxma-oqcrlnjsh4waybcl-938190-i2-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-bp6vitc657iym-hauddfwdtgplnoih-328314-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-byaqtgao4ywfw-j4aj3hm577zq7dj3-103606-i2-v6exp3-v4.metric.gstatic.com:443": {
@@ -3169,6 +3423,9 @@
                "supports_spdy": true
             },
             "p5-cl7o6xrjd3cya-p3aoocyuv4yf6lmp-494689-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-cqg6t662ubw5e-v5w27a6buadzt4hv-743940-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-cta5qkg4mekv4-43zdqxh5tgrkvliu-627491-i1-v6exp3-v4.metric.gstatic.com:443": {
@@ -3225,6 +3482,9 @@
             "p5-f3yre64ep7eqg-dwj6hocjx7lukmx4-580025-i2-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-f55w5mczso3o2-ubxmlom7nvdcgvrv-712501-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-fa3puqio6ovdy-efbgskgmu3wiq6ss-500430-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3237,10 +3497,31 @@
             "p5-fygkbnzbyj6dy-py7q4yo3uibiiqoh-904603-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-g4juwz5zzaaho-e3bggwcu64jk3h3z-100964-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "settings": {
+                  "4": 100
+               },
+               "supports_spdy": true
+            },
+            "p5-gaevggnmva5sq-6fqwhdyim4brvvah-675992-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-gfjg55su3ohjy-bz65yupdofvxl6jq-592849-i2-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-gil5ejn4f6eky-kcdqotedqbcwwctk-862145-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-gkyej2xnfu466-x7sbprakt5nsx7l5-198725-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-htws3c3jw65vq-vczblwqkvzdkgoww-172368-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-hx4s3f4mgodkw-k5hqov35madx3z3y-221377-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-i4xzqnfjoyegs-mbwbjwix5qgxnkxs-225432-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-i5ukfdjro5o66-oqk6uli7fxifopau-435702-i1-v6exp3-ds.metric.gstatic.com:443": {
@@ -3249,7 +3530,16 @@
             "p5-ijbpcp463ctxg-2xe2fvn343cfalr3-769327-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-inep5lgt3xwry-hbm36qpqxasul42l-793241-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-inox7l7yka5mc-op3a6boy2ee6oaza-879788-i2-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-j52wdlew72pdi-4ndj6hz3kjwpvp2a-717642-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-jh5llofaggwxa-gpwacf2ooaugi6e5-411106-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-jhauojrleb43y-updamzube4e2fxfk-279494-i1-v6exp3-ds.metric.gstatic.com:443": {
@@ -3261,6 +3551,12 @@
             "p5-k227r4xj54neo-yxvi5ky3my2nekbn-284906-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-kdejduc7ckiby-l7wf5uspdcveiiwe-721828-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-kipkd4ifcik26-cca2lhpybvpegt7l-417696-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-kkw5dlrtecvt6-s7nnsqvd3grlevvg-517313-i2-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3268,6 +3564,9 @@
                "supports_spdy": true
             },
             "p5-kyguiywrlk5fc-dupt5nzecanbjmqf-199476-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-lbsgwaqb6mglm-p4leelgeosfwoyh5-735993-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-lgpm4lchi2jhc-lcheqd3oagp2pzgd-827553-i2-v6exp3-ds.metric.gstatic.com:443": {
@@ -3279,7 +3578,19 @@
             "p5-ltrf6yn7erozo-fwfjzqd2kcpulnsi-268955-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-lv4nlj56hdg2k-gaainvzuvtakcfe6-913663-i2-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-m3m6f7y4tm3g2-mflzn5o475upd6hn-704336-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-mewajgynb7rue-vxeim64r3ll5vjt6-734542-i2-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-myo6o7kmt2sug-idptp3q67k26nqlz-141207-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-n7nwidvvicf5q-r2s3kgc3ucvtpsjo-467506-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-ncn4zsz6cknzs-7taurwrpsr524ida-464550-i1-v6exp3-ds.metric.gstatic.com:443": {
@@ -3301,6 +3612,9 @@
                "supports_spdy": true
             },
             "p5-ohdkx3sgw6pb4-3ibzgcwi5sqcpzh5-493170-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-ouw4ue6c4a7yq-vm3kmso7pyw223ub-754419-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-p4c57ivaenr3a-iehh73caby4jnw2w-150279-i2-v6exp3-ds.metric.gstatic.com:443": {
@@ -3327,6 +3641,9 @@
             "p5-pu7gta6d4lbay-omtuorss5kvmoffh-548175-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-q6qi5vzufdj6q-62xdjn3mpibjst6j-450935-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-qewvvdlmkhdwc-5clkr32ejb57qczv-504815-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3336,6 +3653,9 @@
             "p5-qlzumtfa6qd6o-qzd7lufbe7as3fes-363037-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-r7dqtzg3ywhro-4ai3zr5swaq5imxq-720691-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-rm7l2gjywrzbs-ii7slehmbppkiqxs-421226-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3343,6 +3663,9 @@
                "supports_spdy": true
             },
             "p5-rzmkroswhofvy-toveasfnsjjlfk4m-461387-i1-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-seebxmwlx73y6-ybt35h7sphbk3c3t-231797-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-sn4v4a55nbwmm-pdzgv4htk5bqvwbv-364509-i1-v6exp3-v4.metric.gstatic.com:443": {
@@ -3363,6 +3686,9 @@
             "p5-tixjqbqzex65k-phoqntbulrja73bv-432733-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-tyhrbkyzdux2a-ur2gvkajvvjhfok3-319525-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-uagcli7aoany2-xkeu7l6qeu5vnahc-466993-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3375,6 +3701,14 @@
             "p5-umnrhnpjrkylg-cisuvdupfddz5dkf-657072-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-uoyskkyxo46iq-2qhbrewgqyojzmtc-839116-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
             "p5-uqr3sxjuublxy-faenee7nhuvrrmcq-750052-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
@@ -3382,6 +3716,9 @@
                "supports_spdy": true
             },
             "p5-uwloskxpm5jfi-bsun6kvslsktcq2k-520926-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-uzzmg7ym37z3e-cd6dcvijhup4qede-857015-i2-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-vd7rhxxpfnrxm-ras2f3cyqh37jua4-746014-i1-v6exp3-v4.metric.gstatic.com:443": {
@@ -3399,13 +3736,22 @@
             "p5-wgqpacshalfeq-n5k54j6lr5b4i3nt-709789-i1-v6exp3-v4.metric.gstatic.com:443": {
                "supports_spdy": true
             },
+            "p5-wtqohhcjqk2lw-yb4766uftxm7y5rn-978752-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
             "p5-wzt543scxqygo-iv3doxeqidm64e7k-878842-i2-v6exp3-v4.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-xbu7qkgr2g5nw-keunbdg3y4tnc6lb-805612-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-xkqwoqj6i5why-qyaol3n74tp2nlbp-485114-i1-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-xoa22awc77mou-ubwkpcc7kociqchf-119216-i1-v6exp3-ds.metric.gstatic.com:443": {
+               "supports_spdy": true
+            },
+            "p5-xxbhwtidtwrdc-ex4elbdgxmnhuidt-973617-i2-v6exp3-ds.metric.gstatic.com:443": {
                "supports_spdy": true
             },
             "p5-y3nqhbtud6o2o-736devkzlkgb5pid-903666-i1-v6exp3-ds.metric.gstatic.com:443": {
@@ -3444,8 +3790,8 @@
             "plus.google.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 32,
-                  "6": 0
+                  "5": 22,
+                  "6": 7
                },
                "supports_spdy": true
             },
@@ -3453,12 +3799,19 @@
                "supports_spdy": true
             },
             "profile-a.xx.fbcdn.net:443": {
+               "settings": {
+                  "4": 100,
+                  "7": 16384
+               },
                "supports_spdy": true
             },
             "profile-b.xx.fbcdn.net:443": {
                "supports_spdy": true
             },
             "public-api.wordpress.com:443": {
+               "settings": {
+                  "4": 100
+               },
                "supports_spdy": true
             },
             "r.twimg.com:443": {
@@ -3478,15 +3831,14 @@
             },
             "secure.gravatar.com:443": {
                "settings": {
-                  "4": 100,
-                  "5": 10
+                  "4": 100
                },
                "supports_spdy": true
             },
             "ssl.google-analytics.com:443": {
                "settings": {
                   "4": 100,
-                  "5": 10,
+                  "5": 32,
                   "6": 0
                },
                "supports_spdy": true
@@ -3499,16 +3851,30 @@
                },
                "supports_spdy": true
             },
+            "stats.wordpress.com:443": {
+               "settings": {
+                  "4": 100
+               },
+               "supports_spdy": true
+            },
             "talkgadget.google.com:443": {
                "supports_spdy": true
             },
             "themes.googleusercontent.com:443": {
+               "settings": {
+                  "4": 100
+               },
                "supports_spdy": true
             },
             "twitter.com:443": {
                "supports_spdy": true
             },
             "upload.docs.google.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
                "supports_spdy": true
             },
             "wordpress.com:443": {
@@ -3518,6 +3884,10 @@
                "supports_spdy": true
             },
             "www.facebook.com:443": {
+               "settings": {
+                  "4": 100,
+                  "7": 16384
+               },
                "supports_spdy": true
             },
             "www.google-analytics.com:443": {
@@ -3525,12 +3895,16 @@
             },
             "www.google.com:443": {
                "settings": {
-                  "4": 100,
-                  "5": 10
+                  "4": 100
                },
                "supports_spdy": true
             },
             "www.googleadservices.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
                "supports_spdy": true
             },
             "www.googleapis.com:443": {
@@ -3554,7 +3928,6 @@
    },
    "ntp": {
       "app_page_names": [ "Apps" ],
-      "promo_resource_cache_update": "1363782751.886722",
       "shown_page": 1024
    },
    "plugins": {
@@ -3661,34 +4034,18 @@
       "created_by_version": "25.0.1364.152",
       "exit_type": "Crashed",
       "exited_cleanly": true,
+      "is_managed": false,
       "local_profile_id": 8743814,
       "name": "Default Profile",
       "per_host_zoom_levels": {
          "42gems.com": 1.2239010334014893
       }
    },
-   "promo": {
-      "ntp_notification_promo": [ {
-         "closed": true,
-         "end": 0.0,
-         "gplus_required": false,
-         "group": 0,
-         "increment": 1,
-         "increment_frequency": 0,
-         "increment_max": 0,
-         "max_views": 0,
-         "num_groups": 100,
-         "segment": 0,
-         "start": 0.0,
-         "text": "",
-         "views": 0
-      } ]
-   },
    "reverse_autologin": {
       "enabled": false
    },
    "selectfile": {
-      "last_directory": "/home/zezhyrule"
+      "last_directory": "/home/zezhyrule/Pictures"
    },
    "session": {
       "restore_on_startup": 1,
@@ -3703,13 +4060,14 @@
       "autofill": true,
       "autofill_profile": true,
       "bookmarks": true,
+      "dictionary": true,
       "encryption_bootstrap_token": "djEwFSHOSiVbk9kej/KnWXIlO0I0Ve6SEH/er/Dvn/qGHffUF1TcdEJOgedqha+V/xk+Uyt8+uvaq+YegYkVoRH1LA==",
       "extension_settings": true,
       "extensions": true,
       "has_setup_completed": true,
       "keep_everything_synced": true,
-      "keystore_encryption_bootstrap_token": "CAMSEA/U4vEHGbKvF/vgDVzH/G8aIAlqppPNJjBXCn55zTamNbwwVx8xOW4YX+nFTB0CPM/1",
-      "last_synced_time": "13008274277476575",
+      "keystore_encryption_bootstrap_token": "djEwg4fhE/+gsiPyM8WYlLhNG567c4P/JJrzATESlLj771w57KgkWBvGchOxjIzmM2Kj7u+tKi1mvS/XxJqW3COc6A1qMouQMiEzpwDVVFUSL9E=",
+      "last_synced_time": "13009151992482054",
       "passwords": true,
       "preferences": true,
       "search_engines": true,

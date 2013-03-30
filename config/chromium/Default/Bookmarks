@@ -1,5 +1,5 @@
 {
-   "checksum": "777033bcb17281220bc51b7251540a3b",
+   "checksum": "3545e546695fd929165521d593daa034",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -374,13 +374,41 @@
             }, {
                "date_added": "13008159472986799",
                "id": "193",
-               "meta_info": "{\"sync\":{\"transaction_version\":\"318\"}}",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"323\"}}",
                "name": "mdominick.com - Meditations on Coding and Other Tech",
                "type": "url",
                "url": "http://blog.mdominick.com/"
+            }, {
+               "date_added": "13008442488983380",
+               "id": "194",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"327\"}}",
+               "name": "Fuduntu \u2022 Home",
+               "type": "url",
+               "url": "http://www.fuduntu.org/"
+            }, {
+               "date_added": "13008927508498471",
+               "id": "195",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"330\"}}",
+               "name": "Crap Keyboards Hurt Your Business: Try a TypeMatrix - DISCOUNT CODE HERE!",
+               "type": "url",
+               "url": "http://www.livebusinesschat.com/smf/index.php?topic=1710.0"
+            }, {
+               "date_added": "13009130467985138",
+               "id": "196",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"334\"}}",
+               "name": "Primary benefits of the 28 Hour Day",
+               "type": "url",
+               "url": "http://www.dbeat.com/28/benefit2.htm"
+            }, {
+               "date_added": "13009131657552749",
+               "id": "197",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"333\"}}",
+               "name": "Truly Ergonomic 209 - Blank keycaps - Truly Ergonomic Computer Keyboard",
+               "type": "url",
+               "url": "http://www.trulyergonomic.com/store/index.php?route=product/product&path=82&product_id=67"
             } ],
             "date_added": "13007514156323664",
-            "date_modified": "13008159472986799",
+            "date_modified": "13009131657552749",
             "id": "153",
             "meta_info": "{\"sync\":{\"transaction_version\":\"264\"}}",
             "name": "Stuff to Buy",
@@ -890,13 +918,6 @@
                "type": "url",
                "url": "http://nutritionunplugged.com/"
             }, {
-               "date_added": "13007535136382706",
-               "id": "169",
-               "meta_info": "{\"sync\":{\"transaction_version\":\"313\"}}",
-               "name": "Future CEO of Duck Commander",
-               "type": "url",
-               "url": "http://johnluke-robertson.tumblr.com/"
-            }, {
                "date_added": "13006376617471285",
                "id": "127",
                "meta_info": "{\"sync\":{\"transaction_version\":\"242\"}}",
@@ -1239,7 +1260,7 @@
          "name": "Bookmarks Bar",
          "type": "folder"
       },
-      "meta_info": "{\"sync\":{\"transaction_version\":\"319\"}}",
+      "meta_info": "{\"sync\":{\"transaction_version\":\"334\"}}",
       "other": {
          "children": [  ],
          "date_added": "13007015917510726",

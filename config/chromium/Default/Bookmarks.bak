@@ -1,5 +1,5 @@
 {
-   "checksum": "777033bcb17281220bc51b7251540a3b",
+   "checksum": "b9153454d430aabbbd733ed9403962cf",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -374,13 +374,27 @@
             }, {
                "date_added": "13008159472986799",
                "id": "193",
-               "meta_info": "{\"sync\":{\"transaction_version\":\"318\"}}",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"323\"}}",
                "name": "mdominick.com - Meditations on Coding and Other Tech",
                "type": "url",
                "url": "http://blog.mdominick.com/"
+            }, {
+               "date_added": "13008442488983380",
+               "id": "194",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"327\"}}",
+               "name": "Fuduntu \u2022 Home",
+               "type": "url",
+               "url": "http://www.fuduntu.org/"
+            }, {
+               "date_added": "13008927508498471",
+               "id": "195",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"326\"}}",
+               "name": "Crap Keyboards Hurt Your Business: Try a TypeMatrix - DISCOUNT CODE HERE!",
+               "type": "url",
+               "url": "http://www.livebusinesschat.com/smf/index.php?topic=1710.0"
             } ],
             "date_added": "13007514156323664",
-            "date_modified": "13008159472986799",
+            "date_modified": "13008927508498471",
             "id": "153",
             "meta_info": "{\"sync\":{\"transaction_version\":\"264\"}}",
             "name": "Stuff to Buy",
@@ -890,13 +904,6 @@
                "type": "url",
                "url": "http://nutritionunplugged.com/"
             }, {
-               "date_added": "13007535136382706",
-               "id": "169",
-               "meta_info": "{\"sync\":{\"transaction_version\":\"313\"}}",
-               "name": "Future CEO of Duck Commander",
-               "type": "url",
-               "url": "http://johnluke-robertson.tumblr.com/"
-            }, {
                "date_added": "13006376617471285",
                "id": "127",
                "meta_info": "{\"sync\":{\"transaction_version\":\"242\"}}",
@@ -1239,7 +1246,7 @@
          "name": "Bookmarks Bar",
          "type": "folder"
       },
-      "meta_info": "{\"sync\":{\"transaction_version\":\"319\"}}",
+      "meta_info": "{\"sync\":{\"transaction_version\":\"327\"}}",
       "other": {
          "children": [  ],
          "date_added": "13007015917510726",

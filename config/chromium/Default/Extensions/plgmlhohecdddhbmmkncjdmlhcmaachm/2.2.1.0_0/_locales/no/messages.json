@@ -1,0 +1,32 @@
+{
+  "appName": {
+    "message": "draw.io (Diagramly)"
+  },
+  "appDesc": {
+    "message": "Diagrammer Online"
+  },
+  "appLongDesc": {
+    "message": "draw.io er et helt gratis Google Drive (TM) aktivert diagramprogram som gir deg mulighet for å tegne:
+
+- Flowcharts
+- UML
+- ERD
+- Nettverksdiagrammer
+- Forretningsprosessmodeller
+- Organisasjonskart
+- Elektroniske kretser
+- Wireframing og mockups
+
+Funksjoner:
+
+- Innbygget HTML 5 klient med full IE 6-8 support
+- Stor innbygget stensilbibliotek
+- Intuitivt dra og slipp grensesnitt
+- Bildesøk og tilsett funksjon
+- Ekport til PNG/JPG/XML/SVG/PDF
+- Berøringsskjerm Support
+- Full kildekode hos github - https://github.com/jgraph/draw.io
+- Sanntidsamarbeid
+- Integrer diagrammer til blogger og wiki"
+  }
+}

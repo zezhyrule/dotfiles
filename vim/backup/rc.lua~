@@ -428,7 +428,7 @@ awful.rules.rules = {
     { rule = { class = "Steam" },
       properties = { tag = tags[1][4] } },
     { rule = { class = "Audacity" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][4] } },
     { rule = { class = "synapse" },
       properties = { border = 0 } },
 }

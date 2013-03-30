@@ -3,3 +3,5 @@ Reinstalling all deployed packages...
 ###### Progress log entry 2013-03-09 22:17:02 ######
 ###### Progress log entry 2013-03-10 05:38:35 ######
 ###### Progress log entry 2013-03-15 00:47:55 ######
+###### Progress log entry 2013-03-29 11:50:15 ######
+###### Progress log entry 2013-03-30 10:03:02 ######

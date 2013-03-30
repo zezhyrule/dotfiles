@@ -6,13 +6,21 @@
       "enabled_labs_experiments": [ "sync-keystore-encryption" ],
       "last_redirect_origin": ""
    },
-   "gl_renderer_string": "Mesa DRI Mobile Intel\u00AE GM45 Express Chipset x86/MMX/SSE2",
-   "gl_vendor_string": "Intel Open Source Technology Center",
-   "gl_version_string": "2.1 Mesa 9.1",
-   "http_original_content_length": "3061652273",
-   "http_received_content_length": "3061652273",
+   "extensions": {
+      "app_launcher": {
+         "should_show_apps_page": false
+      }
+   },
+   "gl_renderer_string": "Gallium 0.4 on llvmpipe (LLVM 3.2, 128 bits)",
+   "gl_vendor_string": "VMware, Inc.",
+   "gl_version_string": "2.1 Mesa 9.1.1",
+   "http_original_content_length": "8543858530",
+   "http_received_content_length": "8543252969",
    "local_state": {
       "multiple_profile_prefs_version": 7
+   },
+   "ntp": {
+      "promo_resource_cache_update": "1364674384.360776"
    },
    "plugins": {
       "metadata": {
@@ -82,10 +90,10 @@
             } ]
          }
       },
-      "resource_cache_update": "1363766973.748891"
+      "resource_cache_update": "1364599632.487576"
    },
    "policy": {
-      "last_statistics_update": "13008240516307327"
+      "last_statistics_update": "13009073178349021"
    },
    "profile": {
       "info_cache": {
@@ -140,28 +148,28 @@
    },
    "uninstall_metrics": {
       "installation_date2": "1362542316",
-      "launch_count": "56"
+      "launch_count": "84"
    },
    "user_experience_metrics": {
       "low_entropy_source": 1565,
-      "session_id": 55,
+      "session_id": 83,
       "stability": {
-         "breakpad_registration_fail": 9,
+         "breakpad_registration_fail": 2,
          "breakpad_registration_ok": 0,
-         "crash_count": 2,
-         "debugger_not_present": 9,
+         "crash_count": 0,
+         "debugger_not_present": 2,
          "debugger_present": 0,
          "exited_cleanly": false,
          "incomplete_session_end_count": 0,
-         "last_timestamp_sec": "1363800474",
-         "launch_count": 9,
-         "launch_time_sec": "1363798374",
+         "last_timestamp_sec": "1364678173",
+         "launch_count": 2,
+         "launch_time_sec": "1364629723",
          "page_load_count": 0,
          "renderer_crash_count": 0,
          "renderer_hang_count": 0,
          "session_end_completed": true,
-         "stats_buildtime": "1363126799",
-         "stats_version": "25.0.1364.172-devel"
+         "stats_buildtime": "1364532218",
+         "stats_version": "26.0.1410.43-devel"
       }
    },
    "was": {

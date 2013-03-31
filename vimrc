@@ -1,11 +1,3 @@
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2011 Apr 15
-"
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -30,15 +22,18 @@ set smartcase
 set shiftwidth=4        " ==, <<, and >> indent 4 spaces
 set softtabstop=4       " tab key indents 4
 
+" highlight all columns past 80
+" execute \"set colorcolumn=" . join(range(81,335), ',')
+
 " open paren will add close paren and put cursor in between
 inoremap ( ()<Esc>i
 " same, with others
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
-inoremap " ""<Esc>i
+" inoremap \" \""<Esc>i
 " inoremap < <><Esc>i
 
-" toggle nerdtree with ctrl + n
+" toggle nerdtree with f7
 map <F7> :NERDTreeToggle<CR> 
 
 " toggle tagbar with f8
@@ -47,9 +42,6 @@ nmap <F8> :TagbarToggle<CR>
 set t_Co=256
 set bg=dark
 colorscheme Tomorrow-Night-Eighties
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -67,7 +59,7 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 " Ctrl-s to save while in insert mode
 inoremap <c-s> <c-o>:Update<CR>
 
-" insert new line without entering insert mode. enter for below and shift-enter for above 
+" insert new line without entering insert mode. enter key for below and shift-enter for above 
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
@@ -105,14 +97,14 @@ nmap <space> zz
 nmap n nzz
 nmap N Nzz
 
-" maps jj to escape key in insert mode
+" maps jk to escape key in insert mode
 imap jk <Esc>
 
 " esc won't move cursor left
 " inoremap <Esc> <Esc>`^
 
-" hide search hl with ctrl + ,
-" map <C-n> :nohl<CR>
+" hide search hl with ctrl+l 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " toggle rnu with ctrl + h
 function! NumberToggle()
@@ -129,9 +121,9 @@ nnoremap <C-h> :call NumberToggle()<cr>
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
-" In many terminal emulators the mouse works just fine, thus enable it.
+" In many terminal emulators the mouse works just fine
 if has('mouse')
-  set mouse=c " I have it disabled here
+  set mouse=c 
 endif
 
 " Switch syntax highlighting on, when the terminal has colors

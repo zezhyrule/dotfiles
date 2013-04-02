@@ -1,3 +1,18 @@
+" zezhyrule
+" 2013-04-02
+"
+" List of plugins I use:
+"
+" a.vim
+" abolish.vim
+" commentary.vim
+" ctrlp.vim
+" NERD_tree
+" snipMate.vim
+" surround.vim
+" syntastic
+
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -65,6 +80,8 @@ map <CR> o<Esc>
 
 " accidentally entering capital q won't hurt anyone
 map :Q :q
+" but ctrl-e is easier anyway
+map <C-E> ZQ
 
 " CTRL-X and SHIFT-Del are Cut
 vnoremap <C-X> "+x
@@ -176,6 +193,6 @@ if !exists(":DiffOrig")
 endif
 
 " lilypond compatibility
-filetype off
-set runtimepath+=/usr/local/share/lilypond/current/vim/
-filetype on
+" filetype off
+" set runtimepath+=/usr/local/share/lilypond/current/vim/
+" filetype on

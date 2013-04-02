@@ -1,0 +1,20 @@
+ctrl-w s = split current buffer into two windows
+ctrl-w v = split window vertically
+ctrl-w n = open new window
+ctrl-w q = quit current window
+ctrl-w c = close current window
+ctrl-w o = make current window the only window
+
+ctrl-w j = move cursor to Nth window below the current one
+ctrl-w k = move cursor to Nth window above the current one
+ctrl-w h = move cursor to Nth window left of the current one
+ctrl-w l = move cursor to Nth window right of the current one
+ctrl-w w = move cursor to next window
+ctrl-w w = move cursor to previous window
+
+ctrl-w r = rotate windows
+ctrl-w = = make all windows equally high and wide
+ctrl-w - = decrease window height
+ctrl-w + = increase window height
+ctrl-w < = decrease window width
+ctrl-w > = increase window width

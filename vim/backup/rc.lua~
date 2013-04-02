@@ -281,14 +281,14 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/Pictures/screenshots/ 2>dev/null'") end),
 
     awful.key({ }, "XF86AudioRaiseVolume", function ()
-       awful.util.spawn("amixer set Master 9%+", false) end),
+       awful.util.spawn("amixer set Master 2%+", false) end),
     awful.key({ }, "XF86AudioLowerVolume", function ()
-       awful.util.spawn("amixer set Master 9%-", false) end),
+       awful.util.spawn("amixer set Master 2%-", false) end),
     awful.key({ }, "XF86AudioMute", function ()
        awful.util.spawn("amixer sset Master toggle", false) end),
 
-    awful.key({ modkey, }, "e", function () awful.util.spawn_with_shell(editor_cmd) end),
-    awful.key({ modkey, }, "g", function () awful.util.spawn_with_shell("geany") end),
+    awful.key({ modkey, }, "d", function () awful.util.spawn_with_shell(editor_cmd) end),
+    awful.key({ modkey, }, "u", function () awful.util.spawn_with_shell("geany") end),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -516,16 +516,4 @@ do
   for _,i in pairs(cmds) do
     awful.util.spawn(i)
   end
-end
-
-function start_daemon(dae)
-	daeCheck = os.execute("ps -eF | grep -v grep | grep -w " .. dae)
-	if (daeCheck ~= 0) then
-		os.execute(dae .. " &")
-	end
-end
-
-procs = {"gnome-settings-daemon", "nm-applet"}
-for k = 1, #procs do
-	start_daemon(procs[k])
 end

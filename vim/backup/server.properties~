@@ -1,0 +1,18 @@
+#Minecraft server properties
+#Wed Mar 27 22:40:39 CDT 2013
+online-mode=true
+gamemode=0
+difficulty=1
+spawn-animals=true
+server-ip=
+pvp=false
+texture-pack=http://205.196.122.81/i4uu9tlrtltg/24r4vxbwyac85p6/Isabella_II_1-5v2.zip 
+server-port=25565
+allow-flight=false
+spawn-npcs=true
+generate-structures=true
+motd=§l§2zezzy's server
+level-name=world
+level-type=LARGEBIOMES
+max-players=4
+view-distance=8

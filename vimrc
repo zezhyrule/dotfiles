@@ -36,6 +36,7 @@ set ignorecase
 set smartcase
 set shiftwidth=4        " ==, <<, and >> indent 4 spaces
 set softtabstop=4       " tab key indents 4
+autocmd vimenter * if !argc() | CtrlP | endif " start ctrlp at startup if no file was specified
 
 " highlight all columns past 80
 " execute \"set colorcolumn=" . join(range(81,335), ',')

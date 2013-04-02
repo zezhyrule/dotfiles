@@ -79,6 +79,9 @@ inoremap <c-s> <c-o>:Update<CR>
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
+" Y to yank to end of line. use yy for yanking whole line
+map Y y$
+
 " accidentally entering capital q won't hurt anyone
 map :Q :q
 " but ctrl-e is easier anyway

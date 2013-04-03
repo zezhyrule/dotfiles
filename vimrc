@@ -41,6 +41,33 @@ autocmd vimenter * if !argc() | CtrlP | endif " start ctrlp at startup if no fil
 " highlight all columns past 80
 " execute \"set colorcolumn=" . join(range(81,335), ',')
 
+
+" I use programmer dvorak because I am crazy. map all the
+" punctuation in the number row (non-shifted) to send numbers in normal mode
+" since they're used so often, but in insert mode they will
+" be the punctuation. note that I use a slightly modified layout, so if
+" you c/p this it will not work the same with normal programmer dvorak.
+noremap [ 7
+noremap { 5
+noremap ( 3
+noremap + 1
+noremap = 9
+noremap ) 0
+noremap } 2
+noremap ] 4
+noremap * 6
+noremap ! 8
+noremap 7 [
+noremap 5 {
+noremap 3 (
+noremap 1 +
+noremap 9 =
+noremap 0 )
+noremap 2 }
+noremap 4 ]
+noremap 6 *
+noremap 8 !
+
 " open paren will add close paren and put cursor in between
 inoremap ( ()<Esc>i
 " same, with others

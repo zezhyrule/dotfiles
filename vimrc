@@ -1,5 +1,5 @@
 " zezhyrule
-" 2013-04-02
+" 2013-04-03
 "
 " List of plugins I use:
 "
@@ -11,6 +11,7 @@
 " snipMate.vim
 " surround.vim
 " syntastic
+"
 
 
 " Use Vim settings, rather than Vi settings (much better!).
@@ -47,26 +48,26 @@ autocmd vimenter * if !argc() | CtrlP | endif " start ctrlp at startup if no fil
 " since they're used so often, but in insert mode they will
 " be the punctuation. note that I use a slightly modified layout, so if
 " you c/p this it will not work the same with normal programmer dvorak.
-noremap [ 7
-noremap { 5
-noremap ( 3
-noremap + 1
-noremap = 9
-noremap ) 0
-noremap } 2
-noremap ] 4
-noremap * 6
-noremap ! 8
-noremap 7 [
-noremap 5 {
-noremap 3 (
-noremap 1 +
-noremap 9 =
-noremap 0 )
-noremap 2 }
-noremap 4 ]
-noremap 6 *
-noremap 8 !
+noremap [ 5
+noremap { 3
+noremap ( 1
+noremap + 9
+noremap = 0
+noremap ) 2
+noremap } 4
+noremap ] 6
+noremap * 8
+noremap ! 7
+noremap 5 [
+noremap 3 {
+noremap 1 (
+noremap 9 +
+noremap 0 =
+noremap 2 )
+noremap 4 }
+noremap 6 ]
+noremap 8 *
+noremap 7 !
 
 " open paren will add close paren and put cursor in between
 inoremap ( ()<Esc>i

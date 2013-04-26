@@ -1,0 +1,18 @@
+/* Charles Davis */
+/* 2013-03-16 */
+/* this is a test program to demo writing C */
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main (int argc, char* argv[]) 
+{
+    int i1;
+    double i2;
+
+    printf("int is %d bytes long\n", sizeof(i1));
+    printf("long int is %d bytes long\n", sizeof(i2));
+
+    return EXIT_SUCCESS;
+
+}

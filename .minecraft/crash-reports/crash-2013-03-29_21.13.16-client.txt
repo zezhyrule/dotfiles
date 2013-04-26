@@ -1,0 +1,44 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 3/29/13 9:13 PM
+Description: Failed to start game
+
+org.lwjgl.LWJGLException: X Error - disp: 0x645ab110 serial: 99 error: BadDrawable (invalid Pixmap or Window parameter) request_code: 153 minor_code: 7
+	at org.lwjgl.opengl.LinuxDisplay.globalErrorHandler(LinuxDisplay.java:268)
+	at org.lwjgl.opengl.GL11.nglClear(Native Method)
+	at org.lwjgl.opengl.GL11.glClear(GL11.java:589)
+	at net.minecraft.client.Minecraft.J(SourceFile:325)
+	at net.minecraft.client.Minecraft.a(SourceFile:274)
+	at avv.a(SourceFile:56)
+	at net.minecraft.client.Minecraft.run(SourceFile:507)
+	at java.lang.Thread.run(Thread.java:722)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.1
+	Operating System: Linux (i386) version 3.8.4-1-ARCH
+	Java Version: 1.7.0_17, Oracle Corporation
+	Java VM Version: OpenJDK Server VM (mixed mode), Oracle Corporation
+	Memory: 384888888 bytes (367 MB) / 514523136 bytes (490 MB) up to 954466304 bytes (910 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms512M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: ModLoader, EntityRendererProxy, BaseMod, ...[reifnsk.minimap.ReiMinimap, WaypointEntity, MinimapException, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	ModLoader: Mods loaded: 4
+ModLoader 1.5.1
+mod_Armor 1.5.1
+mod_ReiMinimap v3.3_04 [1.5.1]
+mod_Stackables 1.5.1
+
+	LWJGL: 2.4.2
+	OpenGL: Mesa DRI Mobile Intel® GM45 Express Chipset x86/MMX/SSE2 GL version 2.1 Mesa 9.1.1, Intel Open Source Technology Center
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Isabella_II_1-5v2.zip
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

@@ -1,0 +1,37 @@
+/* Charles D */
+/* 2013-03-18 */
+/* prints a magicnumber */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, const char *argv[])
+{
+
+    int magicNumber;
+
+    /* magicNumber = 4; */
+    /* magicNumber = 9000; */
+
+    printf("please enter a number\n");
+    scanf("%d", &magicNumber);
+
+    if (magicNumber > 9000)
+    {
+       printf ("I like Danes!\n");
+
+       if (magicNumber <= 9001)
+       {
+	   printf ("I love you man\n");
+       }
+       else
+       {
+	   printf ("laaaaaaaaaa");
+       }
+    }
+
+
+    printf("the magic number is %d\n", magicNumber);
+
+    return EXIT_SUCCESS;
+}

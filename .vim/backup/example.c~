@@ -1,0 +1,46 @@
+/* Charles Davis */
+/* lecture examples on types and variables */
+/* 2013-04-09 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void exampleOne (void);
+void exampleDouble (double height);
+void exampleHex (void);
+
+int main(int argc, const char *argv[])
+{
+    printf("lecture 3 examples!\n");
+
+    /* exampleOne(); */
+    double height;
+    height = 2.31;
+    exampleDouble (height);
+    exampleHex();
+
+    return EXIT_SUCCESS;
+}
+
+
+void exampleOne (void)
+{
+    printf("Example 1\n");
+    printf("EXIT_SUCCESS is %d\n", EXIT_SUCCESS);
+    return;
+}
+
+
+void exampleDouble (double meters)
+{
+    printf("your height is %f meters\n", meters);
+    return;
+}
+
+
+void exampleHex (void)
+{
+    long height = 2.31;
+    printf("your hex height is %lx\n", height);
+    return;
+}

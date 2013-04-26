@@ -1,0 +1,107 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+ 
+#define THURSDAY 0
+#define FRIDAY   1
+#define SATURDAY 2
+#define SUNDAY   3
+#define MONDAY   4
+#define TUESDAY  5
+#define WEDNESDAY 6
+ 
+#define TRUE 1
+#define FALSE 0
+#define DAYS_PER_WEEK 7
+ 
+int dayOfWeek (int doomsday, int leapYear, int month, int day);
+int isLeapYear (int leapYear);
+int doom (int leapYear, int month, int day);
+int daysTillDoom (int leapYear, int month, int day);
+
+int main(int argc, const char *argv[])
+{
+    int leapYear = FALSE;
+    int month = 1;
+    int day = 1;
+    int days = daysTillDoom(leapYear, month, day);
+
+    printf ("%d\n", days);
+	
+    return EXIT_SUCCESS;
+}
+
+int daysTillDoom (int leapYear, int month, int day)
+{
+    int days;
+    int dooms = doom(leapYear, month, day);
+
+    if (dooms)
+    {
+	days = 0;
+    }
+    
+    while (dooms == FALSE)
+    {
+	if ((month == (1 || 3 || 5 || 7 || 8 || 10 || 12) && day == 31) ||
+	    (month == (4 || 6 || 9 || 11) && day == 30) ||
+	    (month == 2 && leapYear == TRUE && day == 29) ||
+	    (month == 2 && leapYear == FALSE && day == 28))
+	{
+	    day = 0;
+	    dooms = doom(leapYear, month, day);
+	    month++;
+	    dooms = doom(leapYear, month, day);
+	    if (month == 13)
+	    {
+		month = 1;
+		dooms = doom(leapYear, month, day);
+	    }
+	}
+	day++;
+	dooms = doom(leapYear, month, day);
+	days++;
+    }
+
+    return (days);
+}
+
+
+/* checks month and day to see if it's a doomsday */
+int doom (int leapYear, int month, int day)
+{
+    int doom;
+    
+    if ((month == 4 && day == (4 || 11 || 18 || 25)) ||
+        (month == 6 && day == (6 || 13 || 20 || 27)) ||
+        (month == 8 && day == (1 || 8 || 15 || 22 || 29)) ||
+       	(month == 10 && day == (3 || 10 || 17 || 24 || 31)) ||
+       	(month == 12 && day == (5 || 12 || 19 || 26)) ||
+       	(month == 3 && day == (0 || 7 || 14 || 21 || 28)) ||
+        (month == 5 && day == (2 || 9 || 16 || 23 || 30)) ||
+       	(month == 7 && day == (4 || 11 || 18 || 25)) ||
+        (month == 9 && day == (5 || 12 || 19 || 26)) ||
+       	(month == 11 && day == (7 || 14 || 21 || 28)))
+    {
+	doom = TRUE;
+    }
+    else if ((leapYear == TRUE) &&
+	    ((month == 1 && day == (4 || 11 || 18 || 25)) ||
+	     (month == 2 && day == (1 || 8 || 15 || 22 || 29)))) 
+    {
+	doom = TRUE;
+    }
+    else if ((leapYear == FALSE) &&
+	    ((month == 1 && day == (3 || 10 || 17 || 24 || 31)) ||
+	      (month == 2 && day == (7 || 14 || 21 || 28)))) 
+    {
+	doom = TRUE;
+    }
+    else
+    {
+	doom = FALSE;
+    }
+
+    return (doom);
+}
+

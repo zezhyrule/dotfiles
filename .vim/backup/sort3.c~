@@ -1,0 +1,61 @@
+/* Charles Davis */
+/* Takes in three numbers and prints them in ascending order */
+/* 2013-04-09 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, const char *argv[])
+{
+    int no1, no2, no3;
+
+    printf ("Please enter 3 separate numbers, and I will sort them in ascending order: ");
+    scanf("%d %d %d", &no1, &no2, &no3);
+
+    if (no1 <= no2 && no1 <= no3)
+    {
+	printf ("%d\n", no1);
+	if (no2 >= no3)
+	{
+	    printf ("%d\n", no3);
+	    printf ("%d\n", no2);
+	}
+	else
+	{
+	    printf ("%d\n", no2);
+	    printf ("%d\n", no3);
+	}
+	
+    }
+    else if (no2 <= no1 && no2 <= no3)
+    {
+	printf ("%d\n", no2);
+	if (no1 >= no3)
+	{    
+	    printf ("%d\n", no3);
+	    printf ("%d\n", no1);
+	}
+	else 
+	{
+	    printf ("%d\n", no1);
+	    printf ("%d\n", no3);
+	}
+    }
+    else
+    {
+	printf ("%d\n", no3);
+	if (no1 <= no2)
+	{
+	    printf ("%d\n", no1);
+	    printf ("%d\n", no2);
+	}
+	else
+	{
+	    printf ("%d\n", no2);
+	    printf ("%d\n", no1);
+	}
+    }
+
+    return EXIT_SUCCESS;
+}

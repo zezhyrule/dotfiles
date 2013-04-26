@@ -1,0 +1,7 @@
+Section "InputClass"
+        Identifier             "keyboard-layout"
+        MatchIsKeyboard        "on"
+        Option "XkbLayout"     "us"
+        Option "XkbVariant"    "dvp"
+        # Option "XkbOptions"    "keypad:atm"
+EndSection

@@ -1,0 +1,69 @@
+/* Charles D */
+/* 2013-03-18 */
+/* takes inputted number and determines if it's a leapyear or not */
+/* Test cases?: 2000, 2012, 4000, 4004, 1581, 2013, 2014 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 1582
+
+int isLeapYear (int year);
+
+int main (int argc, const char *argv[])
+{
+
+    printf("Please enter a year, and I will determine if it's a leap year: ");
+
+    int year;
+    scanf("%d", &year);
+
+    if (isLeapYear(year))
+    {
+	printf("%d is a leap year!\n", year);
+    }
+    else
+    {
+	printf ("%d is not a leap year!\n", year);
+    }
+    
+    return EXIT_SUCCESS;
+}
+
+
+int isLeapYear (int year)
+{
+    int leapYear;
+
+    if (year >= MAX)
+    {   
+        if (year % 4 == 0)
+        {   
+            if (year % 100 == 0)
+            {
+                if (year % 400 == 0)
+                {
+                    leapYear ==  1;  
+                }
+                else
+                {   
+                    leapYear ==  0;  
+                }
+            }
+            else
+            {
+                leapYear ==  1;  
+            }
+        }
+        else
+        {
+            leapYear ==  0;  
+        }
+    }   
+    else
+    {
+        leapYear ==  0;
+    }
+
+    return (leapYear);
+}

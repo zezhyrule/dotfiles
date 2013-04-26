@@ -1,0 +1,40 @@
+Apr 25, 2013 4:54:30 PM ModLoader init
+FINE: ModLoader 1.5.1 Initializing...
+Apr 25, 2013 4:54:30 PM ModLoader readFromClassPath
+FINER: Adding mods from /home/zezhyrule/dotfiles/minecraft/bin/minecraft.jar
+Apr 25, 2013 4:54:30 PM ModLoader readFromClassPath
+FINER: Zip found.
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: ArmorID set to 165
+Apr 25, 2013 4:54:31 PM ModLoader addMod
+FINE: Mod Initialized: "mod_Armor 1.5.1" from mod_Armor.class
+Apr 25, 2013 4:54:31 PM ModLoader addMod
+FINE: Mod Initialized: "mod_ReiMinimap v3.3_04 [1.5.1]" from mod_ReiMinimap.class
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: minecarts set to 4
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: boats set to 4
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: doors set to 8
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: signs set to 8
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: saddles set to 8
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: food set to 64
+Apr 25, 2013 4:54:31 PM ModLoader setupProperties
+FINER: potions set to 16
+Apr 25, 2013 4:54:31 PM ModLoader addMod
+FINE: Mod Initialized: "mod_Stackables 1.5.1" from mod_Stackables.class
+Apr 25, 2013 4:54:31 PM ModLoader readFromModFolder
+FINER: Adding mods from /home/zezhyrule/dotfiles/minecraft/mods/rei_minimap
+Apr 25, 2013 4:54:31 PM ModLoader readFromModFolder
+FINER: Directory found.
+Apr 25, 2013 4:54:31 PM ModLoader init
+FINE: Mod Loaded: "mod_Armor 1.5.1"
+Apr 25, 2013 4:54:31 PM ModLoader init
+FINE: Mod Loaded: "mod_ReiMinimap v3.3_04 [1.5.1]"
+Apr 25, 2013 4:54:31 PM ModLoader init
+FINE: Mod Loaded: "mod_Stackables 1.5.1"
+Apr 25, 2013 4:54:31 PM ModLoader addAllRenderers
+FINE: Initialized

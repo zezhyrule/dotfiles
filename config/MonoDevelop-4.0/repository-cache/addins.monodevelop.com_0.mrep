@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>MonoDevelop Add-in Repository</Name>
-  <Url>http://addins.monodevelop.com/Stable/Linux/4.0/main.mrep</Url>
-  <Repository>
-    <Url>root.mrep</Url>
-    <LastModified>2013-02-25T16:50:50-06:00</LastModified>
-  </Repository>
-</Repository>

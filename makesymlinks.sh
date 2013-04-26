@@ -18,5 +18,5 @@ echo "done"
 # create symlinks
 for file in $files; do
 	echo "Creating symlink to $file in ~"
-	ln -s $dir/$file ~/.$file
+	ln -s $dir/$file ~/$file
 done

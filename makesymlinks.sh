@@ -7,7 +7,7 @@
 ###### Variables
 
 dir=~/dotfiles
-files=".bashrc .vimrc .vim .minecraft .scripts .conkyrc .Xmodmap .xinitrc"
+files=".bashrc .vimrc .vim .minecraft .scripts .conkyrc .Xmodmap .Xresources .xinitrc"
 
 ######
 # change to dotfiles directory
@@ -18,5 +18,5 @@ echo "done"
 # create symlinks
 for file in $files; do
 	echo "Creating symlink to $file in ~"
-	ln -s $dir/$file ~/.$file
+	ln -s $dir/$file ~/$file
 done

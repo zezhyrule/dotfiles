@@ -5,26 +5,25 @@
 theme = {}
 local home = os.getenv("HOME")
 
-theme.font          = "dina 8"
+theme.font          = "dina 10"
 
-theme.bg_normal     = "#2d2d2d"
-theme.bg_focus      = "#2d2d2d"
-theme.bg_urgent     = "#f2777a"
-theme.bg_minimize   = "#2d2d2d"
+theme.bg_normal     = "#151515"
+theme.bg_focus      = "#151515"
+theme.bg_urgent     = "#b85335"
+theme.bg_minimize   = "#151515"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#cccccc"
-theme.fg_focus      = "#ffd75f"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#515151"
+theme.fg_normal     = "#e8e8d3"
+theme.fg_focus      = "#fad07a"
+theme.fg_urgent     = "#e8e8d3"
+theme.fg_minimize   = "#888888"
 
-theme.bg_em         = "#282828"
-theme.fg_em         = "#cccccc"
-
+theme.bg_em         = "#151515"
+theme.fg_em         = "#e8e8d3"
 
 theme.border_width  = 1
-theme.border_normal = "#3a3a3a"
-theme.border_focus  = "#3a3a3a"
+theme.border_normal = "#1c1c1c"
+theme.border_focus  = "#1c1c1c"
 theme.border_marked = "#1f1f1f"
 
 -- There are other variable sets

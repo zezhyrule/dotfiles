@@ -43,7 +43,7 @@ end
 beautiful.init(awful.util.getdir("config") .. "/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "terminator"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or  "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -61,8 +61,6 @@ local layouts =
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
     awful.layout.suit.floating
 }
 -- }}}
@@ -79,8 +77,8 @@ end
 -- Define a tag table which hold all screen tags.
 tags = {
   names  = { "1:term", "2:code", "3:web", "4:media", "5:else" },
-  layout = { layouts[2], layouts[2], layouts[2], layouts[7], layouts[1],
-             layouts[7], layouts[2], layouts[1]
+  layout = { layouts[2], layouts[1], layouts[1], layouts[1], layouts[1],
+             layouts[5], layouts[2], layouts[1]
 }}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
@@ -292,9 +290,9 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86Calculator", function ()
 	awful.util.spawn("gimp") end),
     awful.key({ }, "XF86Mail", function ()
-	awful.util.spawn_with_shell("terminator -e ranger") end),
+	awful.util.spawn_with_shell("thunar") end),
 
-    awful.key({ modkey, }, "e", function () awful.util.spawn_with_shell(editor_cmd) end),
+    awful.key({ modkey, }, "e", function () awful.util.spawn_with_shell("urxvt -e vim") end),
     awful.key({ modkey, }, "g", function () awful.util.spawn_with_shell("geany") end),
     awful.key({ modkey, }, "y", function ()
 	awful.util.spawn_with_shell("unclutter") end),
@@ -417,6 +415,7 @@ awful.rules.rules = {
     { rule = { },
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
+                     size_hints_honor = false,
                      focus = awful.client.focus.filter,
                      keys = clientkeys,
                      buttons = clientbuttons } },
@@ -520,6 +519,7 @@ do
   { 
     run_once("xcompmgr"),
     run_once("capsmod4"),
+    run_once("xset b off"),
     -- run_once("conky"),
   }
 

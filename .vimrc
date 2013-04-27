@@ -1,3 +1,5 @@
+" I NEED TO CLEAN THIS UP!
+"
 " zezhyrule
 " 2013-04-03
 "
@@ -5,8 +7,8 @@
 "
 " a.vim
 " abolish.vim
-" commentary.vim
 " ctrlp.vim
+" NERD_commenter.vim
 " NERD_tree
 " snipMate.vim
 " surround.vim
@@ -44,33 +46,6 @@ autocmd vimenter * if !argc() | CtrlP | endif " start ctrlp at startup if no fil
 " highlight all columns past 80
 " execute \"set colorcolumn=" . join(range(81,335), ',')
 
-
-" I use programmer dvorak because I am crazy. map all the
-" punctuation in the number row (non-shifted) to send numbers in normal mode
-" since they're used so often, but in insert mode they will
-" be the punctuation. note that I use a slightly modified layout, so if
-" you c/p this it will not work the same with normal programmer dvorak.
-noremap [ 5
-noremap { 3
-noremap ( 1
-noremap + 9
-noremap = 0
-noremap ) 2
-noremap } 4
-noremap ] 6
-noremap * 8
-noremap ! 7
-noremap 5 [
-noremap 3 {
-noremap 1 (
-noremap 9 +
-noremap 0 =
-noremap 2 )
-noremap 4 }
-noremap 6 ]
-noremap 8 *
-noremap 7 !
-
 " open paren will add close paren and put cursor in between
 " inoremap ( ()<Esc>i
 " same, with others
@@ -86,8 +61,7 @@ map <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 set t_Co=256
-set bg=dark
-colorscheme Tomorrow-Night-Eighties
+colorscheme jellybeans-Xresources
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -231,6 +205,8 @@ endif
 " set runtimepath+=/usr/local/share/lilypond/current/vim/
 " filetype on
 
+" File comment template mapped to \h  TODO: make compatible with any langauge
+nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
-" Function comment template mapped to Ctrl-n 
-nnoremap <C-n> i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><Space><CR><CR>-inputs-<CR><CR>-returns-<Space><CR>/<Esc>kkkkkkkA
+" Function comment template mapped to \f
+nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA

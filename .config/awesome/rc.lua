@@ -312,7 +312,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey,           }, "Return", function () awful.util.spawn_with_shell("bash /home/zezhyrule/.scripts/urxvtc.sh") end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
@@ -518,6 +518,7 @@ do
   local cmds = 
   { 
     run_once("xcompmgr"),
+    "urxvtd",
     run_once("capsmod4"),
     run_once("xset b off"),
     -- run_once("conky"),

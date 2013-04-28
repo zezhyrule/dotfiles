@@ -37,7 +37,7 @@ man() {
     . /usr/share/bash-completion/bash_completion
 
 # PS1='\u \w > '
-PS1='\[\e[m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[m\]> \[\e[0m\]'
+PS1='\[\e[m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[37m\]> \[\e[0m\]'
 
 shopt -s autocd # cd to a dir just by typing its name
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD' # ls after cding
@@ -59,6 +59,7 @@ alias bashrc='$EDITOR $HOME/.bashrc'
 alias visudo='sudo visudo'
 alias gccw='gcc -Wall -Werror -o'
 alias wifi='sudo wifi-menu'
+alias urxvtc='bash $HOME/.scripts/urxvtc.sh'
 alias extmon='$HOME/.scripts/extmon.sh'
 alias ls='ls --color=auto' # pretty colors
 alias ll="ls -lh"

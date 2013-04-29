@@ -42,10 +42,6 @@ set incsearch                  " do incremental searching
 set ignorecase                 " ignore case in searches-
 set smartcase                  " unless you enter a capital letter
 set rnu                        " relative number lines as default
-set tabstop=4                  " tab character is 4 columns
-set softtabstop=4              " tab key indents 4
-set shiftwidth=4               " ==, <<, and >> indent 4 columns
-set expandtab                  " tab characters turn into spaces
 set t_Co=256
 colorscheme jellybeans-Xresources
 
@@ -102,6 +98,69 @@ endif " has("autocmd")
 
 
 "          ====================
+"        ~ =    Whitespace    = ~
+"          ====================
+
+
+set tabstop=4                  " tab character is 4 columns
+set softtabstop=4              " tab key indents 4
+set shiftwidth=4               " ==, <<, and >> indent 4 columns
+set expandtab                  " tab characters turn into spaces
+
+
+"========== TextMate-Style Visible Whitespace ===========
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+  
+" Use cool symbols for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"======================================================== 
+
+
+"===== Change Whitespace Settings Based on Filetype =====
+
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+   
+  " Syntax of these languages is fussy over tabs Vs spaces
+  autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+   
+  " Customisations based on house-style (arbitrary)
+  autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
+   
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+endif
+
+"======================================================== 
+
+
+"=============== Strip Trailing Whitespace ==============
+
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+"======================================================== 
+
+
+"          ====================
 "        ~ =   Key Mappings   = ~
 "          ====================
 
@@ -145,6 +204,9 @@ nmap N Nzz
 
 " maps jk to escape key in insert mode
 imap jk <Esc>
+
+" delete whitespace at eols with F6
+nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
 
 " toggle nerdtree with f7
 map <F7> :NERDTreeToggle<CR> 

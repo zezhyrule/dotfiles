@@ -1,155 +1,53 @@
-" I NEED TO CLEAN THIS UP!
-"
-" zezhyrule
-" 2013-04-03
-"
-" List of plugins I use:
-"
-" a.vim
-" abolish.vim
-" ctrlp.vim
-" NERD_commenter.vim
-" NERD_tree
-" snipMate.vim
-" surround.vim
-" syntastic
-" tabbar.vim
-"
+" " " " " " " " " " " " " "
+" Author: zezhyrule       "
+" Last Edited: 2013-04-29 "
+"                         "
+" " " " " " " " " " " " " "
+" List of plugins I use:  "
+"                         " 
+" a.vim                   "
+" abolish.vim             "
+" ctrlp.vim               "
+" NERD_commenter.vim      "
+" NERD_tree               "
+" snipMate.vim            "
+" surround.vim            "
+" syntastic               "
+" tabbar.vim              "
+"                         "
+" " " " " " " " " " " " " "
 
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
 
+"          ====================
+"        ~ = General Settings = ~
+"          ====================
+
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+    set nobackup               " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+    set backup                 " keep a backup file
 endif
-set backupdir=~/.vim/backup   " send backup files to .vim/backup
-set noswapfile          " disable saving swap files
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
-set rnu                 " relative number lines
-set ignorecase
-set smartcase
-set expandtab		" tab turns into spaces
-set shiftwidth=4        " ==, <<, and >> indent 4 columns
-set tabstop=4	        " tab key indents 4
-autocmd vimenter * if !argc() | CtrlP | endif " start ctrlp at startup if no file was specified
-
-" highlight all columns past 80
-" execute \"set colorcolumn=" . join(range(81,335), ',')
-
-" open paren will add close paren and put cursor in between
-" inoremap ( ()<Esc>i
-" same, with others
-inoremap [ []<Esc>i
-inoremap { {<CR>}<Esc>O
-" inoremap \" \""<Esc>i
-" inoremap < <><Esc>i
-
-" toggle nerdtree with f7
-map <F7> :NERDTreeToggle<CR> 
-
-" toggle tagbar with f8
-nmap <F8> :TagbarToggle<CR>
-
+set backupdir=~/.vim/backup    " send backup files to .vim/backup
+set noswapfile                 " disable saving swap files
+set history=50                 " keep 50 lines of command line history
+set ruler                      " show the cursor position all the time
+set showcmd                    " display incomplete commands
+set incsearch                  " do incremental searching
+set ignorecase                 " ignore case in searches-
+set smartcase                  " unless you enter a capital letter
+set rnu                        " relative number lines as default
+set tabstop=4                  " tab character is 4 columns
+set softtabstop=4              " tab key indents 4
+set shiftwidth=4               " ==, <<, and >> indent 4 columns
+set expandtab                  " tab characters turn into spaces
 set t_Co=256
 colorscheme jellybeans-Xresources
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" If the current buffer has never been saved, it will have no name,
-" call the file browser to save it, otherwise just save it.
-command -nargs=0 -bar Update if &modified 
-                           \|    if empty(bufname('%'))
-                           \|        browse confirm write
-                           \|    else
-                           \|        confirm write
-                           \|    endif
-                           \|endif
-nnoremap <silent> <C-S> :<C-u>Update<CR>
-" Ctrl-s to save while in insert mode
-inoremap <c-s> <c-o>:Update<CR>
-
-" insert new line without entering insert mode. enter key for below and shift-enter for above 
-map <S-Enter> O<Esc>
-map <CR> o<Esc>
-
-" Y to yank to end of line. use yy for yanking whole line
-map Y y$
-
-" accidentally entering capital q won't hurt anyone
-map :Q :q
-" but ctrl-e is easier anyway
-map <C-E> ZQ
-
-" CTRL-X and SHIFT-Del are Cut
-vnoremap <C-X> "+x
-vnoremap <S-Del> "+x
-
-" CTRL-C and CTRL-Insert are Copy
-vnoremap <C-C> "+y
-vnoremap <C-Insert> "+y
-
-" CTRL-V and SHIFT-Insert are Paste
-map <C-V>   	"+gP
-map <S-Insert>  	"+gP
-
-cmap <C-V>  	<C-R>+
-cmap <S-Insert> 	<C-R>+
-
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
-
-" disable arrow keys in normal mode
-" inoremap <up> <nop>
-" inoremap <down> <nop>
-" inoremap <left> <nop>
-" inoremap <right> <nop>
-
-" press space to center screen on cursor
-nmap <space> zz
-" n will keep cursor on middle of screen
-nmap n nzz
-nmap N Nzz
-
-" maps jk to escape key in insert mode
-imap jk <Esc>
-
-" esc won't move cursor left
-" inoremap <Esc> <Esc>`^
-
-" hide search hl with ctrl+l 
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-" toggle rnu with ctrl + h
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-h> :call NumberToggle()<cr>
-
-" in insert mode, auto turn on absolute numbered lines
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
-
-" In many terminal emulators the mouse works just fine
-if has('mouse')
-  set mouse=c 
-endif
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -157,6 +55,7 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -186,27 +85,123 @@ if has("autocmd")
 
   augroup END
 
+  
+  " in insert mode, auto turn on absolute numbered lines
+  autocmd InsertEnter * :set number
+  autocmd InsertLeave * :set relativenumber
+
+  " start ctrlp at startup if no file was specified
+  autocmd vimenter * if !argc() | CtrlP | endif
+
+
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent        " always set autoindenting on
 
 endif " has("autocmd")
+
+
+"          ====================
+"        ~ =   Key Mappings   = ~
+"          ====================
+
+" function to toggle rnu and nu
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+" ctrl-h to toggle
+nnoremap <C-h> :call NumberToggle()<CR>
+
+"open bracket will add close bracket and put cursor in between
+" inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {<CR>}<Esc>O
+" inoremap \" \""<Esc>i
+" inoremap < <><Esc>i
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" Y to yank to end of line. use yy for yanking whole line
+map Y y$
+
+" insert new line without entering insert mode.
+map <CR> o<Esc>
+
+" accidentally entering capital q won't hurt anyone
+map :Q :q
+" but ctrl-e is easier anyway
+map <C-E> ZQ
+
+" press space to center screen on cursor
+nmap <space> zz
+" n will keep cursor on middle of screen
+nmap n nzz
+nmap N Nzz
+
+" maps jk to escape key in insert mode
+imap jk <Esc>
+
+" toggle nerdtree with f7
+map <F7> :NERDTreeToggle<CR> 
+
+" toggle tagbar with f8
+map <F8> :TagbarToggle<CR>
+
+" Header comment template mapped to \h (in C)
+nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
+
+" Function comment template mapped to \f
+nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
+
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+" Ctrl-s to save in normal mode
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+" Ctrl-s to save while in insert mode
+inoremap <c-s> <c-o>:Update<CR>
+
+" CTRL-X and SHIFT-Del are Cut
+vnoremap <C-X> "+x
+vnoremap <S-Del> "+x
+
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C> "+y
+vnoremap <C-Insert> "+y
+
+" CTRL-V and SHIFT-Insert are Paste
+map <C-V>       "+gP
+map <S-Insert>      "+gP
+
+cmap <C-V>      <C-R>+
+cmap <S-Insert>     <C-R>+
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" esc won't move cursor left
+" inoremap <Esc> <Esc>`^
+
+" hide search hl with ctrl+l 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+          \ | wincmd p | diffthis
 endif
 
-" lilypond compatibility
-" filetype off
-" set runtimepath+=/usr/local/share/lilypond/current/vim/
-" filetype on
-
-" File comment template mapped to \h  TODO: make compatible with any langauge
-nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
-
-" Function comment template mapped to \f
-nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA

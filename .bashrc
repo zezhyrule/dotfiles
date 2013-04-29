@@ -59,6 +59,7 @@ alias bashrc='$EDITOR $HOME/.bashrc'
 alias visudo='sudo visudo'
 alias gccw='gcc -Wall -Werror -o'
 alias wifi='sudo wifi-menu'
+alias redshift='gtk-redshift -l 31.3:-94.7 -t 6500:5500'
 alias urxvtc='bash $HOME/.scripts/urxvtc.sh'
 alias extmon='$HOME/.scripts/extmon.sh'
 alias ls='ls --color=auto' # pretty colors

@@ -1,46 +1,95 @@
-/* Charles Davis */
-/* lecture examples on types and variables */
-/* 2013-04-09 */
+/*
+ * ==================================================
+ *
+ *     Filename: example.c
+ *    
+ *     Description: Lecture examples on types and variables.
+ *    
+ *     Created: 2013-04-09
+ *     Author: Charles Davis
+ *
+ * ==================================================
+ */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
-void exampleOne (void);
-void exampleDouble (double height);
-void exampleHex (void);
+#include "main.h"
+
 
 int main(int argc, const char *argv[])
 {
-    printf("lecture 3 examples!\n");
+    printf("Lecture 3 examples!\n");
 
-    /* exampleOne(); */
-    double height;
-    height = 2.31;
-    exampleDouble (height);
-    exampleHex();
+    exampleFour();
 
     return EXIT_SUCCESS;
 }
 
 
-void exampleOne (void)
+void exampleOne(void)
 {
     printf("Example 1\n");
+
     printf("EXIT_SUCCESS is %d\n", EXIT_SUCCESS);
+
     return;
 }
 
 
-void exampleDouble (double meters)
+void exampleDouble(double meters)
 {
     printf("your height is %f meters\n", meters);
     return;
 }
 
 
-void exampleHex (void)
+void exampleHex(void)
 {
     long height = 2.31;
     printf("your hex height is %lx\n", height);
     return;
 }
+
+void exampleTwo(void)
+{
+    printf("Example 2\n");
+}
+
+void exampleThree(void)
+{
+    printf("Example 3\n");
+
+    int x = 1000000000;
+    /*char letter;*/
+
+    /*printf("sizeof (letter) = %ld\n", sizeof (letter));*/
+    printf("sizeof (x) = %d\n", sizeof (x));
+
+    return;
+}
+
+void exampleFour(void)
+{
+    printf("Example 4\n");
+
+    int x = 1;
+    int y = 2;
+    int z = 3;
+
+    int* address;
+
+    address = &x;
+    printf("address of x is %p\n", address);
+    printf("the value stored at %p is %u\n", address, *address);
+    
+    address = &y;
+    printf("address of y is %p\n", address);
+    printf("the value stored at %p is %u\n", address, *address);
+
+    address = &z;
+    printf("address of z is %p\n", address);
+    printf("the value stored at %p is %u\n", address, *address);
+}
+

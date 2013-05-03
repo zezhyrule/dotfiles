@@ -1,0 +1,112 @@
+/*
+ * ================================================== 
+ *
+ *      Filename: encode.c
+ *
+ *      Description: encodes a single letter inputted by user
+ *
+ *      Created: 2013-04-26
+ *      Author: Charles Davis
+ *
+ * ==================================================
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+ 
+
+#define FIRST_LETTER 'a'
+#define LAST_LETTER 'z'
+ 
+
+void testEncode(void);
+char encode(char plainText);
+int isLetter(char letter);
+ 
+
+int main(int argc, char *argv[])
+{
+ 
+    testEncode();
+ 
+    char plainText;
+    char cipherText;
+ 
+    printf("Enter a plain text character:\n");
+ 
+    scanf("%c", &plainText);
+    cipherText = encode(plainText);
+ 
+    printf("Encrypted is %c\n", cipherText);
+    return EXIT_SUCCESS;
+}
+
+
+/*
+ * Funtion: testEncode
+ * -=-=-=-=-=-=-=-=-
+ * Tests the encode function. 
+ *
+ *   -inputs-
+ *
+ * returns:
+ */
+void testEncode (void)
+{
+    assert(encode('a') == 'b');
+    assert(encode('z') == 'a');
+    assert(encode('A') == 'A');
+    assert(encode('7') == '7');
+ 
+    printf("All tests passed!!!");
+    printf("You are Awesome!\n");
+}
+
+
+/*
+ * Funtion: encode
+ * -=-=-=-=-=-=-=-=-
+ * Takes the letter typed by user and encodes it.  
+ *
+ *   -inputs-
+ * plainText: a char typed by user
+ *
+ * returns: char + 1 (e.g., a will turn into b)
+ */
+char encode (char plainText)
+{
+    char cipherText;
+    int toBeEncoded = isLetter(plainText);
+ 
+    if (toBeEncoded)
+    {
+        cipherText = plainText+1;
+        if (cipherText > LAST_LETTER)
+        {
+            cipherText = FIRST_LETTER;
+        }
+    }
+    else
+    {
+        cipherText = plainText;
+    }
+ 
+    return cipherText;
+}
+ 
+/*
+ * Funtion: isLetter
+ * -=-=-=-=-=-=-=-=-
+ * Checks if user's input is a letter or not 
+ *
+ *   -inputs-
+ * letter: the char inputted by user
+ *
+ * returns: true or false
+ */
+int isLetter (char letter)
+{
+    return (letter >= FIRST_LETTER) && (letter <= LAST_LETTER);
+}

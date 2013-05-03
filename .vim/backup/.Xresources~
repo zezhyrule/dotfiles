@@ -1,41 +1,40 @@
 ! terminal colors ------------------------------ 
 
-!TomorrowNightEighties
+! Jellybeans Terminal Colours
 
-*.foreground: #cccccc
-URxvt*.background: #2d2d2d
-*.cursorColor: #aeafad
-! Black / Grey
-*.color0: #000000
-*.color8: #666666
-! Red / Bright Red
-*.color1: #f2777a
-*.color9: #FF3334
-! Green + Bright Green
-*.color2: 99cc99
-*.color10: #9ec400
-! Yellow (Orange) + Bright Yellow (Yellow)
-*.color3: #f99157
-*.color11: #ffcc66
-! Blue + Bright Blue
-*.color4: #99cccc
-*.color12: #6699cc
-! Magenta (Purple) + Bright Magenta
-*.color5: #cc99cc
-*.color13: #b777e0
-! Cyan (Aqua) + Bright Cyan
-*.color6: #009999
-*.color14: #54ced6
-! Light Grey (Selection) + White (Current Line)
-*.color7: #515151
-*.color15: #393939
+! vim: ft=xdefaults
+*background: #151515
+*foreground: #888888
+! black
+*color0: #1C1C1C
+*color8: #404040
+! red
+*color1: #B85335
+*color9: #CF6A4C
+! green
+*color2: #799D6A
+*color10: #99AD6A
+! yellow
+*color3: #FFB964
+*color11: #FAD07A
+! blue
+*color4: #667899
+*color12: #8197BF
+! magenta
+*color5: #8787AF
+*color13: #C6B6EE
+! cyan
+*color6: #668799
+*color14: #8FBFDC
+! white
+*color7: #888888
+*color15: #E8E8D3
+
 ! urxvt stuff -------------------------------
 
-
-URxvt*.transparent: true
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*.shading: 110
 URxvt*.scrollBar: false
-URxvt*.font: xft:Dina:size=12:antialias=false
+URxvt*.cursorBlink: 1
+URxvt*.foreground: #e8e8d3
+URxvt*.font: xft:Dina:size=11:antialias=false
 URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
 URxvt.perl-ext-common: vtwheel

@@ -182,8 +182,8 @@ inoremap { {<CR>}<Esc>O
 " inoremap \" \""<Esc>i
 " inoremap < <><Esc>i
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
+" Don't use Ex mode, use Q for quick macro
+map Q @q
 
 " Y to yank to end of line. use yy for yanking whole line
 map Y y$
@@ -213,6 +213,9 @@ map <F7> :NERDTreeToggle<CR>
 
 " toggle tagbar with f8
 map <F8> :TagbarToggle<CR>
+
+" toggle hardmode with f9
+noremap <F9> <Esc>:call ToggleHardMode()<CR> 
 
 " Header comment template mapped to \h (in C)
 nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA

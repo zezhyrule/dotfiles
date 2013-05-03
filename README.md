@@ -13,6 +13,14 @@ It's not the actual default theme, but one that matches the [Jellybeans Vim them
 ![zezarchtop](http://img41.imageshack.us/img41/6797/20130427145224screensho.png)
 
 
+Xresources
+----------
+
+Colors from: https://github.com/w0ng/dotfiles/blob/master/.config/termcolours/jellybeans
+
+![spaceinvaders](http://img545.imageshack.us/img545/1171/terminalcolors.png)
+
+
 Conky
 -----
 

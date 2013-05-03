@@ -237,16 +237,16 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 " Ctrl-s to save while in insert mode
 inoremap <c-s> <c-o>:Update<CR>
 
-" CTRL-X and SHIFT-Del are Cut
+" CTRL-X and SHIFT-Del are Cut to clipboard
 vnoremap <C-X> "+x
 vnoremap <S-Del> "+x
 
-" CTRL-C and CTRL-Insert are Copy
+" CTRL-C and CTRL-Insert are Copy to clipboard
 vnoremap <C-C> "+y
 vnoremap <C-Insert> "+y
 
-" CTRL-V and SHIFT-Insert are Paste
-map <C-V>       "+gP
+" CTRL-V and SHIFT-Insert are Paste from clipboard
+" map <C-V>       "+gP
 map <S-Insert>      "+gP
 
 cmap <C-V>      <C-R>+

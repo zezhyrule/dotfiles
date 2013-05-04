@@ -7,7 +7,9 @@
                 "                         "
                 " a.vim                   "
                 " abolish.vim             "
+                " ag.vim
                 " ctrlp.vim               "
+                " fugitive.vim
                 " NERD_commenter.vim      "
                 " NERD_tree               "
                 " snipMate.vim            "
@@ -44,6 +46,7 @@ set smartcase                  " unless you enter a capital letter
 set rnu                        " relative number lines as default
 set t_Co=256
 colorscheme jellybeans-Xresources
+execute pathogen#infect()
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -52,6 +55,8 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+
+"================= Autocommand Stuff ====================
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -94,6 +99,8 @@ else
   set autoindent        " always set autoindenting on
 
 endif " has("autocmd")
+
+"========================================================
 
 
 
@@ -224,11 +231,37 @@ noremap <F9> <Esc>:call ToggleHardMode()<CR>
 
 "================= C Comment Templates ==================
 
-" Header comment template mapped to \h
-nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
+" Header comment template mapped to \g
+nnoremap <Leader>g  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
 " Function comment template mapped to \f
 nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
+
+"========================================================
+
+
+"====================== Fugitive ========================
+
+" Edit Git Files
+nnoremap <Leader>e :Gedit<CR>
+nnoremap <Leader>h :Gsplit<CR>
+nnoremap <Leader>v :Gvsplit<CR>
+
+" Git Diff
+nnoremap <Leader>d :Gdiff<CR>
+
+" Git Status
+nnoremap <Leader>s :Gstatus<CR>
+
+" Commit
+nnoremap <Leader>c :Gcommit<CR>
+
+" Git Blame
+nnoremap <Leader>b :Gblame<CR>
+
+" Git Move and Remove
+nnoremap <Leader>m :Gmove<CR>
+nnoremap <Leader>r :Gremove<CR>
 
 "========================================================
 

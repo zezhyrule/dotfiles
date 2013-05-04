@@ -29,7 +29,6 @@ gnome)
     ;;
 awesome|*)
     xrdb -merge ~/.Xresources
-    synapse &
     exec awesome
     ;;
 esac

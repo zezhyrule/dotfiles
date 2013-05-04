@@ -1,31 +1,31 @@
-" " " " " " " " " " " " " "
-" Author: zezhyrule       "
-" Last Edited: 2013-04-29 "
-"                         "
-" " " " " " " " " " " " " "
-" List of plugins I use:  "
-"                         " 
-" a.vim                   "
-" abolish.vim             "
-" ctrlp.vim               "
-" NERD_commenter.vim      "
-" NERD_tree               "
-" snipMate.vim            "
-" surround.vim            "
-" syntastic               "
-" tabbar.vim              "
-"                         "
-" " " " " " " " " " " " " "
+                " " " " " " " " " " " " " "
+                " Author: zezhyrule       "
+                " Last Edited: 2013-04-29 "
+                "                         "
+     " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
+                " List of plugins I use:  "
+                "                         "
+                " a.vim                   "
+                " abolish.vim             "
+                " ctrlp.vim               "
+                " NERD_commenter.vim      "
+                " NERD_tree               "
+                " snipMate.vim            "
+                " surround.vim            "
+                " syntastic               "
+                " tabbar.vim              "
+                "                         "
+                " " " " " " " " " " " " " "
+
 
 
 " Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
 set nocompatible
 
 
-"          ====================
-"        ~ = General Settings = ~
-"          ====================
+"                  ====================
+"                ~ = General Settings = ~
+"                  ====================
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 if has("vms")
@@ -81,14 +81,13 @@ if has("autocmd")
 
   augroup END
 
-  
+
   " in insert mode, auto turn on absolute numbered lines
   autocmd InsertEnter * :set number
   autocmd InsertLeave * :set relativenumber
 
   " start ctrlp at startup if no file was specified
   autocmd vimenter * if !argc() | CtrlP | endif
-
 
 else
 
@@ -97,9 +96,10 @@ else
 endif " has("autocmd")
 
 
-"          ====================
-"        ~ =    Whitespace    = ~
-"          ====================
+
+"                  ====================
+"                ~ =    Whitespace    = ~
+"                  ====================
 
 
 set tabstop=4                  " tab character is 4 columns
@@ -112,11 +112,11 @@ set expandtab                  " tab characters turn into spaces
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
-  
+
 " Use cool symbols for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-"======================================================== 
+"========================================================
 
 
 "===== Change Whitespace Settings Based on Filetype =====
@@ -125,22 +125,22 @@ set listchars=tab:▸\ ,eol:¬
 if has("autocmd")
   " Enable file type detection
   filetype on
-   
+
   " Syntax of these languages is fussy over tabs Vs spaces
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-   
+
   " Customisations based on house-style (arbitrary)
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
-   
+
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
 
-"======================================================== 
+"========================================================
 
 
 "=============== Strip Trailing Whitespace ==============
@@ -157,23 +157,16 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-"======================================================== 
+"========================================================
 
 
-"          ====================
-"        ~ =   Key Mappings   = ~
-"          ====================
 
-" function to toggle rnu and nu
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-" ctrl-h to toggle
-nnoremap <C-h> :call NumberToggle()<CR>
+"                  ====================
+"                ~ =   Key Mappings   = ~
+"                  ====================
+
+
+"======================= General ========================
 
 "open bracket will add close bracket and put cursor in between
 " inoremap ( ()<Esc>i
@@ -202,30 +195,49 @@ nmap <space> zz
 nmap n nzz
 nmap N Nzz
 
+" j and k will move on visual lines, not actual lines
+map j gj
+map k gk
+
 " maps jk to escape key in insert mode
 imap jk <Esc>
+
+"========================================================
+
+
+"==================== Function Keys =====================
 
 " delete whitespace at eols with F6
 nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
 
 " toggle nerdtree with f7
-map <F7> :NERDTreeToggle<CR> 
+map <F7> :NERDTreeToggle<CR>
 
 " toggle tagbar with f8
 map <F8> :TagbarToggle<CR>
 
 " toggle hardmode with f9
-noremap <F9> <Esc>:call ToggleHardMode()<CR> 
+noremap <F9> <Esc>:call ToggleHardMode()<CR>
 
-" Header comment template mapped to \h (in C)
+"========================================================
+
+
+"================= C Comment Templates ==================
+
+" Header comment template mapped to \h
 nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
 " Function comment template mapped to \f
 nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
 
+"========================================================
+
+
+"======================= Saving =========================
+
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
-command -nargs=0 -bar Update if &modified 
+command -nargs=0 -bar Update if &modified
                            \|    if empty(bufname('%'))
                            \|        browse confirm write
                            \|    else
@@ -237,30 +249,62 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 " Ctrl-s to save while in insert mode
 inoremap <c-s> <c-o>:Update<CR>
 
-" CTRL-X and SHIFT-Del are Cut to clipboard
+"========================================================
+
+
+"==================== X11 Clipboard =====================
+"
+" CTRL-X and SHIFT-Del are Cut
 vnoremap <C-X> "+x
 vnoremap <S-Del> "+x
 
-" CTRL-C and CTRL-Insert are Copy to clipboard
+" CTRL-C and CTRL-Insert are Copy
 vnoremap <C-C> "+y
 vnoremap <C-Insert> "+y
 
-" CTRL-V and SHIFT-Insert are Paste from clipboard
+" CTRL-V and SHIFT-Insert are Paste
 " map <C-V>       "+gP
 map <S-Insert>      "+gP
 
 cmap <C-V>      <C-R>+
 cmap <S-Insert>     <C-R>+
 
+"========================================================
+
+
+"=================== Smooth Scrollin' ===================
+
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+
+"========================================================
+
+
+"========================= Misc =========================
+
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" esc won't move cursor left
-" inoremap <Esc> <Esc>`^
+" CTRL-Y to switch between two most recent buffers
+nmap <C-Y> :b#<CR>
 
-" hide search hl with ctrl+l 
+" function to toggle rnu and nu
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+" ctrl-h to toggle
+nnoremap <C-h> :call NumberToggle()<CR>
+
+" hide search hl with ctrl+l
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -270,3 +314,4 @@ if !exists(":DiffOrig")
           \ | wincmd p | diffthis
 endif
 
+"========================================================

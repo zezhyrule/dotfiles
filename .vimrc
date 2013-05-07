@@ -43,10 +43,14 @@ set showcmd                    " display incomplete commands
 set incsearch                  " do incremental searching
 set ignorecase                 " ignore case in searches-
 set smartcase                  " unless you enter a capital letter
+"set visualbell                 " no sounds
+"set autoread                   " reload files changed outside of vim
 set rnu                        " relative number lines as default
+set scrolloff=2                " start scrolling when 2 lines from margins
 set t_Co=256
 colorscheme jellybeans-Xresources
 execute pathogen#infect()
+let mapleader=","              " change leader to comma
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -198,13 +202,18 @@ map <C-E> ZQ
 
 " press space to center screen on cursor
 nmap <space> zz
-" n will keep cursor on middle of screen
-nmap n nzz
-nmap N Nzz
+" searching will keep cursor on middle of screen
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
 
 " j and k will move on visual lines, not actual lines
 map j gj
 map k gk
+" H to bol, L to eol
+noremap H ^
+noremap L g_
 
 " maps jk to escape key in insert mode
 imap jk <Esc>
@@ -231,10 +240,10 @@ noremap <F9> <Esc>:call ToggleHardMode()<CR>
 
 "================= C Comment Templates ==================
 
-" Header comment template mapped to \g
+" Header comment template mapped to ,g
 nnoremap <Leader>g  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
-" Function comment template mapped to \f
+" Function comment template mapped to ,f
 nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
 
 "========================================================
@@ -282,6 +291,9 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 " Ctrl-s to save while in insert mode
 inoremap <c-s> <c-o>:Update<CR>
 
+" w!! to sudo write
+cmap w!! w !sudo tee % >/dev/null<CR>
+
 "========================================================
 
 
@@ -307,7 +319,7 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
 noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
 noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>

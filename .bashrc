@@ -52,8 +52,9 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias vim="stty stop '' -ixoff ; vim" # keep all my configs when run as root
 alias svim='sudo vim'
-alias vi=vim # down with vi compatibility mode!
+alias vi='vim' # down with vi compatibility mode!
 alias edit='vim'
+alias emacs='vim'
 alias vimrc='$EDITOR $HOME/.vimrc'
 alias bashrc='$EDITOR $HOME/.bashrc'
 alias visudo='sudo visudo'
@@ -64,6 +65,7 @@ alias extmon='$HOME/.scripts/extmon.sh'
 alias ls='ls --color=auto' # pretty colors
 alias ll="ls -lh"
 alias la="ls -a"
+alias lt="ll -rt"
 alias lla="ls -la"
 alias l.="ls -d .*"
 alias grep='grep --color=auto'
@@ -85,9 +87,14 @@ alias awrc='$EDITOR $HOME/.config/awesome/rc.lua'
 alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
 alias tmux='tmux -2uv' # for some reason this makes vim work in tmux
 alias x='xmodmap $HOME/.Xmodmap'
-alias reboot="sudo shutdown -r now"
-alias poweroff="sudo poweroff"
+alias reboot="sudo systemctl reboot"
+alias poweroff="sudo systemctl poweroff"
+alias shutdown="sudo systemctl poweroff"
 alias halt="sudo shutdown -h now"
-
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -I'
+alias ln='ln -i'
+alias chown='chown --preserve-root'
 
 export EDITOR="vim"

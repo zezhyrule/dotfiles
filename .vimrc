@@ -1,5 +1,4 @@
-                " " " " " " " " " " " " " "
-                " Author: zezhyrule       "
+                " " " " " " " " " " " " " " " Author: zezhyrule       "
                 " Last Edited: 2013-04-29 "
                 "                         "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
@@ -46,7 +45,8 @@ set smartcase                  " unless you enter a capital letter
 "set visualbell                 " no sounds
 "set autoread                   " reload files changed outside of vim
 set rnu                        " relative number lines as default
-set scrolloff=2                " start scrolling when 2 lines from margins
+set scrolloff=5                " start scrolling when 5 lines from margins
+"set undofile                   " saves undos in a file so you can undo after reopen
 set t_Co=256
 colorscheme jellybeans-Xresources
 execute pathogen#infect()
@@ -90,6 +90,9 @@ if has("autocmd")
 
   augroup END
 
+  " highlight cursorline in active window
+  au WinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
 
   " in insert mode, auto turn on absolute numbered lines
   autocmd InsertEnter * :set number
@@ -196,7 +199,7 @@ map Y y$
 map <CR> o<Esc>
 
 " accidentally entering capital q won't hurt anyone
-map :Q :q
+cnoreabbrev Q q
 " but ctrl-e is easier anyway
 map <C-E> ZQ
 
@@ -217,6 +220,38 @@ noremap L g_
 
 " maps jk to escape key in insert mode
 imap jk <Esc>
+
+" ,-a for Ag.vim
+nnoremap <Leader>a :Ag<Space>
+
+"========================================================
+
+
+"================= Windows and Buffers ==================
+
+" New vertical split with ,-w
+nnoremap <Leader>w <C-w>v<C-w>l
+" Close windows with ,-c
+nnoremap <Leader>c <C-w>c
+
+" move between windows with arrow keys
+nnoremap <Left> <C-w>h
+nnoremap <Down> <C-w>j
+nnoremap <Up> <C-w>k
+nnoremap <Right> <C-w>l
+
+" move between buffers with ,-left/right
+nnoremap <silent> <Leader><Left> :bp<CR>
+nnoremap <silent> <Leader><Right> :bn<CR>
+
+" ,-y to switch between two most recent buffers
+nmap <Leader>y :b#<CR>
+
+" ,-ev to edit vimrc in vertical split
+nnoremap <Leader>ev <C-w><C-v><C-w><C-l>:e $MYVIMRC<CR>
+
+" ,-sv to source the vimrc
+nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
 
 "========================================================
 
@@ -240,8 +275,8 @@ noremap <F9> <Esc>:call ToggleHardMode()<CR>
 
 "================= C Comment Templates ==================
 
-" Header comment template mapped to ,g
-nnoremap <Leader>g  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
+" Header comment template mapped to ,h
+nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
 " Function comment template mapped to ,f
 nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
@@ -252,25 +287,25 @@ nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-input
 "====================== Fugitive ========================
 
 " Edit Git Files
-nnoremap <Leader>e :Gedit<CR>
-nnoremap <Leader>h :Gsplit<CR>
-nnoremap <Leader>v :Gvsplit<CR>
+nnoremap <Leader>ge :Gedit<CR>
+nnoremap <Leader>gh :Gsplit<CR>
+nnoremap <Leader>gv :Gvsplit<CR>
 
 " Git Diff
-nnoremap <Leader>d :Gdiff<CR>
+nnoremap <Leader>gd :Gdiff<CR>
 
 " Git Status
-nnoremap <Leader>s :Gstatus<CR>
+nnoremap <Leader>gs :Gstatus<CR>
 
 " Commit
-nnoremap <Leader>c :Gcommit<CR>
+nnoremap <Leader>gc :Gcommit<CR>
 
 " Git Blame
-nnoremap <Leader>b :Gblame<CR>
+nnoremap <Leader>gb :Gblame<CR>
 
 " Git Move and Remove
-nnoremap <Leader>m :Gmove<CR>
-nnoremap <Leader>r :Gremove<CR>
+nnoremap <Leader>gm :Gmove<CR>
+nnoremap <Leader>gr :Gremove<CR>
 
 "========================================================
 
@@ -332,9 +367,6 @@ noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
-
-" CTRL-Y to switch between two most recent buffers
-nmap <C-Y> :b#<CR>
 
 " function to toggle rnu and nu
 function! NumberToggle()

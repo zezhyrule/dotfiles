@@ -18,61 +18,118 @@ long add(int x, int y);
 
 int main(int argc, const char *argv[])
 {
-    int x;
-    int y;
-    long total;
+    /*int x;*/
+    /*int y;*/
+    /*long total;*/
 
-    x = 40;
-    y = 2;
+    /*x = 40;*/
+    /*y = 2;*/
 
-    total = add(x, y);
+    /*total = add(x, y);*/
 
+    /*printf("\n");*/
+    /*printf("the sum of %d and %d is %ld\n", x, y, total);*/
     printf("\n");
-    printf("the sum of %d and %d is %ld\n", x, y, total);
-    printf("\n");
 
-    char c = 'a';
+    /*char c = 256;*/
+    /*printf("c = %d\n", c);*/
 
-    unsigned long ul = 0;
-    unsigned int ui = 1;
-    unsigned long long ull = 2;
-    unsigned short us = 3;
+    unsigned long ul = 4294967295;
+    printf("ul = %l\n", ul);
+    /*unsigned int ui = 1;*/
+    /*unsigned long long ull = 2;*/
+    /*unsigned short us = 3;*/
 
-    signed long sl = 4;
-    signed int si = 5;
-    signed long long sll = 6;
-    signed short ss = 7;
+    /*signed long sl = 4;*/
+    /*signed int si = 5;*/
+    /*signed long long sll = 6;*/
+    /*signed short ss = 7;*/
 
-    long l = 8;
-    int i = 9;
-    long long ll = 10;
-    short s = 11;
+    /*long l = 8;*/
+    /*int i = 9;*/
+    /*long long ll = 10;*/
+    /*short s = 11;*/
 
-    float f = 3.1;
-    double d = 3.14;
-
+    /*float f = 3.1;*/
+    /*double d = 3.14;*/
+    
 
     printf("the number of bytes used to store a char is %d\n", sizeof(c));
-    printf("\n")
+    printf("\n");
     printf("the number of bytes used to store an unsigned long is %d\n", sizeof(ul));
     printf("the number of bytes used to store an unsigned int is %d\n", sizeof(ui));
     printf("the number of bytes used to store an unsigned long long is %d\n", sizeof(ull));
     printf("the number of bytes used to store an unsigned short is %d\n", sizeof(us));
-    printf("\n")
+    printf("\n");
     printf("the number of bytes used to store a signed long is %d\n", sizeof(sl));
     printf("the number of bytes used to store a signed int is %d\n", sizeof(si));
     printf("the number of bytes used to store a signed long long is %d\n", sizeof(sll));
     printf("the number of bytes used to store a signed short is %d\n", sizeof(ss));
-    printf("\n")
+    printf("\n");
+    printf("the number of bytes used to store a long is %d\n", sizeof(l));
+    printf("the number of bytes used to store an int is %d\n", sizeof(i));
+    printf("the number of bytes used to store a long long is %d\n", sizeof(ll));
+    printf("the number of bytes used to store a short is %d\n", sizeof(s));
+    printf("\n");
+    printf("the number of bytes used to store a float is %d\n", sizeof(f));
+    printf("the number of bytes used to store a double is %d\n", sizeof(d));
+    printf("\n");
+
+
+/*
+ *    char* cPtr = &c;
+ *
+ *    unsigned long* ulPtr = &ul;
+ *    unsigned int* uiPtr = &ui;
+ *    unsigned long long* ullPtr = &ull;
+ *    unsigned short* usPtr = &us;
+ *
+ *    long* slPtr = &sl;
+ *    int* siPtr = &si;
+ *    long long* sllPtr = &sll;
+ *    short* ssPtr = &ss;
+ *
+ *    long* lPtr = &l;
+ *    int* iPtr = &i;
+ *    long long* llPtr = &ll;
+ *    short* sPtr = &s;
+ *
+ *    float* fPtr = &f;
+ *    double* dPtr = &d;
+ *
+ *    printf("\n");
+ *    printf("The location of char c is %p\n", cPtr);
+ *    printf("\n");
+ *    printf("The location of unsigned long ul is %p\n", ulPtr);
+ *    printf("The location of unsigned int ui is %p\n", uiPtr);
+ *    printf("The location of unsigned long long ull is %p\n", ullPtr);
+ *    printf("The location of unsigned short us is %p\n", usPtr);
+ *    printf("\n");
+ *    printf("The location of signed long sl is %p\n", slPtr);
+ *    printf("The location of signed int si is %p\n", siPtr);
+ *    printf("The location of signed long long sll is %p\n", sllPtr);
+ *    printf("The location of signed short ss is %p\n", ssPtr);
+ *    printf("\n");
+ *    printf("The location of long l is %p\n", lPtr);
+ *    printf("The location of int i is %p\n", iPtr);
+ *    printf("The location of long long ll is %p\n", llPtr);
+ *    printf("The location of short s is %p\n", sPtr);
+ *    printf("\n");
+ *    printf("The location of float f is %p\n", fPtr);
+ *    printf("The location of double d is %p\n", dPtr);
+ */
+
 
     // add them all together to avoid compiler complaints
 
-    double grandTotal;
-    grandTotal = c + ul + ui + ull + us + sl + si + sll +
-                 ss + l + i + ll + s + f + d;
+    /*
+     *double grandTotal;
+     *grandTotal = c + ul + ui + ull + us + sl + si + sll +
+     *             ss + l + i + ll + s + f + d;
+     */
 
     printf("\n");
-    printf("all these things added together make %f\n", grandTotal);
+    /*printf("all these things added together make %f\n", grandTotal);*/
 
 
     return EXIT_SUCCESS;

@@ -6,23 +6,23 @@
 #   (use "git reset HEAD <file>..." to unstage)
 #
 #	modified:   .bashrc
-#	deleted:    .config/awesome/themes/default/README
 #	modified:   .vimrc
-#	modified:   .xinitrc
 #
 # Changes not staged for commit:
-#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	deleted:    .scripts/2013-04-05-124607_1360x768_scrot.png
 #	modified:   .vim/backup/.Xresources~
 #	modified:   .vim/backup/.bashrc~
 #	modified:   .vim/backup/.vimrc~
 #	modified:   .vim/backup/.xinitrc~
-#	modified:   .vim/backup/example.c~
-#	modified:   .vim/backup/makesymlinks.sh~
+#	modified:   .vim/backup/COMMIT_EDITMSG~
+#	modified:   .vim/backup/capsmod4~
+#	modified:   .vim/backup/config~
+#	modified:   .vim/backup/encode.c~
+#	modified:   .vim/backup/logind.conf~
+#	modified:   .vim/backup/main.c~
 #	modified:   .vim/backup/rc.lua~
-#	modified:   .vim/backup/settings~
 #	modified:   .vim/backup/theme.lua~
 #
 # Untracked files:
@@ -63,7 +63,10 @@
 #	.config/xfburn/
 #	.config/xfce4-dict/
 #	.config/xfce4/
-#	.vim/backup/COMMIT_EDITMSG~
-#	.vim/backup/README.md~
-#	.vim/backup/encode.c~
-#	.vim/backup/encode.h~
+#	.minecraft/
+#	.vim/autoload/smooth_scroll.vim
+#	.vim/backup/home~
+#	.vim/backup/libao.conf~
+#	.vim/backup/logout~
+#	.vim/backup/rot13.c~
+#	.vim/backup/wlp2s0-NETGEAR~

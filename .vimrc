@@ -1,5 +1,6 @@
-                " " " " " " " " " " " " " " " Author: zezhyrule       "
-                " Last Edited: 2013-04-29 "
+                " " " " " " " " " " " " " "
+                " Author: zezhyrule       "
+                " Last Edited: 2013-05-09 "
                 "                         "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
                 " List of plugins I use:  "
@@ -44,9 +45,9 @@ set ignorecase                 " ignore case in searches-
 set smartcase                  " unless you enter a capital letter
 "set visualbell                 " no sounds
 "set autoread                   " reload files changed outside of vim
+"set undofile                   " saves undos in a file so you can undo after reopen
 set rnu                        " relative number lines as default
 set scrolloff=5                " start scrolling when 5 lines from margins
-"set undofile                   " saves undos in a file so you can undo after reopen
 set t_Co=256
 colorscheme jellybeans-Xresources
 execute pathogen#infect()
@@ -219,7 +220,7 @@ noremap H ^
 noremap L g_
 
 " maps jk to escape key in insert mode
-imap jk <Esc>
+"imap jk <Esc>
 
 " ,-a for Ag.vim
 nnoremap <Leader>a :Ag<Space>
@@ -229,10 +230,10 @@ nnoremap <Leader>a :Ag<Space>
 
 "================= Windows and Buffers ==================
 
-" New vertical split with ,-w
-nnoremap <Leader>w <C-w>v<C-w>l
-" Close windows with ,-c
-nnoremap <Leader>c <C-w>c
+" New vertical split with ,-wv
+nnoremap <Leader>wv <C-w>v<C-w>l
+" Close windows with ,-wc
+nnoremap <Leader>wc <C-w>c
 
 " move between windows with arrow keys
 nnoremap <Left> <C-w>h
@@ -257,6 +258,9 @@ nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
 
 
 "==================== Function Keys =====================
+
+" F1 will search help for the word under the cursor
+nnoremap <F1> :help <C-r><C-w><CR>
 
 " delete whitespace at eols with F6
 nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
@@ -376,8 +380,8 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
-" ctrl-h to toggle
-nnoremap <C-h> :call NumberToggle()<CR>
+" ,-n to toggle
+nnoremap <Leader>n :call NumberToggle()<CR>
 
 " hide search hl with ctrl+l
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

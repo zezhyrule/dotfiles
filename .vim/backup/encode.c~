@@ -53,10 +53,10 @@ int main(int argc, char *argv[])
  *
  * returns:
  */
-void testEncode (void)
+void testEncode(void)
 {
-    assert(encode('a') == 'b');
-    assert(encode('z') == 'a');
+    assert(encode('a') == 'n');
+    assert(encode('z') == 'm');
     assert(encode('A') == 'A');
     assert(encode('7') == '7');
  
@@ -75,14 +75,14 @@ void testEncode (void)
  *
  * returns: char + 1 (e.g., a will turn into b)
  */
-char encode (char plainText)
+char encode(char plainText)
 {
     char cipherText;
     int toBeEncoded = isLetter(plainText);
  
     if (toBeEncoded)
     {
-        cipherText = plainText+1;
+        cipherText = plainText + 13;
         if (cipherText > LAST_LETTER)
         {
             cipherText = FIRST_LETTER;
@@ -106,7 +106,7 @@ char encode (char plainText)
  *
  * returns: true or false
  */
-int isLetter (char letter)
+int isLetter(char letter)
 {
     return (letter >= FIRST_LETTER) && (letter <= LAST_LETTER);
 }

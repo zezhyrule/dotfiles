@@ -5,25 +5,25 @@
 theme = {}
 local home = os.getenv("HOME")
 
-theme.font          = "dina 10"
+theme.font          = "dina 8"
 
-theme.bg_normal     = "#151515"
-theme.bg_focus      = "#151515"
-theme.bg_urgent     = "#b85335"
-theme.bg_minimize   = "#151515"
+theme.bg_normal     = "#1d1f21"
+theme.bg_focus      = theme.bg_normal
+theme.bg_urgent     = "#CC6666"
+theme.bg_minimize   = theme.bg_normal
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#e8e8d3"
-theme.fg_focus      = "#fad07a"
-theme.fg_urgent     = "#e8e8d3"
-theme.fg_minimize   = "#888888"
+theme.fg_normal     = "#C5C8C6"
+theme.fg_focus      = "#A54242"
+theme.fg_urgent     = "#1d1f21"
+theme.fg_minimize   = "#373B41"
 
-theme.bg_em         = "#151515"
-theme.fg_em         = "#e8e8d3"
+theme.bg_em         = theme.bg_normal
+theme.fg_em         = theme.fg_normal
 
-theme.border_width  = 1
-theme.border_normal = "#1c1c1c"
-theme.border_focus  = "#1c1c1c"
+theme.border_width  = 2
+theme.border_normal = "#282A2E"
+theme.border_focus  = "#C5C8C6"
 theme.border_marked = "#1f1f1f"
 
 -- There are other variable sets
@@ -76,7 +76,7 @@ theme.titlebar_maximized_button_focus_inactive  = "/usr/share/awesome/themes/def
 theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "~/Pictures/wallpapers/wall2.png"
+theme.wallpaper = "~/Pictures/wallpapers/nekowall.jpg"
 
 
 -- {{{ Clean Tasklist

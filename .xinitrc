@@ -17,8 +17,10 @@ xfce4)
     synapse &
     exec startxfce4
     ;;
-wmii)
-    exec wmii
+bspwm)
+    xrdb -merge ~/.Xresources
+    sxhkd &
+    exec bspwm
     ;;
 openbox)
     synapse &

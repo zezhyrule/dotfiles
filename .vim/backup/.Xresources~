@@ -1,10 +1,55 @@
 ! terminal colors ------------------------------ 
 
-! Jellybeans Terminal Colours
+!! Jellybeans Terminal Colours
 
+!! vim: ft=xdefaults
+!*background: #151515
+!*foreground: #888888
+!! black
+!*color0: #1C1C1C
+!*color8: #404040
+!! red
+!*color1: #B85335
+!*color9: #CF6A4C
+!! green
+!*color2: #799D6A
+!*color10: #99AD6A
+!! yellow
+!*color3: #FFB964
+!*color11: #FAD07A
+!! blue
+!*color4: #667899
+!*color12: #8197BF
+!! magenta
+!*color5: #8787AF
+!*color13: #C6B6EE
+!! cyan
+!*color6: #668799
+!*color14: #8FBFDC
+!! white
+!*color7: #888888
+!*color15: #E8E8D3
+
+
+! Hybrid Terminal Colours
 ! vim: ft=xdefaults
-*background: #151515
-*foreground: #888888
+ 
+! Tomorrow-Night Palette
+#define t_background #1d1f21
+#define t_current_line #282A2E
+#define t_selection #373B41
+#define t_foreground #C5C8C6
+#define t_comment #707880
+#define t_red #CC6666
+#define t_orange #DE935F
+#define t_yellow #F0C674
+#define t_green #B5BD68
+#define t_aqua #8ABEB7
+#define t_blue #81A2BE
+#define t_purple #B294BB
+  
+*background: t_background
+*foreground: t_foreground
 ! black
 *color0: #1C1C1C
 *color8: #404040
@@ -35,6 +80,6 @@
 URxvt*.scrollBar: false
 URxvt*.cursorBlink: 1
 URxvt*.foreground: #e8e8d3
-URxvt*.font: xft:Dina:size=11:antialias=false
+URxvt*.font: xft:Dina:size=10:antialias=false
 URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
 URxvt.perl-ext-common: vtwheel

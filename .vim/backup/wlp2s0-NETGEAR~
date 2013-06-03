@@ -1,0 +1,6 @@
+Connection=wireless
+Description='Automatically generated profile by wifi-menu'
+Interface=wlp2s0
+Security=none
+ESSID=NETGEAR
+IP=dhcp

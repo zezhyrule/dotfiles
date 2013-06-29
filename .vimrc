@@ -15,7 +15,7 @@
                 " snipMate.vim            "
                 " surround.vim            "
                 " syntastic               "
-                " tabbar.vim              "
+                " tagbar.vim              "
                 "                         "
                 " " " " " " " " " " " " " "
 
@@ -46,6 +46,7 @@ set smartcase                  " unless you enter a capital letter
 "set visualbell                 " no sounds
 "set autoread                   " reload files changed outside of vim
 "set undofile                   " saves undos in a file so you can undo after reopen
+set cursorline                 " highlights the line the cursor is on
 set rnu                        " relative number lines as default
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
@@ -98,9 +99,6 @@ if has("autocmd")
   " in insert mode, auto turn on absolute numbered lines
   autocmd InsertEnter * :set number
   autocmd InsertLeave * :set relativenumber
-
-  " start ctrlp at startup if no file was specified
-  autocmd vimenter * if !argc() | CtrlP | endif
 
 else
 
@@ -235,7 +233,7 @@ nnoremap <Leader>wv <C-w>v<C-w>l
 " Close windows with ,-wc
 nnoremap <Leader>wc <C-w>c
 
-" move between windows with arrow keys
+" move between windows with arrow keys (ctrl-w+hjkl is probably better though)
 nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
 nnoremap <Up> <C-w>k
@@ -277,13 +275,16 @@ noremap <F9> <Esc>:call ToggleHardMode()<CR>
 "========================================================
 
 
-"================= C Comment Templates ==================
+"====================== C Stuff =========================
 
 " Header comment template mapped to ,h
 nnoremap <Leader>h  i/*<CR><Space><Esc>50i=<Esc>o<CR><Tab><Tab>Filename:<Space><CR><CR>Description:<Space><CR><CR>Created:<Space><CR>Author:<Space>Charles<Space>Davis<CR><CR><Esc>a<Space><Esc>50a=<Esc>o<Esc>a/<CR><CR><Esc>10kA
 
 " Function comment template mapped to ,f
 nnoremap <Leader>f i/*<CR>Funtion:<Space><CR>-=-=-=-=-=-=-=-=-<CR><CR><CR>-inputs-<CR><BS><BS><CR>returns:<Space><CR>/<Esc>7kA
+
+" Open definition in split with ,/
+nnoremap <Leader>/ :vsp<CR> :exec("tag ".expand("<cword>"))<CR>
 
 "========================================================
 

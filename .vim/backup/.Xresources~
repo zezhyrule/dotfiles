@@ -30,12 +30,11 @@
 !*color7: #888888
 !*color15: #E8E8D3
 
-
 ! Hybrid Terminal Colours
 ! vim: ft=xdefaults
  
 ! Tomorrow-Night Palette
-#define t_background #1d1f21
+#define t_background #1D1F21
 #define t_current_line #282A2E
 #define t_selection #373B41
 #define t_foreground #C5C8C6
@@ -47,33 +46,33 @@
 #define t_aqua #8ABEB7
 #define t_blue #81A2BE
 #define t_purple #B294BB
-  
+ 
 *background: t_background
 *foreground: t_foreground
 ! black
-*color0: #1C1C1C
-*color8: #404040
+*color0: t_current_line
+*color8: t_selection
 ! red
-*color1: #B85335
-*color9: #CF6A4C
+*color1: #A54242
+*color9: t_red
 ! green
-*color2: #799D6A
-*color10: #99AD6A
+*color2: #8C9440
+*color10: t_green
 ! yellow
-*color3: #FFB964
-*color11: #FAD07A
+*color3: t_orange
+*color11: t_yellow
 ! blue
-*color4: #667899
-*color12: #8197BF
+*color4: #5F819D
+*color12: t_blue
 ! magenta
-*color5: #8787AF
-*color13: #C6B6EE
+*color5: #85678F
+*color13: t_purple
 ! cyan
-*color6: #668799
-*color14: #8FBFDC
+*color6: #5E8D87
+*color14: t_aqua
 ! white
-*color7: #888888
-*color15: #E8E8D3
+*color7: t_comment
+*color15: t_foreground
 
 ! urxvt stuff -------------------------------
 
@@ -83,3 +82,5 @@ URxvt*.foreground: #e8e8d3
 URxvt*.font: xft:Dina:size=10:antialias=false
 URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
 URxvt.perl-ext-common: vtwheel
+xterm*.foreground: #e8e8d3
+xterm*.font: xft:Dina:size=10:antialias=false

@@ -1,0 +1,7 @@
+\relative c'
+{
+  c d e f
+  g a b c
+  d f a g
+  c b f d
+}

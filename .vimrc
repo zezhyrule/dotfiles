@@ -12,6 +12,7 @@
                 " fugitive.vim
                 " NERD_commenter.vim      "
                 " NERD_tree               "
+                " smartusline.vim
                 " snipMate.vim            "
                 " surround.vim            "
                 " syntastic               "
@@ -47,10 +48,12 @@ set smartcase                  " unless you enter a capital letter
 "set autoread                   " reload files changed outside of vim
 "set undofile                   " saves undos in a file so you can undo after reopen
 set cursorline                 " highlights the line the cursor is on
+set ls=2                       " shows statusline always
 set rnu                        " relative number lines as default
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
-colorscheme jellybeans-Xresources
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 execute pathogen#infect()
 let mapleader=","              " change leader to comma
 
@@ -61,6 +64,11 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" smartus line stuff
+"hi Modified guifg=black guibg=#1C1C1C
+"set statusline=%2.2n\ %t\ %h%#Modified#%m%r%*%=%l/%L\ %2c\ %P
+let g:smartusline_string_to_highlight = '%2.2n %t %h'
+set statusline=\(%n\)\ %f\ %#Modified#%m%r%*\ (%l/%L,\ %c)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]\ \ 
 
 "================= Autocommand Stuff ====================
 
@@ -148,6 +156,7 @@ if has("autocmd")
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType lilypond setlocal ts=2 sts=2 sw=2
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
@@ -233,11 +242,15 @@ nnoremap <Leader>wv <C-w>v<C-w>l
 " Close windows with ,-wc
 nnoremap <Leader>wc <C-w>c
 
-" move between windows with arrow keys (ctrl-w+hjkl is probably better though)
+" move between windows with arrow keys or ,-w + hjkl
 nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
 nnoremap <Up> <C-w>k
 nnoremap <Right> <C-w>l
+nnoremap <Leader>wh <C-w>h
+nnoremap <Leader>wj <C-w>j
+nnoremap <Leader>wk <C-w>k
+nnoremap <Leader>wl <C-w>l
 
 " move between buffers with ,-left/right
 nnoremap <silent> <Leader><Left> :bp<CR>
@@ -261,7 +274,7 @@ nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
 nnoremap <F1> :help <C-r><C-w><CR>
 
 " delete whitespace at eols with F6
-nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
+"nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
 
 " toggle nerdtree with f7
 map <F7> :NERDTreeToggle<CR>
@@ -395,5 +408,8 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
           \ | wincmd p | diffthis
 endif
+
+" LilyPond stuff
+set runtimepath+=/usr/share/lilypond/2.16.0/vim/
 
 "========================================================

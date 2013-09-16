@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=urxvt
+Comment=rxvt terminal patched with unicode support
+Exec=urxvt
+Icon=/usr/share/icons/Humanity/apps/32/gnome-terminal.svg
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+X-Ayatana-Desktop-Shortcuts=NewWindow
+
+[NewWindow Shortcut Group]
+Name=New Window
+Exec=urxvt
+TargetEnvironment=Unity

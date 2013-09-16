@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void failChangeValue(int);
+void changeValue(int*);
+
+int main(int argc, const char *argv[])
+{
+    int x = 10;
+    int *p;
+    p = &x;
+
+    printf("The value of x: %d\n", x);
+    printf("The address of x: %p\n", p);
+    printf("The address of x: %p\n", &x);
+    printf("The value of x: %d\n", *p); // Dereferencing p (var stored at &x)
+    
+    printf("The value of x: %d\n", *(&x)); // Same as x
+    printf("\n");
+
+    *p = 20; // Dereferencing p to 20
+    printf("The value of x: %d\n", *p);  // prints 20
+    printf("The value of x: %d\n", x); // also prints 20
+    printf("\n");
+
+    // *p = 20 is the same as *(&x) = 20 which is the same as x = 20
+    // using pointers you can change the values of vars inside functions
+    printf("The address of x outside fn: %p\n", &x);
+    failChangeValue(x);
+    printf("The value of x: %d\n", x);
+    printf("\n");
+    changeValue(&x);
+    printf("The value of x: %d\n", x);
+
+    
+
+    return 0;
+}
+
+void failChangeValue(int x)
+{
+    x = 15; 
+    printf("The address of x inside fn: %p\n", &x);
+}
+
+void changeValue(int *p)
+{
+    *p = 15; 
+    printf("The address of x inside fn: %p\n", p);
+}

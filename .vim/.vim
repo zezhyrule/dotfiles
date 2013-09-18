@@ -1,0 +1,1 @@
+/home/zezzy/dotfiles/.vim

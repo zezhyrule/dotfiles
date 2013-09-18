@@ -52,8 +52,8 @@ set ls=2                       " shows statusline always
 set rnu                        " relative number lines as default
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+"let g:hybrid_use_Xresources = 1
+colorscheme jellybeans-Xresources
 execute pathogen#infect()
 let mapleader=","              " change leader to comma
 

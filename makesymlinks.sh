@@ -7,7 +7,7 @@
 ###### Variables
 
 dir=~/dotfiles
-files=".bashrc .vimrc .vim .minecraft .scripts .conkyrc .Xmodmap .Xresources .xinitrc"
+files=".bashrc .vimrc .vim .scripts .conkyrc .Xmodmap .Xresources"
 
 ######
 # change to dotfiles directory

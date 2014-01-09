@@ -24,7 +24,7 @@ Colors from: https://github.com/w0ng/dotfiles/blob/master/.config/termcolours/je
 Conky
 -----
 
-Here's what [my conky config](https://github.com/zezhyrule/dotfiles/blob/master/.conkyrc) looks like. I don't use conky anymore but I like how this one looks so I'll keep the rc around for a while.
+Here's what [my conky config](https://github.com/zezhyrule/dotfiles/blob/master/.conkyrc) looks like. I don't use conky anymore but I like how this one looks so I'll keep ot around. Based on Archey.
 
 ![zezarchconky](http://img826.imageshack.us/img826/1289/archeyconky.png)
 
@@ -32,13 +32,11 @@ Here's what [my conky config](https://github.com/zezhyrule/dotfiles/blob/master/
 Vim
 ---
 
-I listed all the plugins I use in my vimrc, since I installed them via [packer](https://aur.archlinux.org/packages/packer/ "AUR - packer"). Jellybeans is the colorscheme I currently use, as mentioned above. Another great one to check out is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme "Tomorrow Theme"). I used that one for a very long time before I switched to jellybeans. It's really an amazing scheme, I just wanted to try something different.
-Yes, [my vimrc](https://github.com/zezhyrule/dotfiles/blob/master/.vimrc) is super ugly. I will clean it one day.
+All the plugins I use are listed at the top of [my vimrc](https://github.com/zezhyrule/dotfiles/blob/master/.vimrc). Jellybeans is the colorscheme I currently use, as mentioned above. Another great one to check out is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme "Tomorrow Theme"). I used that one for a very long time before I switched to jellybeans. It's really an amazing scheme, I just wanted to try something different.
+Yes, my vimrc is super ugly. I will clean it one day.
 
 
 Misc
 ----
 
 [Dina Font](https://www.archlinux.org/packages/community/any/dina-font/) is my go-to font for all my monospace needs, if anyone is wondering. It's a great font, I recommend it to everyone! It's in the Arch community repo.
-
-Why do I have my .minecraft folder hosted here? Because uh... Why not?

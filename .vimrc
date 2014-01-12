@@ -1,19 +1,21 @@
                 " " " " " " " " " " " " " "
                 " Author: zezhyrule       "
-                " Last Edited: 2013-05-09 "
+                " Last Edited: 2014-01-11 "
                 "                         "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
                 " List of plugins I use:  "
                 "                         "
                 " a.vim                   "
                 " abolish.vim             "
-                " ag.vim
+                " ag.vim                  "
                 " ctrlp.vim               "
-                " fugitive.vim
+                " easymotion
+                " fugitive.vim            "
                 " NERD_commenter.vim      "
                 " NERD_tree               "
-                " smartusline.vim
+                " smartusline.vim         "
                 " snipMate.vim            "
+                " supertab                "
                 " surround.vim            "
                 " syntastic               "
                 " tagbar.vim              "
@@ -24,7 +26,6 @@
 
 " Use Vim settings, rather than Vi settings (much better!).
 set nocompatible
-
 
 "                  ====================
 "                ~ = General Settings = ~
@@ -55,24 +56,25 @@ set t_Co=256
 "let g:hybrid_use_Xresources = 1
 colorscheme jellybeans-Xresources
 execute pathogen#infect()
+
 let mapleader=","              " change leader to comma
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  syntax on
+  "syntax on
   set hlsearch
 endif
 
 " smartus line stuff
 "hi Modified guifg=black guibg=#1C1C1C
 "set statusline=%2.2n\ %t\ %h%#Modified#%m%r%*%=%l/%L\ %2c\ %P
-let g:smartusline_string_to_highlight = '%2.2n %t %h'
-set statusline=\(%n\)\ %f\ %#Modified#%m%r%*\ (%l/%L,\ %c)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]\ \ 
+"let g:smartusline_string_to_highlight = '%2.2n %t %h'
+"set statusline=\(%n\)\ %f\ %#Modified#%m%r%*\ (%l/%L,\ %c)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]\ \ 
 
 "================= Autocommand Stuff ====================
 
-" Only do this part when compiled with support for autocommands.
+" Only do this part if compiled with support for autocommands.
 if has("autocmd")
 
   " Enable file type detection.
@@ -135,7 +137,7 @@ set expandtab                  " tab characters turn into spaces
 nmap <leader>l :set list!<CR>
 
 " Use cool symbols for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+"set listchars=tab:▸\ ,eol:¬
 
 "========================================================
 
@@ -192,7 +194,7 @@ endfunction
 
 "open bracket will add close bracket and put cursor in between
 " inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
+"inoremap [ []<Esc>i
 inoremap { {<CR>}<Esc>O
 " inoremap \" \""<Esc>i
 " inoremap < <><Esc>i
@@ -231,6 +233,9 @@ noremap L g_
 
 " ,-a for Ag.vim
 nnoremap <Leader>a :Ag<Space>
+
+" tmux uses C-b
+noremap <C-b> <NOP>
 
 "========================================================
 
@@ -372,10 +377,10 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
+"noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+"noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 "========================================================
 
@@ -410,6 +415,6 @@ if !exists(":DiffOrig")
 endif
 
 " LilyPond stuff
-set runtimepath+=/usr/share/lilypond/2.16.0/vim/
+"set runtimepath+=/usr/share/lilypond/2.16.0/vim/
 
 "========================================================

@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# make_page - A script to produce an HTML file
+
+#### Constants
+
+TITLE="System Information for $HOSTNAME"
+TIME_NOW=$(date +"%F %r %Z")
+TIME_STAMP="Updated on $TIME_NOW by $USER"
+
+
+#### Functions
+
+function sys_info
+{
+    echo "<h2>System release info</h2>"
+    echo "<p>Function not yet implemented</p>"
+}
+
+function show_uptime
+{
+    echo "<h2>System uptime</h2>"
+    echo "<pre>"
+    uptime
+    echo "</pre>"
+}
+
+function drive_space
+{
+    echo "<h2>Filesystem space</h2>"
+    echo "<pre>"
+    df
+    echo "</pre>"
+}
+
+function home_space
+{
+    echo "<h2>Filesystem space</h2>"
+    echo "<pre>"
+    echo "Bytes   Directory"
+    du -s /home/* | sort -nr
+    echo "</pre>"
+}
+
+
+#### Main
+
+cat <<- _EOF_
+    <html>
+    <head>
+        <title>$TITLE</title>
+    </head>
+
+    <body>
+        <h1>$TITLE<h1>
+        <p>$TIME_STAMP
+        $(sys_info)
+        $(show_uptime)
+        $(drive_space)
+        $(home_space)
+    </body>
+    </html>
+_EOF_

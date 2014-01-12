@@ -1,3 +1,13 @@
+!!!!!! Custom Dvorak Keymap !!!!!!
+
+! Swap left alt and left control
+remove Mod1 = Alt_L
+remove Control = Control_L
+keysym Control_L = Alt_L
+keysym Alt_L = Control_L
+add Mod1 = Alt_L
+add Control = Control_L
+
 keycode   8 =
 keycode   9 = Escape NoSymbol Escape
 keycode  10 = exclam 7 exclam 7 currency NoSymbol currency

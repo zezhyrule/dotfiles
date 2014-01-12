@@ -1,0 +1,26 @@
+exec xsetroot -cursor_name left_ptr
+startup_message off
+
+escape C-t
+
+exec urxvt
+hsplit
+focusright
+exec urxvt
+
+#switch between windows
+unbind h
+unbind j
+unbind k
+unbind l
+bind h focusleft
+bind j focusdown
+bind k focusup
+bind l focusright
+
+#apps
+unbind c
+bind c exec urxvt
+
+unbind q
+bind q exec killall ratpoison

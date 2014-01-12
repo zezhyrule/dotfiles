@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# make_page - A script to produce an HTML file
+
+TITLE="System Information for"
+TIME=$(date +"%F %r %Z")
+TIME_STAMP="Updated on $TIME By $USER"
+
+cat <<- _EOF_
+    <HTML>
+    <HEAD>
+        <TITLE>
+        $TITLE $HOSTNAME
+        </TITLE>
+    </HEAD>
+
+    <BODY>
+    <H1>$TITLE $HOSTNAME<H1>
+    <P>$TIME_STAMP
+    </BODY>
+    </HTML>
+_EOF_

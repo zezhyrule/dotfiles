@@ -1,15 +1,23 @@
+! Swap left alt and left control
+remove Mod1 = Alt_L
+remove Control = Control_L
+keysym Control_L = Alt_L
+keysym Alt_L = Control_L
+add Mod1 = Alt_L
+add Control = Control_L
+
 keycode   8 =
 keycode   9 = Escape NoSymbol Escape
-keycode  10 = bracketleft 7 bracketleft 7 currency NoSymbol currency
-keycode  11 = braceleft 5 braceleft 5 cent NoSymbol cent
-keycode  12 = parenleft 3 parenleft 3 yen NoSymbol yen
-keycode  13 = plus 1 plus 1 EuroSign NoSymbol EuroSign
-keycode  14 = equal 9 equal 9 sterling dead_circumflex sterling
-keycode  15 = parenright  0 parenright 0
-keycode  16 = braceright 2 braceright 2 onehalf NoSymbol onehalf
-keycode  17 = bracketright 4 bracketright 4 dead_grave NoSymbol dead_grave
-keycode  18 = asterisk 6 asterisk 6
-keycode  19 = exclam 8 exclam 8 exclamdown NoSymbol exclamdown
+keycode  10 = exclam 7 exclam 7 currency NoSymbol currency
+keycode  11 = bracketleft 5 bracketleft 5 cent NoSymbol cent
+keycode  12 = braceleft 3 braceleft 3 yen NoSymbol yen
+keycode  13 = parenleft 1 parenleft 1 EuroSign NoSymbol EuroSign
+keycode  14 = plus 9 plus 9 sterling dead_circumflex sterling
+keycode  15 = equal 0 equal 0
+keycode  16 = parenright 2 parenright 2 onehalf NoSymbol onehalf
+keycode  17 = braceright 4 braceright 4 dead_grave NoSymbol dead_grave
+keycode  18 = bracketright 6 bracketright 6
+keycode  19 = asterisk 8 asterisk 8 exclamdown NoSymbol exclamdown
 keycode  20 = ampersand percent ampersand percent
 keycode  21 = numbersign grave numbersign grave dead_grave NoSymbol dead_grave
 keycode  22 = BackSpace BackSpace BackSpace BackSpace

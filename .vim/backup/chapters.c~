@@ -1,0 +1,46 @@
+/*
+ * ================================================== 
+ *
+ *      Filename: chapters.c
+ *
+ *      Description: prints chapter
+ *
+ *      Created: 2014-01-10
+ *      Author: Charles Davis
+ *
+ * ==================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void singVerse(int chapterNumber, int maxBats);
+
+#define LINE "*********\n"
+
+int main(int argc, char *argv[])
+{
+    int batCount = 1;
+    int maxBats = 10;
+
+    while (batCount <= maxBats)
+    {
+        singVerse(batCount, maxBats);
+        printf("\n\n\n");
+        batCount++;
+    }
+
+    return EXIT_SUCCESS;
+}
+
+void singVerse(int batCount, int maxBats)
+{
+    printf("%d bats sitting in my belfry\n", batCount);
+    printf("1 bat flies in through the door\n");
+    batCount++;
+    printf("That makes %d bats sitting in my belfry\n", batCount);
+    if (batCount < maxBats)
+    {
+        printf("but wait, there's more...\n\n");
+    }
+}

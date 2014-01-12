@@ -49,19 +49,7 @@ PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD' # ls after
 
 alias cd..='cd ..' # mah silly typos
 alias ..='cd ..' 
-alias ...='cd ../../../'
-alias vim="stty stop '' -ixoff ; vim" # keep all my configs when run as root
-alias svim='sudo vim'
-alias vi='vim' # down with vi compatibility mode!
-alias edit='vim'
-alias emacs='vim'
-alias vimrc='$EDITOR $HOME/dotfiles/.vimrc'
-alias bashrc='$EDITOR $HOME/dotfiles/.bashrc'
-alias visudo='sudo visudo'
-alias gccw='gcc -Wall -Werror -o'
-alias wifi='sudo wifi-menu'
-#alias urxvtc='$HOME/.scripts/urxvtc.sh'
-alias extmon='$HOME/.scripts/extmon.sh'
+alias ...='cd ../../'
 alias ls='ls --color=auto' # pretty colors
 alias ll="ls -lh"
 alias la="ls -a"
@@ -74,6 +62,17 @@ alias fgrep='fgrep --color=auto'
 alias grepr='grep -r --color=auto'
 alias grepi='grep -i --color=auto'
 alias grepl='grep -l --color=auto'
+alias vim="stty stop '' -ixoff ; vim" # keep all my configs when run as root
+alias svim='sudo vim'
+alias vi='vim' # down with vi compatibility mode!
+alias emacs='vim'
+alias vimrc='$EDITOR $HOME/.vimrc'
+alias bashrc='$EDITOR $HOME/.bashrc'
+alias tmuxrc='$EDITOR $HOME/.tmux.conf'
+alias awrc='$EDITOR $HOME/.config/awesome/rc.lua'
+alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
+alias rprc='$EDITOR $HOME/.ratpoisonrc'
+alias visudo='sudo visudo'
 alias pacman='pacman'
 alias pac='sudo pacman -S'
 alias pacs='pacman -Ss'
@@ -82,12 +81,12 @@ alias pacr='sudo pacman -Rns'
 alias pacqs='pacman -Qs'
 alias pak='sudo packer -S'
 alias pakup='sudo packer -Syu'
-alias pakf='packer -Ss'
-alias awrc='$EDITOR $HOME/.config/awesome/rc.lua'
-alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
-alias tmux='tmux -2uv' # for some reason this makes vim work in tmux
+alias paks='packer -Ss'
 alias x='xmodmap $HOME/.Xmodmap'
-alias reboot="sudo systemctl reboot"
+alias gccw='gcc -Wall -Werror -o'
+alias wifi='sudo wifi-menu'
+alias tmux='tmux -2uv' # for some reason this makes vim work in tmux
+alias reboot="sudo shutdown -r now"
 alias poweroff="sudo systemctl poweroff"
 alias shutdown="sudo systemctl poweroff"
 alias halt="sudo shutdown -h now"
@@ -96,5 +95,12 @@ alias mv='mv -i'
 alias rm='rm -I'
 alias ln='ln -i'
 alias chown='chown --preserve-root'
+alias chx='chmod 755' # gives rwx to owner and r_x to others
+
+function today
+{
+    date +"%R - %A %-d %B, %Y"
+}
 
 export EDITOR="vim"
+export PATH=$PATH:$HOME/bin/

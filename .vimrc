@@ -66,12 +66,6 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-" smartus line stuff
-"hi Modified guifg=black guibg=#1C1C1C
-"set statusline=%2.2n\ %t\ %h%#Modified#%m%r%*%=%l/%L\ %2c\ %P
-"let g:smartusline_string_to_highlight = '%2.2n %t %h'
-"set statusline=\(%n\)\ %f\ %#Modified#%m%r%*\ (%l/%L,\ %c)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]\ \ 
-
 "================= Autocommand Stuff ====================
 
 " Only do this part if compiled with support for autocommands.
@@ -105,6 +99,10 @@ if has("autocmd")
   " highlight cursorline in active window
   au WinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
+
+  " change status line color based on mode
+  au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+  au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
   " in insert mode, auto turn on absolute numbered lines
   autocmd InsertEnter * :set number

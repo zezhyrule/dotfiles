@@ -4,12 +4,10 @@
 # Creates symlinks from ~ to dotfiles in ~/dotfiles
 ################
 
-###### Variables
-
+# variables
 dir=~/dotfiles
-files=".bashrc .vimrc .vim .scripts .conkyrc .Xmodmap .Xresources"
+files=".bashrc .vimrc .vim .scripts .Xmodmap .Xresources .tmux.conf .xinitrc .ratpoisonrc"
 
-######
 # change to dotfiles directory
 echo -n "cding to $dir"
 cd $dir

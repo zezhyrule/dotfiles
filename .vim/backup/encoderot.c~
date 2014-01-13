@@ -78,7 +78,7 @@ char encode(char plainText)
     char cipherText;
     int isLetter = checkLetter(plainText);
  
-    if (toBeEncoded)
+    if (isLetter)
     {
         cipherText = plainText + 13;
         if (cipherText > LAST_LETTER)

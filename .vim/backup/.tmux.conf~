@@ -12,9 +12,6 @@
 # 256 term for better colors
 set -g default-terminal "screen-256color"
 
-# vim key bindings
-setw -g mode-keys vi
-
 # disable mouse
 set -g mode-mouse off
 
@@ -27,7 +24,7 @@ set -g pane-base-index 1
 
 # highlight window when it has new activity
 setw -g monitor-activity on
-set -g visual-activity on
+#set -g visual-activity on
 
 # re-number windows when one is closed
 set -g renumber-windows on
@@ -37,16 +34,19 @@ set -g renumber-windows on
 # any client connected to *that window*. Much more reasonable
 setw -g aggressive-resize on
 
-# Activity monitoring
-# setw -g monitor-activity on
-# set -g visual-activity on
-
 # auto window rename
 set-window-option -g automatic-rename
+
+# status bar at top of screen
+set -g status-position top
 
 #####################
 # Keybindings
 #####################
+
+# vim key bindings
+set  -g status-keys vi
+setw -g mode-keys vi
 
 # Use C-h instead of C-b
 unbind C-b
@@ -92,11 +92,11 @@ set -g status-justify centre
 
 # left status bar (hostname, linux ver, window and pane)
 set -g status-left-length 40
-set -g status-left '#[fg=green]#H #[fg-black]• #[fg=green,bright]#(uname -r | cut -c 1-6)#[default] #[fg=green]#I:#P#[default]'
+set -g status-left '#[fg=blue]#H#[default] #[fg=default]•#[default] #[fg=blue,bright]#S#[default] #[fg=blue]#I:#P#[default]'
 
 # right status bar (date, time)
 set -g status-right-length 140
-set -g status-right '#[fg=green,bg=default]#(tmux-mem-cpu-load 1) #[fg=blue]%a %H:%M •#[default] #[fg=blue]%Y-%m-%d'
+set -g status-right '#[fg=green,bg=default]#(tmux-mem-cpu-load 1) #[fg=blue]%a %H:%M#[default] #[fg=default]• #[fg=blue]%Y-%m-%d'
 
 
 #####################

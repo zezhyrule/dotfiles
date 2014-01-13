@@ -2,71 +2,175 @@
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
+#	modified:   .Xmodmap
 #	modified:   .bashrc
-#	modified:   .vimrc
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .vim/backup/.Xresources~
+#	new file:   .ratpoisonrc
+#	new file:   .scripts/extra/README.md
+#	new file:   .scripts/extra/bar/config.h
+#	new file:   .scripts/extra/colors
+#	new file:   .scripts/extra/colors.sh
+#	new file:   .scripts/extra/dmenu/finder
+#	new file:   .scripts/extra/dmenu/spotlight
+#	new file:   .scripts/extra/dmenu/wallpaper
+#	new file:   .scripts/extra/docky-launch
+#	new file:   .scripts/extra/dwm-launch
+#	new file:   .scripts/extra/dwm-status
+#	new file:   .scripts/extra/gtprofile
+#	new file:   .scripts/extra/invaders.sh
+#	new file:   .scripts/extra/jazzget
+#	new file:   .scripts/extra/lens
+#	new file:   .scripts/extra/menu
+#	new file:   .scripts/extra/mkpcf
+#	new file:   .scripts/extra/mpd_notify.sh
+#	new file:   .scripts/extra/music_add
+#	new file:   .scripts/extra/open
+#	new file:   .scripts/extra/panel
+#	new file:   .scripts/extra/panel_bar
+#	new file:   .scripts/extra/project
+#	new file:   .scripts/extra/screenfetch-dev
+#	new file:   .scripts/extra/showcolors
+#	new file:   .scripts/extra/tumblrcat
+#	new file:   .scripts/extra/wallpaper-switcher
+#	new file:   .tmux.conf
+#	modified:   .vim/backup/.Xmodmap~
 #	modified:   .vim/backup/.bashrc~
+#	new file:   .vim/backup/.ratpoisonrc~
+#	new file:   .vim/backup/.tmux.conf~
 #	modified:   .vim/backup/.vimrc~
 #	modified:   .vim/backup/.xinitrc~
-#	modified:   .vim/backup/COMMIT_EDITMSG~
-#	modified:   .vim/backup/capsmod4~
-#	modified:   .vim/backup/config~
-#	modified:   .vim/backup/encode.c~
-#	modified:   .vim/backup/logind.conf~
-#	modified:   .vim/backup/main.c~
-#	modified:   .vim/backup/rc.lua~
-#	modified:   .vim/backup/theme.lua~
+#	new file:   .vim/backup/alsi.conf~
+#	new file:   .vim/backup/c.snippets~
+#	new file:   .vim/backup/chapters.c~
+#	new file:   .vim/backup/countSong.c~
+#	new file:   .vim/backup/evenorodd.bash~
+#	modified:   .vim/backup/leapYear.c~
+#	new file:   .vim/backup/make_page~
+#	new file:   .vim/backup/makepage.sh~
+#	modified:   .vim/backup/makesymlinks.sh~
+#	new file:   .vim/backup/read.bash~
+#	new file:   .vim/backup/seconds.bash~
+#	new file:   .vim/backup/trouble.bash~
+#	new file:   .vim/bundle/supertab
+#	modified:   .vim/bundle/tagbar
+#	modified:   .vim/bundle/tlib_vim
+#	modified:   .vim/bundle/vim-snipmate
+#	modified:   .vim/snippets/c.snippets
+#	modified:   .vimrc
+#	modified:   .xinitrc
 #
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
+# Changes not staged for commit:
+#	deleted:    .scripts/scripts/README.md
+#	deleted:    .scripts/scripts/bar/config.h
+#	deleted:    .scripts/scripts/colors
+#	deleted:    .scripts/scripts/colors.sh
+#	deleted:    .scripts/scripts/dmenu/finder
+#	deleted:    .scripts/scripts/dmenu/spotlight
+#	deleted:    .scripts/scripts/dmenu/wallpaper
+#	deleted:    .scripts/scripts/docky-launch
+#	deleted:    .scripts/scripts/dwm-launch
+#	deleted:    .scripts/scripts/dwm-status
+#	deleted:    .scripts/scripts/gtprofile
+#	deleted:    .scripts/scripts/invaders.sh
+#	deleted:    .scripts/scripts/jazzget
+#	deleted:    .scripts/scripts/lens
+#	deleted:    .scripts/scripts/menu
+#	deleted:    .scripts/scripts/mkpcf
+#	deleted:    .scripts/scripts/mpd_notify.sh
+#	deleted:    .scripts/scripts/music_add
+#	deleted:    .scripts/scripts/open
+#	deleted:    .scripts/scripts/panel
+#	deleted:    .scripts/scripts/panel_bar
+#	deleted:    .scripts/scripts/project
+#	deleted:    .scripts/scripts/screenfetch-dev
+#	deleted:    .scripts/scripts/showcolors
+#	deleted:    .scripts/scripts/tumblrcat
+#	deleted:    .scripts/scripts/wallpaper-switcher
+#	deleted:    burg-metro-theme/Metro/background.png
+#	deleted:    burg-metro-theme/Metro/extended
+#	deleted:    burg-metro-theme/Metro/icons/hover_arch.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_debian.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_elementary.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_freebsd.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_haiku.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_opensuse.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_os.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_osx.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_recovery.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_restart.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_shutdown.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_ubuntu.png
+#	deleted:    burg-metro-theme/Metro/icons/hover_windows.png
+#	deleted:    burg-metro-theme/Metro/icons/icons
+#	deleted:    burg-metro-theme/Metro/icons/normal_arch.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_debian.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_elementary.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_freebsd.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_haiku.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_opensuse.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_os.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_osx.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_recovery.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_restart.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_shutdown.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_ubuntu.png
+#	deleted:    burg-metro-theme/Metro/icons/normal_windows.png
+#	deleted:    burg-metro-theme/Metro/images/000-70opaque.png
+#	deleted:    burg-metro-theme/Metro/images/button-bg.png
+#	deleted:    burg-metro-theme/Metro/images/button-hover-bg.png
+#	deleted:    burg-metro-theme/Metro/images/button-hover-l.png
+#	deleted:    burg-metro-theme/Metro/images/button-hover-r.png
+#	deleted:    burg-metro-theme/Metro/images/button-l.png
+#	deleted:    burg-metro-theme/Metro/images/button-r.png
+#	deleted:    burg-metro-theme/Metro/images/button-tools-hover.png
+#	deleted:    burg-metro-theme/Metro/images/button-tools.png
+#	deleted:    burg-metro-theme/Metro/images/container-b.png
+#	deleted:    burg-metro-theme/Metro/images/container-bg.png
+#	deleted:    burg-metro-theme/Metro/images/container-bl.png
+#	deleted:    burg-metro-theme/Metro/images/container-br.png
+#	deleted:    burg-metro-theme/Metro/images/container-l.png
+#	deleted:    burg-metro-theme/Metro/images/container-r.png
+#	deleted:    burg-metro-theme/Metro/images/container-t.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-bg.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-l.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-r.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-t.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-tl.png
+#	deleted:    burg-metro-theme/Metro/images/container-title-tr.png
+#	deleted:    burg-metro-theme/Metro/images/container-tl.png
+#	deleted:    burg-metro-theme/Metro/images/container-tr.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-b.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-bg.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-bl.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-bl.xcf
+#	deleted:    burg-metro-theme/Metro/images/dialog-br.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-lr.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-spacer.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-t.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-tl.png
+#	deleted:    burg-metro-theme/Metro/images/dialog-tr.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-b.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-bl.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-br.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-l.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-r.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-t.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-tl.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg-tr.png
+#	deleted:    burg-metro-theme/Metro/images/progressbar-bg.png
+#	deleted:    burg-metro-theme/Metro/images/text-line-l.png
+#	deleted:    burg-metro-theme/Metro/images/text-line-r.png
+#	deleted:    burg-metro-theme/Metro/images/tick.png
+#	deleted:    burg-metro-theme/Metro/images/txt-about.png
+#	deleted:    burg-metro-theme/Metro/images/txt-help.png
+#	deleted:    burg-metro-theme/Metro/images/txt-select.png
+#	deleted:    burg-metro-theme/Metro/images/txt-tools.png
+#	deleted:    burg-metro-theme/Metro/images/ubuntu-glow-96.png
+#	deleted:    burg-metro-theme/Metro/menus
+#	deleted:    burg-metro-theme/Metro/style
+#	deleted:    burg-metro-theme/Metro/theme
+#	deleted:    burg-metro-theme/README.md
+#	modified:   makesymlinks.sh
 #
-#	.config/Bitcoin/
-#	.config/Thunar/
-#	.config/Trolltech.conf
-#	.config/alsi/
-#	.config/autostart/
-#	.config/chromium/
-#	.config/dconf/
-#	.config/deluge/
-#	.config/emelfm2/
-#	.config/enchant/
-#	.config/epiphany/
-#	.config/gedit/
-#	.config/geeqie/
-#	.config/gnome-control-center/
-#	.config/gtk-2.0/
-#	.config/gtk-3.0/
-#	.config/hotkeys/
-#	.config/ibus/
-#	.config/libreoffice/
-#	.config/menus/
-#	.config/nautilus/
-#	.config/pulse/
-#	.config/stetic/
-#	.config/synapse/
-#	.config/terminator/
-#	.config/tint2/
-#	.config/totem/
-#	.config/user-dirs.dirs
-#	.config/user-dirs.locale
-#	.config/vlc/
-#	.config/volti/
-#	.config/xbuild/
-#	.config/xfburn/
-#	.config/xfce4-dict/
-#	.config/xfce4/
-#	.minecraft/
-#	.vim/autoload/smooth_scroll.vim
-#	.vim/backup/home~
-#	.vim/backup/libao.conf~
-#	.vim/backup/logout~
-#	.vim/backup/rot13.c~
-#	.vim/backup/wlp2s0-NETGEAR~

@@ -50,7 +50,7 @@ set smartcase                  " unless you enter a capital letter
 "set undofile                   " saves undos in a file so you can undo after reopen
 set cursorline                 " highlights the line the cursor is on
 set ls=2                       " shows statusline always
-set rnu                        " relative number lines as default
+set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
 "let g:hybrid_use_Xresources = 1
@@ -101,12 +101,13 @@ if has("autocmd")
   au WinLeave * setlocal nocursorline
 
   " change status line color based on mode
-  au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
-  au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+  hi statusline term=reverse ctermfg=0 ctermbg=2
+  au InsertEnter * hi statusline term=reverse ctermbg=4 gui=undercurl guisp=Magenta
+  au InsertLeave * hi statusline term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
   " in insert mode, auto turn on absolute numbered lines
-  autocmd InsertEnter * :set number
-  autocmd InsertLeave * :set relativenumber
+  "autocmd InsertEnter * :set number
+  "autocmd InsertLeave * :set relativenumber
 
 else
 
@@ -193,7 +194,7 @@ endfunction
 "open bracket will add close bracket and put cursor in between
 " inoremap ( ()<Esc>i
 "inoremap [ []<Esc>i
-inoremap { {<CR>}<Esc>O
+"inoremap { {<CR>}<Esc>O
 " inoremap \" \""<Esc>i
 " inoremap < <><Esc>i
 
@@ -233,7 +234,13 @@ noremap L g_
 nnoremap <Leader>a :Ag<Space>
 
 " tmux uses C-b
-noremap <C-b> <NOP>
+"noremap <C-b> <NOP>
+
+" ,s to toggle syntax on/off
+nnoremap <Leader>s :call SyntaxToggle()<CR>
+
+" ,-n to toggle
+nnoremap <Leader>n :call NumberToggle()<CR>
 
 "========================================================
 
@@ -397,8 +404,15 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
-" ,-n to toggle
-nnoremap <Leader>n :call NumberToggle()<CR>
+
+" function to toggle syntax on and off
+function! SyntaxToggle()
+    if(&syntax == 1)
+        syntax off
+    else
+        syntax on
+    endif
+endfunc
 
 " hide search hl with ctrl+l
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

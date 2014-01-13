@@ -9,6 +9,7 @@
                 " abolish.vim             "
                 " ag.vim                  "
                 " ctrlp.vim               "
+                " easymotion
                 " fugitive.vim            "
                 " NERD_commenter.vim      "
                 " NERD_tree               "
@@ -25,7 +26,6 @@
 
 " Use Vim settings, rather than Vi settings (much better!).
 set nocompatible
-
 
 "                  ====================
 "                ~ = General Settings = ~
@@ -50,7 +50,7 @@ set smartcase                  " unless you enter a capital letter
 "set undofile                   " saves undos in a file so you can undo after reopen
 set cursorline                 " highlights the line the cursor is on
 set ls=2                       " shows statusline always
-set rnu                        " relative number lines as default
+set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
 "let g:hybrid_use_Xresources = 1
@@ -65,12 +65,6 @@ if &t_Co > 2 || has("gui_running")
   "syntax on
   set hlsearch
 endif
-
-" smartus line stuff
-"hi Modified guifg=black guibg=#1C1C1C
-"set statusline=%2.2n\ %t\ %h%#Modified#%m%r%*%=%l/%L\ %2c\ %P
-"let g:smartusline_string_to_highlight = '%2.2n %t %h'
-"set statusline=\(%n\)\ %f\ %#Modified#%m%r%*\ (%l/%L,\ %c)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]\ \ 
 
 "================= Autocommand Stuff ====================
 
@@ -106,9 +100,14 @@ if has("autocmd")
   au WinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 
+  " change status line color based on mode
+  hi statusline term=reverse ctermfg=0 ctermbg=2
+  au InsertEnter * hi statusline term=reverse ctermbg=4 gui=undercurl guisp=Magenta
+  au InsertLeave * hi statusline term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+
   " in insert mode, auto turn on absolute numbered lines
-  autocmd InsertEnter * :set number
-  autocmd InsertLeave * :set relativenumber
+  "autocmd InsertEnter * :set number
+  "autocmd InsertLeave * :set relativenumber
 
 else
 
@@ -195,7 +194,7 @@ endfunction
 "open bracket will add close bracket and put cursor in between
 " inoremap ( ()<Esc>i
 "inoremap [ []<Esc>i
-inoremap { {<CR>}<Esc>O
+"inoremap { {<CR>}<Esc>O
 " inoremap \" \""<Esc>i
 " inoremap < <><Esc>i
 
@@ -235,7 +234,13 @@ noremap L g_
 nnoremap <Leader>a :Ag<Space>
 
 " tmux uses C-b
-noremap <C-b> <NOP>
+"noremap <C-b> <NOP>
+
+" ,s to toggle syntax on/off
+nnoremap <Leader>s :call SyntaxToggle()<CR>
+
+" ,-n to toggle
+nnoremap <Leader>n :call NumberToggle()<CR>
 
 "========================================================
 
@@ -399,8 +404,15 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
-" ,-n to toggle
-nnoremap <Leader>n :call NumberToggle()<CR>
+
+" function to toggle syntax on and off
+function! SyntaxToggle()
+    if(&syntax == on)
+        syntax off
+    else
+        syntax on
+    endif
+endfunc
 
 " hide search hl with ctrl+l
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

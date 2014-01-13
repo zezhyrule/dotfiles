@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# Setup some variables needed for bootstrapping the environment
+ROOT=/home/zezzy/Projects/learning/comp1
+REPOS=${ROOT}/repos
+
+export PYTHONPATH=${REPOS}
+
+# Bootstrap a new session called "Comp1"
+tmux new-session -d -s Comp1
+
+# Rename the first window (using the session-name:id notation)
+tmux rename-window      -t Comp1:1 "bash"
+
+
+# Create and label two other windows, splitting the second one horizontally
+tmux new-window     -t Comp1:2 -n "vim"
+tmux split-window -v -t Comp1:2
+tmux resize-pane -x -t Comp1:2 20 
+tmux new-window     -t Comp1:3
+
+
+
+# Send commands to the windows, use "C-m" to emulate "enter"
+
+# On window 1 start vim
+tmux send-keys      -t Comp1:2 "cd ${ROOT}" C-m
+tmux swap-pane      -t Comp1:2 C-m
+tmux send-keys      -t Comp1:2 "cd ${ROOT}" C-m
+tmux send-keys      -t Comp1:2 "vim" C-m
+
+# On window 2 move to directory with the source code for the client start vim
+tmux send-keys      -t Comp1:3 "alsi -a" C-m
+
+
+# Switch to window 1
+tmux select-window -t Comp1:2
+
+# Force tmux to assume the terminal supports colors and attach to "Comp1"
+tmux -2 attach-session -t Comp1

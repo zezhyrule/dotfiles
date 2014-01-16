@@ -242,6 +242,9 @@ nnoremap <Leader>s :call SyntaxToggle()<CR>
 " ,n to toggle rnu
 nnoremap <Leader>n :call NumberToggle()<CR>
 
+" ,cd to move to file's working directory
+nnoremap <Leader>cd :lcd %:h<CR>
+
 "========================================================
 
 
@@ -280,20 +283,20 @@ nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
 
 "==================== Function Keys =====================
 
-" F1 will search help for the word under the cursor
-nnoremap <F1> :help <C-r><C-w><CR>
-
-" delete whitespace at eols with F6
-"nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
-
 " toggle nerdtree with f7
 map <F7> :NERDTreeToggle<CR>
 
 " toggle tagbar with f8
 map <F8> :TagbarToggle<CR>
 
-" toggle hardmode with f9
-noremap <F9> <Esc>:call ToggleHardMode()<CR>
+" delete whitespace at eols with F9
+nnoremap <silent> <F9> :call <SID>StripTrailingWhitespaces()<CR>
+
+" F10 will search help for the word under the cursor
+nnoremap <F10> :help <C-r><C-w><CR>
+
+" toggle hardmode with f11
+noremap <F11> <Esc>:call ToggleHardMode()<CR>
 
 "========================================================
 

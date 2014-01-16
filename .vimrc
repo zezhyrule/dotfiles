@@ -142,10 +142,10 @@ set expandtab                  " tab characters turn into spaces
 "========== TextMate-Style Visible Whitespace ===========
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <leader>t :set list!<CR>
 
 " Use cool symbols for tabstops and EOLs
-"set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬
 
 "========================================================
 
@@ -244,6 +244,9 @@ nnoremap <Leader>n :call NumberToggle()<CR>
 
 " ,cd to move to file's working directory
 nnoremap <Leader>cd :lcd %:h<CR>
+
+" For LilyPond - insert version number and start
+nnoremap <leader>l i\version<Space>""<Esc>:read<Space>!lilypond<Space>-v<Bar>ag<Space>LilyPond<Bar>cut<Space>-c<Space>14-20<CR>vawdkf"pjo{}<Esc>i<CR><Esc>O
 
 "========================================================
 

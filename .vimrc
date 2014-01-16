@@ -1,6 +1,6 @@
                 " " " " " " " " " " " " " "
                 " Author: zezhyrule       "
-                " Last Edited: 2014-01-11 "
+                " Last Edited: 2014-01-15 "
                 "                         "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
                 " List of plugins I use:  "
@@ -8,9 +8,11 @@
                 " a.vim                   "
                 " abolish.vim             "
                 " ag.vim                  "
+                " autoclose               "
                 " ctrlp.vim               "
-                " easymotion
+                " easymotion              "
                 " fugitive.vim            "
+                " latexsuite              "
                 " NERD_commenter.vim      "
                 " NERD_tree               "
                 " smartusline.vim         "
@@ -48,7 +50,7 @@ set smartcase                  " unless you enter a capital letter
 "set visualbell                 " no sounds
 "set autoread                   " reload files changed outside of vim
 "set undofile                   " saves undos in a file so you can undo after reopen
-set cursorline                 " highlights the line the cursor is on
+"set cursorline                 " highlights the line the cursor is on
 set ls=2                       " shows statusline always
 set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
@@ -62,7 +64,7 @@ let mapleader=","              " change leader to comma
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  "syntax on
+  syntax on
   set hlsearch
 endif
 
@@ -97,8 +99,8 @@ if has("autocmd")
   augroup END
 
   " highlight cursorline in active window
-  au WinEnter * setlocal cursorline
-  au WinLeave * setlocal nocursorline
+  "au WinEnter * setlocal cursorline
+  "au WinLeave * setlocal nocursorline
 
   " change status line color based on mode
   hi statusline term=reverse ctermfg=0 ctermbg=2
@@ -108,6 +110,13 @@ if has("autocmd")
   " in insert mode, auto turn on absolute numbered lines
   "autocmd InsertEnter * :set number
   "autocmd InsertLeave * :set relativenumber
+
+  " for tex files, disable cursorline and parenmatch
+  au FileType tex :NoMatchParen
+  au FileType tex setlocal nocursorline
+
+  " turn parenmatch off
+  let loaded_matchparen = 1
 
 else
 
@@ -161,6 +170,7 @@ if has("autocmd")
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
 endif
 
 "========================================================
@@ -190,13 +200,6 @@ endfunction
 
 
 "======================= General ========================
-
-"open bracket will add close bracket and put cursor in between
-" inoremap ( ()<Esc>i
-"inoremap [ []<Esc>i
-"inoremap { {<CR>}<Esc>O
-" inoremap \" \""<Esc>i
-" inoremap < <><Esc>i
 
 " Don't use Ex mode, use Q for quick macro
 map Q @q
@@ -230,16 +233,13 @@ noremap L g_
 " maps jk to escape key in insert mode
 "imap jk <Esc>
 
-" ,-a for Ag.vim
+" ,a for Ag.vim
 nnoremap <Leader>a :Ag<Space>
-
-" tmux uses C-b
-"noremap <C-b> <NOP>
 
 " ,s to toggle syntax on/off
 nnoremap <Leader>s :call SyntaxToggle()<CR>
 
-" ,-n to toggle
+" ,n to toggle rnu
 nnoremap <Leader>n :call NumberToggle()<CR>
 
 "========================================================
@@ -428,5 +428,9 @@ endif
 
 " LilyPond stuff
 "set runtimepath+=/usr/share/lilypond/2.16.0/vim/
+
+" LaTex stuff
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
 
 "========================================================

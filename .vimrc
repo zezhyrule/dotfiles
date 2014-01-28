@@ -1,30 +1,7 @@
                 " " " " " " " " " " " " " "
                 " Author: zezhyrule       "
-                " Last Edited: 2014-01-15 "
-                "                         "
+                " Last Edited: 2014-01-28 "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
-                " List of plugins I use:  "
-                "                         "
-                " a.vim                   "
-                " abolish.vim             "
-                " ag.vim                  "
-                " autoclose               "
-                " ctrlp.vim               "
-                " easymotion              "
-                " fugitive.vim            "
-                " latexsuite              "
-                " NERD_commenter.vim      "
-                " NERD_tree               "
-                " smartusline.vim         "
-                " snipMate.vim            "
-                " supertab                "
-                " surround.vim            "
-                " syntastic               "
-                " tagbar.vim              "
-                "                         "
-                " " " " " " " " " " " " " "
-
-
 
 " Use Vim settings, rather than Vi settings (much better!).
 set nocompatible
@@ -50,14 +27,13 @@ set smartcase                  " unless you enter a capital letter
 "set visualbell                 " no sounds
 "set autoread                   " reload files changed outside of vim
 "set undofile                   " saves undos in a file so you can undo after reopen
-"set cursorline                 " highlights the line the cursor is on
+set cursorline                 " highlights the line the cursor is on
 set ls=2                       " shows statusline always
 set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
-"let g:hybrid_use_Xresources = 1
-colorscheme jellybeans-Xresources
-execute pathogen#infect()
+set background=dark
+colorscheme Tomorrow-Night-Eighties
 
 let mapleader=","              " change leader to comma
 
@@ -67,6 +43,37 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+"                  ====================
+"                ~ =      Vundle      = ~
+"                  ====================
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" All mah bundles: 
+Bundle 'chriskempson/base16-vim'
+Bundle 'vim-scripts/a.vim'
+Bundle 'rking/ag.vim'
+Bundle 'Townk/vim-autoclose'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'gerw/vim-latex-suite'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'ervandew/supertab'
+Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 
 "================= Autocommand Stuff ====================
 
@@ -99,8 +106,8 @@ if has("autocmd")
   augroup END
 
   " highlight cursorline in active window
-  "au WinEnter * setlocal cursorline
-  "au WinLeave * setlocal nocursorline
+  au WinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
 
   " change status line color based on mode
   hi statusline term=reverse ctermfg=0 ctermbg=2
@@ -108,15 +115,8 @@ if has("autocmd")
   au InsertLeave * hi statusline term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
   " in insert mode, auto turn on absolute numbered lines
-  "autocmd InsertEnter * :set number
-  "autocmd InsertLeave * :set relativenumber
-
-  " for tex files, disable cursorline and parenmatch
-  au FileType tex :NoMatchParen
-  au FileType tex setlocal nocursorline
-
-  " turn parenmatch off
-  let loaded_matchparen = 1
+  autocmd InsertEnter * :set number
+  autocmd InsertLeave * :set relativenumber
 
 else
 
@@ -125,8 +125,6 @@ else
 endif " has("autocmd")
 
 "========================================================
-
-
 
 "                  ====================
 "                ~ =    Whitespace    = ~
@@ -388,10 +386,10 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-"noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-"noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-"noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-"noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
+noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 "========================================================
 

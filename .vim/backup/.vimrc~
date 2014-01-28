@@ -1,28 +1,7 @@
                 " " " " " " " " " " " " " "
                 " Author: zezhyrule       "
-                " Last Edited: 2014-01-11 "
-                "                         "
+                " Last Edited: 2014-01-28 "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
-                " List of plugins I use:  "
-                "                         "
-                " a.vim                   "
-                " abolish.vim             "
-                " ag.vim                  "
-                " ctrlp.vim               "
-                " easymotion
-                " fugitive.vim            "
-                " NERD_commenter.vim      "
-                " NERD_tree               "
-                " smartusline.vim         "
-                " snipMate.vim            "
-                " supertab                "
-                " surround.vim            "
-                " syntastic               "
-                " tagbar.vim              "
-                "                         "
-                " " " " " " " " " " " " " "
-
-
 
 " Use Vim settings, rather than Vi settings (much better!).
 set nocompatible
@@ -53,18 +32,48 @@ set ls=2                       " shows statusline always
 set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
-"let g:hybrid_use_Xresources = 1
-colorscheme jellybeans-Xresources
-execute pathogen#infect()
+set background=dark
+colorscheme jellybeans
 
 let mapleader=","              " change leader to comma
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  "syntax on
+  syntax on
   set hlsearch
 endif
+
+"                  ====================
+"                ~ =      Vundle      = ~
+"                  ====================
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" All mah bundles: 
+Bundle 'chriskempson/base16-vim'
+Bundle 'vim-scripts/a.vim'
+Bundle 'rking/ag.vim'
+Bundle 'Townk/vim-autoclose'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'gerw/vim-latex-suite'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'ervandew/supertab'
+Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 
 "================= Autocommand Stuff ====================
 
@@ -106,8 +115,8 @@ if has("autocmd")
   au InsertLeave * hi statusline term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
   " in insert mode, auto turn on absolute numbered lines
-  "autocmd InsertEnter * :set number
-  "autocmd InsertLeave * :set relativenumber
+  autocmd InsertEnter * :set number
+  autocmd InsertLeave * :set relativenumber
 
 else
 
@@ -116,8 +125,6 @@ else
 endif " has("autocmd")
 
 "========================================================
-
-
 
 "                  ====================
 "                ~ =    Whitespace    = ~
@@ -133,10 +140,10 @@ set expandtab                  " tab characters turn into spaces
 "========== TextMate-Style Visible Whitespace ===========
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <leader>t :set list!<CR>
 
 " Use cool symbols for tabstops and EOLs
-"set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬
 
 "========================================================
 
@@ -161,6 +168,7 @@ if has("autocmd")
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
 endif
 
 "========================================================
@@ -190,13 +198,6 @@ endfunction
 
 
 "======================= General ========================
-
-"open bracket will add close bracket and put cursor in between
-" inoremap ( ()<Esc>i
-"inoremap [ []<Esc>i
-"inoremap { {<CR>}<Esc>O
-" inoremap \" \""<Esc>i
-" inoremap < <><Esc>i
 
 " Don't use Ex mode, use Q for quick macro
 map Q @q
@@ -230,17 +231,20 @@ noremap L g_
 " maps jk to escape key in insert mode
 "imap jk <Esc>
 
-" ,-a for Ag.vim
+" ,a for Ag.vim
 nnoremap <Leader>a :Ag<Space>
-
-" tmux uses C-b
-"noremap <C-b> <NOP>
 
 " ,s to toggle syntax on/off
 nnoremap <Leader>s :call SyntaxToggle()<CR>
 
-" ,-n to toggle
+" ,n to toggle rnu
 nnoremap <Leader>n :call NumberToggle()<CR>
+
+" ,cd to move to file's working directory
+nnoremap <Leader>cd :lcd %:h<CR>
+
+" For LilyPond - insert version number and start
+nnoremap <leader>l i\version<Space>""<Esc>:read<Space>!lilypond<Space>-v<Bar>ag<Space>LilyPond<Bar>cut<Space>-c<Space>14-20<CR>vawdkf"pjo{}<Esc>i<CR><Esc>O
 
 "========================================================
 
@@ -280,20 +284,20 @@ nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
 
 "==================== Function Keys =====================
 
-" F1 will search help for the word under the cursor
-nnoremap <F1> :help <C-r><C-w><CR>
-
-" delete whitespace at eols with F6
-"nnoremap <silent> <F6> :call <SID>StripTrailingWhitespaces()<CR>
-
 " toggle nerdtree with f7
 map <F7> :NERDTreeToggle<CR>
 
 " toggle tagbar with f8
 map <F8> :TagbarToggle<CR>
 
-" toggle hardmode with f9
-noremap <F9> <Esc>:call ToggleHardMode()<CR>
+" delete whitespace at eols with F9
+nnoremap <silent> <F9> :call <SID>StripTrailingWhitespaces()<CR>
+
+" F10 will search help for the word under the cursor
+nnoremap <F10> :help <C-r><C-w><CR>
+
+" toggle hardmode with f11
+noremap <F11> <Esc>:call ToggleHardMode()<CR>
 
 "========================================================
 
@@ -382,10 +386,10 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-"noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-"noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-"noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-"noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
+noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 "========================================================
 
@@ -407,7 +411,7 @@ endfunc
 
 " function to toggle syntax on and off
 function! SyntaxToggle()
-    if(&syntax == on)
+    if(&syntax == 1)
         syntax off
     else
         syntax on
@@ -428,5 +432,9 @@ endif
 
 " LilyPond stuff
 "set runtimepath+=/usr/share/lilypond/2.16.0/vim/
+
+" LaTex stuff
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
 
 "========================================================

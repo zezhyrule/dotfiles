@@ -30,8 +30,8 @@ keycode  26 = period greater period greater guillemotright periodcentered guille
 keycode  27 = p P p P paragraph section paragraph
 keycode  28 = y Y y Y udiaeresis Udiaeresis udiaeresis
 keycode  29 = f F f F
-keycode  30 = g G g G
-keycode  31 = c C c C ccedilla Ccedilla ccedilla
+keycode  30 = G NoSymbol gcircumflex
+keycode  31 = C NoSymbol ccircumflex
 keycode  32 = r R r R registered trademark registered
 keycode  33 = l L l L
 keycode  34 = slash question slash question questiondown NoSymbol questiondown
@@ -42,19 +42,19 @@ keycode  38 = a A a A aring Aring aring
 keycode  39 = o O o O oslash Oslash oslash
 keycode  40 = e E e E ae AE ae
 keycode  41 = i I i I
-keycode  42 = u U u U eacute Eacute eacute
+keycode  42 = U NoSymbol ubreve
 keycode  43 = d D d D eth ETH eth
-keycode  44 = h H h H dead_acute NoSymbol dead_acute
+keycode  44 = H NoSymbol hcircumflex
 keycode  45 = t T t T thorn THORN thorn
 keycode  46 = n N n N ntilde Ntilde ntilde
-keycode  47 = s S s S ssharp NoSymbol ssharp
+keycode  47 = S NoSymbol scircumflex
 keycode  48 = minus underscore minus underscore hyphen NoSymbol hyphen
 keycode  49 = dollar asciitilde dollar asciitilde dead_tilde dead_tilde dead_tilde
 keycode  50 = Shift_L ISO_Prev_Group Shift_L ISO_Prev_Group
 keycode  51 = backslash bar backslash bar
 keycode  52 = apostrophe quotedbl apostrophe quotedbl dead_acute dead_doubleacute dead_acute
 keycode  53 = q Q q Q
-keycode  54 = j J j J
+keycode  54 = J NoSymbol jcircumflex
 keycode  55 = k K k K
 keycode  56 = x X x X
 keycode  57 = b B b B
@@ -256,3 +256,11 @@ keycode 252 =
 keycode 253 =
 keycode 254 =
 keycode 255 =
+
+
+! Uzi AltGr kun ne internacia klavoj
+! left/right windows-logo key
+! in "windows" keyboards the postion of the key is annoying, is where AltGr
+! usually resides, so go define it as AltGr
+keycode 133 = Mode_switch
+keycode 134 = Mode_switch

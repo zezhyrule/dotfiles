@@ -1,5 +1,6 @@
 #
 # ~/.bash_profile
 #
-alsi -a
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+tmux &

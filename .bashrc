@@ -6,6 +6,18 @@
 [[ $- != *i* ]] && return
 [ -n "$TMUX" ] && export TERM=xterm-256color
 
+#start tmux if installed
+if which tmux >/dev/null 2>&1; then
+    # if no session is startet, start new session
+    test -z ${TMUX} && tmux
+
+    # when quitting tmux, try to attach
+    while test -z ${TMUX}; do
+        tmux attach || exit ||  break
+    done
+fi
+
+
 # allows saving with ctrl-s in vim
 vim()
 {

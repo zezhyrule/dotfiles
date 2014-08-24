@@ -1,0 +1,15 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+
+\title{A Test Document}
+\author{Charlie Davis}
+
+\begin{document}
+
+\maketitle
+
+\section{section}
+\subsection*{subsection}
+text 
+\end{document}

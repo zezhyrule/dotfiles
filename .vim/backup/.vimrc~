@@ -33,7 +33,7 @@ set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
 set t_Co=256
 set background=dark
-colorscheme jellybeans
+colorscheme Tomorrow-Night-Eighties
 
 let mapleader=","              " change leader to comma
 
@@ -386,10 +386,10 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
+"noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+"noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 "========================================================
 

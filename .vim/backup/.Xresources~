@@ -82,4 +82,4 @@ URxvt*.cursorBlink: 1
 URxvt*.foreground: #e8e8d3
 URxvt*.font: xft:Dina:size=8:antialias=false
 URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
-URxvt.perl-ext-common: vtwheel
+URxvt.perl-ext-common: vtwheel,clipboard

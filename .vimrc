@@ -386,10 +386,10 @@ cmap <S-Insert>     <C-R>+
 
 "=================== Smooth Scrollin' ===================
 
-noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 20, 2)<CR>
+"noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 20, 2)<CR>
+"noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+"noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 "========================================================
 
@@ -436,5 +436,7 @@ endif
 " LaTex stuff
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats= 'pdf, aux'
 
 "========================================================

@@ -262,5 +262,5 @@ keycode 255 =
 ! left/right windows-logo key
 ! in "windows" keyboards the postion of the key is annoying, is where AltGr
 ! usually resides, so go define it as AltGr
-keycode 133 = Mode_switch
-keycode 134 = Mode_switch
+!keycode 133 = Mode_switch
+!keycode 134 = Mode_switch

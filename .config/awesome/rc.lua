@@ -1,6 +1,7 @@
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
+local user_name = os.getenv("USER")
 awful.rules = require("awful.rules")
 require("awful.autofocus")
 -- Widget and layout library
@@ -117,7 +118,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- Create a textclock widget
 clockicon = wibox.widget.imagebox()
-clockicon:set_image("/home/zezzy/.config/awesome/icons/clock.png")
+clockicon:set_image("/home/" .. user_name .. "/.config/awesome/icons/clock.png")
 mytextclock = awful.widget.textclock("<span color='" .. beautiful.fg_em ..
   "'>%a %m-%d</span> %I:%M %p ")
 
@@ -292,7 +293,7 @@ globalkeys = awful.util.table.join(
         end),
 
     awful.key({ modkey,           }, "a", function () mymainmenu:show() end),
-    awful.key({ }, "Print", function () awful.util.spawn("scrot /home/zezzy/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png") end),
+    awful.key({ }, "Print", function () awful.util.spawn("scrot /home/" .. user_name .. "/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png") end),
 
     awful.key({ }, "XF86AudioRaiseVolume", function ()
        awful.util.spawn("amixer set Master 2%+", false) end),

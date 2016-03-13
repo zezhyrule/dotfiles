@@ -15,8 +15,6 @@ Xresources
 
 Colors from: https://github.com/w0ng/dotfiles/blob/master/.config/termcolours/jellybeans
 
-![spaceinvaders](http://img545.imageshack.us/img545/1171/terminalcolors.png)
-
 
 Conky
 -----

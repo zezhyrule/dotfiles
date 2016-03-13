@@ -1,4 +1,5 @@
 !!!!!! Custom Dvorak Keymap !!!!!!
+! I now use regular dvorak on all my setups, but I'll keep this for fun
 
 ! Swap left alt and left control
 remove Mod1 = Alt_L

@@ -10,7 +10,7 @@
 #####################
 
 # 256 term for better colors
-set -g default-terminal "screen-256color"
+#set -g default-terminal "screen-256color"
 
 # disable mouse
 set -g mode-mouse off
@@ -38,7 +38,7 @@ setw -g aggressive-resize on
 set-window-option -g automatic-rename
 
 # status bar at top of screen
-set -g status-position top
+#set -g status-position top
 
 #####################
 # Keybindings
@@ -98,7 +98,6 @@ set -g status-left '#[fg=blue]#H#[default] #[fg=default]•#[default] #[fg=blue,
 set -g status-right-length 140
 set -g status-right '#[fg=green,bg=default]#(tmux-mem-cpu-load 1) #[fg=blue]%a %H:%M#[default] #[fg=default]• #[fg=blue]%Y-%m-%d'
 
-
 #####################
 # Colors
 #####################
@@ -125,3 +124,17 @@ set -g pane-border-fg white
 # active pane colors
 set -g pane-border-bg black
 set -g pane-border-fg green
+
+#####################
+# Session
+#####################
+
+#new -s work -n vim bash -e vim
+#splitw -h -p 50 -t 1
+#splitw -v -p 50 -t 2 htop
+#neww -n back pianobar
+#splitw -v -p 50 -t 1 clock-mode
+#selectp -t 1
+#splitw -h -p 50 -t 1 htop
+#selectw -t 1
+#selectp -t 1

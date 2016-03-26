@@ -33,7 +33,7 @@
 !! Hybrid Terminal Colours
 !!
 !! vim: ft=xdefaults
- 
+!
 !! Tomorrow-Night Palette
 !#define t_background #1D1F21
 !#define t_current_line #282A2E
@@ -47,7 +47,7 @@
 !#define t_aqua #8ABEB7
 !#define t_blue #81A2BE
 !#define t_purple #B294BB
- 
+!
 !*background: t_background
 !*foreground: t_foreground
 !! black
@@ -74,7 +74,7 @@
 !! white
 !*color7: t_comment
 !*color15: t_foreground
-
+!
 ! urxvt stuff -------------------------------
 
 URxvt*.scrollBar: false

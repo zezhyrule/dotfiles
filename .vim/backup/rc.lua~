@@ -52,7 +52,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod4"
+modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
@@ -97,6 +97,7 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     {"chromium", "chromium"},
+				    {"geany", "geany"},
 				    {"gimp", "gimp"},
 				    {"vim", editor_cmd},
 				    {"logout", "logout"},
@@ -115,7 +116,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- Create a textclock widget
 clockicon = wibox.widget.imagebox()
-clockicon:set_image("/home/zezzy/.config/awesome/icons/clock.png")
+clockicon:set_image("/home/charles/.config/awesome/icons/clock.png")
 mytextclock = awful.widget.textclock("<span color='" .. beautiful.fg_em ..
   "'>%a %m-%d</span> %I:%M %p ")
 
@@ -238,13 +239,13 @@ for s = 1, screen.count() do
     right_layout:add(spacer)
     right_layout:add(spacer)
     right_layout:add(spacer)
-    right_layout:add(spacer)
-    right_layout:add(spacer)
-    right_layout:add(spacer)
-    right_layout:add(spacer)
-    right_layout:add(pacicon)
-    right_layout:add(pacwidget)
-    right_layout:add(spacer)
+    --right_layout:add(spacer)
+    --right_layout:add(spacer)
+    --right_layout:add(spacer)
+    --right_layout:add(spacer)
+    --right_layout:add(pacicon)
+    --right_layout:add(pacwidget)
+    --right_layout:add(spacer)
     right_layout:add(baticon)
     right_layout:add(batpct)
     right_layout:add(spacer)
@@ -290,7 +291,7 @@ globalkeys = awful.util.table.join(
         end),
 
     awful.key({ modkey,           }, "a", function () mymainmenu:show() end),
-    awful.key({ }, "Print", function () awful.util.spawn("scrot /home/zezzy/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png") end),
+    awful.key({ }, "Print", function () awful.util.spawn("scrot /home/charles/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png") end),
 
     awful.key({ }, "XF86AudioRaiseVolume", function ()
        awful.util.spawn("amixer set Master 2%+", false) end),
@@ -533,7 +534,6 @@ do
   { 
     run_once("xcompmgr"),
     run_once("xset b off"),
-    run_once("xcape -e 'Shift_L=Escape'")
     -- run_once("conky"),
   }
 

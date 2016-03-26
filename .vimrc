@@ -10,7 +10,6 @@ set nocompatible
 "                ~ = General Settings = ~
 "                  ====================
 
-set backspace=indent,eol,start " allow backspacing over everything in insert mode
 if has("vms")
     set nobackup               " do not keep a backup file, use versions instead
 else
@@ -27,9 +26,12 @@ set smartcase                  " unless you enter a capital letter
 set ls=2                       " shows statusline always
 set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
+set timeout ttimeoutlen=100	   " time out length at 100ms
+
 set t_Co=256
 set background=dark
-colorscheme Tomorrow-Night-Eighties
+colorscheme hybrid
+let g:hybrid_custom_term_colors = 1
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -43,6 +45,7 @@ let &path.="src/include,/usr/include/AL,"
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
 
 "                  ====================
 "                ~ =      Vundle      = ~
@@ -56,7 +59,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 " All mah plugins: 
 Plugin 'chriskempson/base16-vim'
-Plugin 'Townk/vim-autoclose'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'vim-scripts/OmniCppComplete'
+"Plugin 'Townk/vim-autoclose'
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/nerdcommenter'
 "Plugin 'scrooloose/nerdtree'
@@ -213,41 +221,6 @@ nnoremap <leader>l i\version<Space>""<Esc>:read<Space>!lilypond<Space>-v<Bar>ag<
 
 "========================================================
 
-
-"================= Windows and Buffers ==================
-
-" New vertical split with <Leader>wv
-nnoremap <Leader>wv <C-w>v<C-w>l
-
-" Close windows with <Leader>wc
-nnoremap <Leader>wc <C-w>c
-
-" move between windows with arrow keys or <Leader>w + hjkl
-nnoremap <Left> <C-w>h
-nnoremap <Down> <C-w>j
-nnoremap <Up> <C-w>k
-nnoremap <Right> <C-w>l
-nnoremap <Leader>wh <C-w>h
-nnoremap <Leader>wj <C-w>j
-nnoremap <Leader>wk <C-w>k
-nnoremap <Leader>wl <C-w>l
-
-" move between buffers with <Leader>left/right
-nnoremap <silent> <Leader><Left> :bp<CR>
-nnoremap <silent> <Leader><Right> :bn<CR>
-
-" <Leader>y to switch between two most recent buffers
-nmap <Leader>y :b#<CR>
-
-" <Leader>ev to edit vimrc in vertical split
-nnoremap <Leader>ev <C-w><C-v><C-w><C-l>:e $MYVIMRC<CR>
-
-" <Leader>sv to source the vimrc
-nnoremap <Leader>sv :source<Space>$MYVIMRC<CR>
-
-"========================================================
-
-
 "==================== Function Keys =====================
 
 " delete whitespace at eols with F9
@@ -264,32 +237,6 @@ nnoremap <F10> :help <C-r><C-w><CR>
 " Open definition in split with <Leader>/
 nnoremap <Leader>/ :vsp<CR> :exec("tag ".expand("<cword>"))<CR>
 
-
-"========================================================
-
-
-"====================== Fugitive ========================
-
-" Edit Git Files
-nnoremap <Leader>ge :Gedit<CR>
-nnoremap <Leader>gh :Gsplit<CR>
-nnoremap <Leader>gv :Gvsplit<CR>
-
-" Git Diff
-nnoremap <Leader>gd :Gdiff<CR>
-
-" Git Status
-nnoremap <Leader>gs :Gstatus<CR>
-
-" Commit
-nnoremap <Leader>gc :Gcommit<CR>
-
-" Git Blame
-nnoremap <Leader>gb :Gblame<CR>
-
-" Git Move and Remove
-nnoremap <Leader>gm :Gmove<CR>
-nnoremap <Leader>gr :Gremove<CR>
 
 "========================================================
 

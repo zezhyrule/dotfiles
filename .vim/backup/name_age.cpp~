@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+inline void keep_window_open() { char ch; cin>>ch; }
+
+int main()
+{
+	cout << "Please enter your first name and age (in years)\n";
+	string first_name = "???";    // string variable
+	double age = -1;    			  // integer variable
+	cin >> first_name >> age;
+	age = age * 12;
+	cout << "Hello, " << first_name << " (age (in months): " << age << ")\n";
+	return 0;
+}

@@ -2,30 +2,26 @@
 # ~/.bashrc
 #
 
+# starts vagrant at bash login
+#vagrant up
+#vagrant ssh
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-[ -n "$TMUX" ] && export TERM=xterm-256color
+[ -n "$TMUX" ] # && export TERM=xterm-256color
+
+# start in home folder
+cd ~
 
 #start tmux if installed
 #if which tmux >/dev/null 2>&1; then
-    ## if no session is startet, start new session
-    #test -z ${TMUX} && tmux
+test -z ${TMUX} && tmux
 
-    ## when quitting tmux, try to attach
-    ##while test -z ${TMUX}; do
-        ##tmux attach || break
-    ##done
+# when quitting tmux, try to attach
+#while test -z ${TMUX}; do
+#tmux attach || exit ||  break
+#done
 #fi
-
-
-# allows saving with ctrl-s in vim
-vim()
-{
-    local STTYOPTS="$(stty --save)"
-    stty stop '' -ixoff
-    command vim "$@"
-    stty "$STTYOPTS"
-}
 
 # use vi-style keybindings in shell
 # starts in insert mode, esc to leave
@@ -41,12 +37,12 @@ man() {
 		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
 		LESS_TERMCAP_ue=$(printf "\e[0m") \
 		LESS_TERMCAP_us=$(printf "\e[1;35m") \
-			man "$@"
+		man "$@"
 }
 
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-    . /usr/share/bash-completion/bash_completion
+	. /usr/share/bash-completion/bash_completion
 
 # PS1='\u \w > '
 PS1='\[\e[31m\]\u\[\e[m\] \[\e[34m\]\w\[\e[m\] \[\e[31m\]> \[\e[0m\]'
@@ -74,7 +70,7 @@ alias fgrep='fgrep --color=auto'
 alias grepr='grep -r --color=auto'
 alias grepi='grep -i --color=auto'
 alias grepl='grep -l --color=auto'
-alias vim="stty stop '' -ixoff ; vim" # keep all my configs when run as root
+#alias vim="stty stop '' -ixoff ; vim" # keep all my configs when run as root
 alias svim='sudo vim'
 alias vi='vim' # down with vi compatibility mode!
 alias emacs='vim'
@@ -87,13 +83,13 @@ alias awtheme='$EDITOR $HOME/.config/awesome/themes/default/theme.lua'
 alias rprc='$EDITOR $HOME/.ratpoisonrc'
 alias visudo='sudo visudo'
 alias pacman='pacman'
-alias pac='sudo pacman -S'
+alias pac='pacman -S'
 alias pacs='pacman -Ss'
-alias pacup='sudo pacman -Syu'
-alias pacr='sudo pacman -Rns'
+alias pacup='pacman -Syu'
+alias pacr='pacman -Rns'
 alias pacqs='pacman -Qs'
-alias pak='sudo packer -S'
-alias pakup='sudo packer -Syu'
+alias pak='packer -S'
+alias pakup='packer -Syu'
 alias paks='packer -Ss'
 alias apti='sudo apt-get install'
 alias apts='apt-cache search'
@@ -119,4 +115,5 @@ function today
 }
 
 export EDITOR="vim"
-export PATH=$PATH:$HOME/bin/
+export PATH=$PATH:$HOME/bin:/usr/bin:/usr/local/bin:/bin/:$HOME/.scripts/
+export PATH=$PATH:"/C/Program Files/Java/jdk1.8.0_65/bin/"

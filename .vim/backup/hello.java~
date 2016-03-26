@@ -1,0 +1,11 @@
+public class Hello
+{
+	public Empty()
+	{
+	}
+
+	public void methodDef(int hello)
+	{
+		System.out.println(hello);
+	}
+}

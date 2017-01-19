@@ -1,18 +1,15 @@
-/* Charles Davis */
-/* 2013-03-16 */
-/* this is a test program to demo writing C */
+#include<stdio.h> // library needed for simple I/O
 
-#include <stdlib.h>
-#include <stdio.h>
+int square(int x);
 
-int main (int argc, char* argv[]) 
+int main() // create a main function with return type int
+{          // return 0 if successful. C standard is to have a return type.
+
+	printf("%d", square(3)); // standard print func display to console
+	return 0;
+} // end main
+
+int square(int x)
 {
-    int i1;
-    double i2;
-
-    printf("int is %d bytes long\n", sizeof(i1));
-    printf("long int is %d bytes long\n", sizeof(i2));
-
-    return EXIT_SUCCESS;
-
+	return x * x;
 }

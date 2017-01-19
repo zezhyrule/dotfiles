@@ -1,6 +1,9 @@
                 " " " " " " " " " " " " " "
                 " Author: zezhyrule       "
-                " Last Edited: 2016-03-13 "
+                " Last Edited: 2017-01-19 "
+				"                         "
+				" My school setup. Still  "
+				" needs to be cleaned up  "
      " ~ ~ ~    " " " " " " " " " " " " " "    ~ ~ ~ "
 
 " Use Vim settings, rather than Vi settings (much better!).
@@ -23,6 +26,7 @@ set showcmd                    " display incomplete commands
 set incsearch                  " do incremental searching
 set ignorecase                 " ignore case in searches-
 set smartcase                  " unless you enter a capital letter
+set wildmenu
 set ls=2                       " shows statusline always
 set nu                         " number lines
 set scrolloff=5                " start scrolling when 5 lines from margins
@@ -52,18 +56,18 @@ set completeopt-=preview
 "                  ====================
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
 
 " let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
 
 " All mah plugins: 
-Plugin 'chriskempson/base16-vim'
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'vim-scripts/OmniCppComplete'
+"Plugin 'chriskempson/base16-vim'
+"Plugin 'chriskempson/vim-tomorrow-theme'
+"Plugin 'nanotech/jellybeans.vim'
+"Plugin 'w0ng/vim-hybrid'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'vim-scripts/OmniCppComplete'
 "Plugin 'Townk/vim-autoclose'
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/nerdcommenter'
@@ -156,6 +160,7 @@ if has("autocmd")
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType lilypond setlocal ts=2 sts=2 sw=2
+  autocmd FileType markdown setlocal complete+=kspell spell tw=75
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
